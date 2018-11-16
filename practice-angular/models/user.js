@@ -6,7 +6,10 @@ const userSchema = mongoose.Schema({
   password: String,
   profilePicture: String,
   bio: String,
-  following: [ARRAY OF USERS!!!]
+  friends: [{
+    id: string,
+    status: string,
+  }]
   moviesReviewed: [String]
 };
 
