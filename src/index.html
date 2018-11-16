@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" ng-app="filmSpotting">
   <head>
     <meta charset="utf-8">
-    <title>WDI Project 3</title>
+    <title>Film Spotting</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <img src="logo goes here" alt="film spotting logo">
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link">
+            <div class="navbar-dropdown">
+              <a href="navbar-item" ui-sref="home">Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main ui-view></main>
+    <footer class="footer has-text-centered">
+      © 2018 FILM SPOTTING
+      <div class="socials">
+        <a href="https://www.facebook.com/">
+          <i class="fab fa-facebook-square social"></i>
+        </a>
+        <a href="https://www.twitter.com/">
+          <i class="fab fa-twitter-square social"></i>
+        </a>
+        <a href="https://www.instagram.com/">
+          <i class="fab fa-instagram social"></i>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
