@@ -6,7 +6,7 @@ mongoose.connect(env.dbUri);
 
 const userIds = [
   {
-    ....
+
   }
 ]
 const userData = [
