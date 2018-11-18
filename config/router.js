@@ -12,10 +12,11 @@ const movieController = require('../controllers/movieController');
 
 //theo's code
 
-
-
+router.route('/movies/:id')
+  .get(movieController.show);
+   
 //fred's code
 
 
 
-module.exports router;
+module.exports = router;
