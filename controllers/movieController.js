@@ -1,8 +1,11 @@
-const Movie = require('../models/whiskey');
+const Movie = require('../models/movie');
 
 
 //zoe's code
-
+function indexRoute(req, res, next) {
+  Movie.find().then(movies => res.json(movies))
+    .catch(next);
+}
 
 
 
@@ -14,5 +17,5 @@ const Movie = require('../models/whiskey');
 
 
 module.exports = {
-
+  index: indexRoute
 };

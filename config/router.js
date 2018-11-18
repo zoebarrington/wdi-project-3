@@ -6,6 +6,8 @@ const movieController = require('../controllers/movieController');
 
 
 //zoe's code
+router.route('/movies')
+  .get(movieController.index);
 
 
 
@@ -18,4 +20,4 @@ const movieController = require('../controllers/movieController');
 
 
 
-module.exports router;
+module.exports = router;
