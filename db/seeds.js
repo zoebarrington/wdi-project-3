@@ -43,6 +43,7 @@ const userData = [
 
 const movieData = [
   {
+    createdBy: userIds[0],
     name: 'Love Actually',
     yearReleased: 2003,
     movieLength: '2h 15mins',
@@ -54,6 +55,7 @@ const movieData = [
     locationFilmed: ['London', 'Surrey', 'France'],
     genres: ['Comedy', 'Romance']
   }, {
+    createdBy: userIds[1],
     name: 'Blood Diamond',
     yearReleased: 2006,
     movieLength: '2h 23mins',
@@ -65,6 +67,7 @@ const movieData = [
     locationFilmed: ['South Africa', 'Mozambique'],
     genres: ['Adventure', 'Drama', 'Thriller']
   }, {
+    createdBy: userIds[2],
     name: 'The Shawshank Redemption',
     yearReleased: 1994,
     movieLength: '2h 22mins',

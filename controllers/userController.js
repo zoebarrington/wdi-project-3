@@ -1,7 +1,7 @@
 const User = require('../models/user');
 
 function showRoute(req, res, next) {
-  User.findByIdr(req.params.id)
+  User.findById(req.params.id)
     .populate('moviesCreated')
     .select('-password')
     .then(user => {
