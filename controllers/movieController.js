@@ -24,7 +24,7 @@ function movieCreate(req, res, next){
 
 //update route
 function movieUpdate(req, res, next) {
-  Movie.FindById(req.params.id)
+  Movie.findById(req.params.id)
     .then(movie => movie.set(req.body))
     .then(movie => movie.save())
     .then(movie => res.json(movie))
