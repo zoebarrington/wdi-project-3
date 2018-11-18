@@ -43,7 +43,7 @@ const userData = [
 
 const movieData = [
   {
-    createdBy: userIds[0],
+    createdBy: userIds [0],
     name: 'Love Actually',
     yearReleased: 2003,
     movieLength: '2h 15mins',
