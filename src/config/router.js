@@ -1,6 +1,7 @@
 import moviesIndexCtrl from '../controllers/movies/indexCtrl';
 import moviesShowCtrl from '../controllers/movies/showCtrl';
 import moviesNewCtrl from '../controllers/movies/newCtrl';
+import moviesEditCtrl from '../controllers/movies/editCtrl';
 
 
 function Router($stateProvider, $urlRouterProvider) {
@@ -23,6 +24,11 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: './views/movies/new.html',
       url: '/movies/new',
       controller: moviesNewCtrl
+    })
+    .state('movieEdit', {
+      templateUrl: './views/movies/edit.html',
+      url: '/movies/:id/edit',
+      controller: moviesEditCtrl
     });
   $urlRouterProvider.otherwise('/');
 }

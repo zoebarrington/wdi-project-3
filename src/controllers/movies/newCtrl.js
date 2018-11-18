@@ -1,5 +1,6 @@
 function newCtrl($scope, $http, $state){
   $scope.handleSubmit = function (){
+    console.log('handleSubmit');
     $http({
       method: 'POST',
       url: '/api/movies',
