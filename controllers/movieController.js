@@ -7,8 +7,6 @@ function movieIndex(req, res, next) {
     .catch(next);
 }
 
-
-
 //theo's code
 function movieShow(req, res, next) {
   Movie.findById(req.params.id)
@@ -24,8 +22,26 @@ function movieCreate(req, res, next){
     .catch(next);
 }
 
+//update route
+function movieUpdate(req, res, next) {
+  Movie.FindById(req.params.id)
+    .then(movie => movie.set(req.body))
+    .then(movie => movie.save())
+    .then(movie => res.json(movie))
+    .catch(next);
+}
+
+//delete
+function deleteRoute(req, res, next) {
+  Movie.findByIdAndDelete(req.params.id)
+    .then(() => res.sendStatus(204))
+    .catch(next);
+}
+
 module.exports = {
   create: movieCreate,
   show: movieShow,
-  index: movieIndex
+  index: movieIndex,
+  update: movieUpdate,
+  delete: deleteRoute
 };
