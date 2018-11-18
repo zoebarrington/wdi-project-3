@@ -1,3 +1,8 @@
+.html {
+  height: 100%;
+}
+
+
 .navbar{
   background-color: lightgrey;
   .navbar-link{
@@ -12,7 +17,10 @@
 }
 
 body{
-  main{
+  min-height: 100%;
+  display: grid;
+   grid-template-rows: 1fr auto;
+    main {
     height: 80vh;
   }
 }
@@ -20,6 +28,8 @@ body{
 footer{
   width: 100vw;
   position: relative;
+  grid-row-start: -1;
+  grid-row-end: 3;
   .socials{
     position: absolute;
     right: 3vw;
