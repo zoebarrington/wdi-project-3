@@ -2,8 +2,8 @@
 <h2 class="subtitle is-2"> {{ movie.yearReleased }}</h2>
 <p> The film length is {{ movie.movieLength }} </p>
 <img ng-src="{{ movie.image }}" alt="{{ movie.name }}">
-<p ng-repeat="writer in movie.writers"> The writers are {{ movie.writers }}</p>
-<p ng-repeat=" director in movie.director">The director is {{ movie.director }}</p>
-<p ng-repeat=" actor in movie.actors"> The actors are {{ movie.actors }}</p>
+<p ng-repeat="writer in movie.writers"> The writers are {{ writer }}</p>
+<p>The director is {{ movie.director }}</p>
+<p ng-repeat=" actor in movie.actors"> The actors are {{ actor }}</p>
 
 <p>{{ movie.name }} {{ movie.synopsis }}</p>

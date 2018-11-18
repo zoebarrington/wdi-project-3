@@ -1,5 +1,6 @@
 import moviesIndexCtrl from '../controllers/movies/indexCtrl';
 import moviesShowCtrl from '../controllers/movies/showCtrl';
+import moviesNewCtrl from '../controllers/movies/newCtrl';
 
 
 function Router($stateProvider, $urlRouterProvider) {
@@ -17,6 +18,11 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: './views/movies/show.html',
       url: '/movies/:id',
       controller: moviesShowCtrl
+    })
+    .state('movieNew', {
+      templateUrl: './views/movies/new.html',
+      url: '/movies/new',
+      controller: moviesNewCtrl
     });
   $urlRouterProvider.otherwise('/');
 }
