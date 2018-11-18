@@ -1,0 +1,17 @@
+<h1 class="title is-1">Spot the film</h1>
+  <div class="columns is-multiline">
+    <div ng-repeat="movie in movies" class="column is-4">
+      <a ui-sref="movieShow({ id: movie._id })">
+        <div class="card">
+          <div class="card-header">
+            {{ movie.name }}
+          </div>
+          <div class="card-image">
+            <figure class="image">
+              <img ng-src="{{ movie.image }}" alt="{{ movie.name }}">
+            </figure>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
