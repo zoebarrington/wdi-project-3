@@ -1,6 +1,7 @@
 //
 const router = require('express').Router();
 const movieController = require('../controllers/movieController');
+const userController = require('../controllers/userController');
 
 
 //zoe's code
@@ -22,6 +23,9 @@ router.route('/movies/:id')
 router.route('/movies')
   .post(movieController.create);
 
+//user show page
+router.route('/users/:id')
+  .get(userController.show);
 
 
 module.exports = router;
