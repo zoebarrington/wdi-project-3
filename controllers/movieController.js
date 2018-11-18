@@ -7,8 +7,6 @@ function movieIndex(req, res, next) {
     .catch(next);
 }
 
-
-
 //theo's code
 function movieShow(req, res, next) {
   Movie.findById(req.params.id)
