@@ -1,10 +1,49 @@
 const mongoose = require('mongoose');
 const env = require('../config/environment');
-mongoose.connect(env.dbUri);
 const Movie = require('../models/movie');
+const User = require('../models/user');
+mongoose.connect(env.dbUri);
+
+const userIds = [
+  '5bf17051d4a071297aa4b6ea',
+  '5bf17051d4a071297aa4b6eb',
+  '5bf17051d4a071297aa4b6ec',
+  '5bf17051d4a071297aa4b6ed',
+  '5bf17051d4a071297aa4b6ee'
+];
+
+const userData = [
+  {
+    _id: userIds[0],
+    username: 'freddiebell',
+    email: 'fred@bell.com',
+    password: 'pass'
+  }, {
+    _id: userIds[1],
+    username: 'theobirch',
+    email: 'theo@birch.com',
+    password: 'pass'
+  }, {
+    _id: userIds[2],
+    username: 'davidcomer',
+    email: 'david@comer.com',
+    password: 'pass'
+  }, {
+    _id: userIds[3],
+    username: 'zoebarrington',
+    email: 'zoe@barrington.com',
+    password: 'pass'
+  }, {
+    _id: userIds[4],
+    username: 'albert',
+    email: 'albert@birch.com',
+    password: 'pass'
+  }
+];
 
 const movieData = [
   {
+    createdBy: userIds [0],
     name: 'Love Actually',
     yearReleased: 2003,
     movieLength: '2h 15mins',
@@ -16,6 +55,7 @@ const movieData = [
     locationFilmed: ['London', 'Surrey', 'France'],
     genres: ['Comedy', 'Romance']
   }, {
+    createdBy: userIds[1],
     name: 'Blood Diamond',
     yearReleased: 2006,
     movieLength: '2h 23mins',
@@ -27,6 +67,7 @@ const movieData = [
     locationFilmed: ['South Africa', 'Mozambique'],
     genres: ['Adventure', 'Drama', 'Thriller']
   }, {
+    createdBy: userIds[2],
     name: 'The Shawshank Redemption',
     yearReleased: 1994,
     movieLength: '2h 22mins',
@@ -41,9 +82,14 @@ const movieData = [
 ];
 
 Movie.collection.drop();
+User.collection.drop();
 
 Movie.create(movieData)
   .then(movies => {
     console.log(`created' ${movies.length} movies!`);
-    mongoose.connection.close();
+    User.create(userData)
+      .then(users => {
+        console.log(`Created ${users.length} user`);
+        mongoose.connection.close();
+      });
   });
