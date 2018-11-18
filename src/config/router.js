@@ -10,10 +10,12 @@ function Router($stateProvider, $urlRouterProvider) {
     })
     .state('movieIndex', {
       templateUrl: './views/movies/index.html',
+      url: '/movies',
       controller: moviesIndexCtrl
     })
     .state('movieShow', {
       templateUrl: './views/movies/show.html',
+      url: '/movies/:id',
       controller: moviesShowCtrl
     });
   $urlRouterProvider.otherwise('/');
