@@ -1,8 +1,11 @@
-const Movie = require('../models/whiskey');
+const Movie = require('../models/movie');
 
 
 //zoe's code
-
+function movieIndex(req, res, next) {
+  Movie.find().then(movies => res.json(movies))
+    .catch(next);
+}
 
 
 
@@ -17,5 +20,7 @@ function movieShow(req, res, next) {
 
 
 module.exports = {
-  show: movieShow
+  show: movieShow,
+  index: movieIndex
+
 };

@@ -6,6 +6,8 @@ const movieController = require('../controllers/movieController');
 
 
 //zoe's code
+router.route('/movies')
+  .get(movieController.index);
 
 
 
