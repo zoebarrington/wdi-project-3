@@ -1,4 +1,4 @@
-const Movie = require('../models/whiskey');
+const Movie = require('../models/movie');
 
 
 //zoe's code
@@ -11,8 +11,13 @@ const Movie = require('../models/whiskey');
 
 
 //fred's code
-
+function movieCreate(req, res, next){
+  Movie
+    .create(req.body)
+    .then(movie => res.json(movie))
+    .catch(next);
+}
 
 module.exports = {
-
+  create: movieCreate
 };

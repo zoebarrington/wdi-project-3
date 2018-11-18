@@ -1,7 +1,5 @@
 //
 const router = require('express').Router();
-
-
 const movieController = require('../controllers/movieController');
 
 
@@ -15,7 +13,8 @@ const movieController = require('../controllers/movieController');
 
 
 //fred's code
+router.route('/movies')
+  .post(movieController.create);
 
 
-
-module.exports router;
+module.exports = router;
