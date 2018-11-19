@@ -1,12 +1,10 @@
-//
+
 const router = require('express').Router();
 const movieController = require('../controllers/movieController');
 const userController = require('../controllers/userController');
-
 const secureController = require('../controllers/secureController');
-
 const reviewController = require('../controllers/reviewController');
-
+const authController = require('../controllers/authController');
 
 //zoe's code
 router.route('/movies')
@@ -29,14 +27,21 @@ router.route('/movies')
 
 //user show page
 router.route('/users/:id')
-  .get(userController.show);
+  .get(secureController, userController.show);
 
 //comment create route
 router.route('/movies/:movieId/reviews')
-  .post(reviewController.create);
+  .post(secureController, reviewController.create);
 
 //comment delete route
 router.route('/movies/:movieId/reviews/:reviewId')
-  .delete(reviewController.delete);
+  .delete(secureController, reviewController.delete);
+
+// register route
+router.route('/register')
+  .post(authController.register);
+// login route
+router.route('/login')
+  .post(authController.login);
 
 module.exports = router;
