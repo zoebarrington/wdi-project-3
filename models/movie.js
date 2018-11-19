@@ -21,7 +21,7 @@ const movieSchema = mongoose.Schema({
     likedBy: [{
       type: mongoose.Schema.ObjectId, ref: 'User'
     }],
-    date: String
+    time: { type: Date, default: Date.now }
   }],
   averageRatings: Number,
   createdBy: {
