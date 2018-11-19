@@ -1,4 +1,48 @@
-<form ng-submit="handleLogin()">
+
+<section class="hero is-success is-fullheight">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="column is-4 is-offset-4">
+        <h3 class="title has-text-grey">Login</h3>
+        <p class="subtitle has-text-grey">Please login to proceed.</p>
+        <div class="box">
+          <figure class="avatar">
+            <img ng-src="http://www.gstatic.com/tv/thumb/persons/282920/282920_v9_ba.jpg">
+          </figure>
+          <form ng-submit="handleLogin()">
+            <div class="field">
+              <div class="control">
+                <input class="input is-large" type="email" ng-model= "user.email" placeholder="Your Email" autofocus="">
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <input class="input is-large" type="password" ng-model ="user.password" placeholder="Your Password">
+              </div>
+            </div>
+            <div class="field">
+              <label class="checkbox">
+                <input type="checkbox">
+                Remember me
+              </label>
+            </div>
+            <button class="button is-block is-info is-large is-fullwidth">Login</button>
+          </form>
+        </div>
+        <p class="has-text-grey">
+          <a usref="../">Sign Up</a>
+          <a href="../">Forgot Password</a>
+          <a href="../">Need Help?</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <form ng-submit="handleLogin()">
   <div class="field">
     <label class="label" for="email">Email:</label>
     <div class="control">
@@ -16,4 +60,4 @@
       <button class="button">Submit</button>
     </div>
   </div>
-</form>
+</form> -->
