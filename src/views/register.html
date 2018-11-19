@@ -1,0 +1,19 @@
+<form ng-submit="handleRegister()">
+  <div class="field">
+    <label class="label" for="email">Email:</label>
+    <div class="control">
+      <input class="input" name="email" ng-model="user.email">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="password">Password:</label>
+    <div class="control">
+      <input class="input" name="password" type="password" ng-model="user.password">
+    </div>
+  </div>
+  <div class="field">
+    <div class="control">
+      <button class="button">Register</button>
+    </div>
+  </div>
+</form>
