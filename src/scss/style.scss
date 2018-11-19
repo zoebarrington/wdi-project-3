@@ -65,7 +65,13 @@
 
 
 // movie show page styling
+.show-title{
+  position: absolute;
+  top: 65vh;
+  right: 1vw;
+}
 .info-box{
+  background-color: white;
   width: 30vw;
   border: 1px solid;
   position: absolute;
@@ -87,11 +93,20 @@
     border-bottom: 1px solid;
   }
 }
-
-.reviews{
+.cover-photo{
+  width: 100vw;
   position: absolute;
   right: 0;
-  top: 20vh;
+  top: 10vh;
+  height: 55vh;
+  background-color: red;
+}
+.reviews{
+  border: 1px solid;
+  position: absolute;
+  right: 1vw;
+  top: 75vh;
+  width: 55vw;
 }
 // home page styling
 .home-welcome{
