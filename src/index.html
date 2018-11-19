@@ -28,6 +28,9 @@
               <a ng-if="!isAuthenticated()" ui-sref="login">
                 <div>Login</div>
               </a>
+              <a ng-if="!isAuthenticated()" ui-sref="profileShow({ id: userId })">
+                <div>Your Profile</div>
+              </a>
               <a ng-if="!isAuthenticated()" ui-sref="register">
                 <div>Register</div>
               </a>
