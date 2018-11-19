@@ -10,14 +10,14 @@
     .navbar-dropdown{
       text-align: center;
       background-color: dimgrey;
+      a{
+        width: 10vw;
+        color: white;
+      }
       div{
         border-top: 1px white solid;
         border-bottom: 1px white solid;
         padding: 1vh;
-        a{
-          width: 10vw;
-          color: white;
-        }
       }
       div:hover{
         background-color: gray;
