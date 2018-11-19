@@ -9,7 +9,7 @@ function movieIndex(req, res, next) {
 
 //theo's code
 function movieShow(req, res, next) {
-  Movie.findById(req.params.id)
+  Movie.findById(req.params.id).populate('createdBy reviews.createdBy')
     .then(movie => res.json(movie))
     .catch(next);
 }
