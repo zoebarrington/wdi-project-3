@@ -1,11 +1,10 @@
 <h1 class="title is-1">{{ movie.name }}</h1>
-<h2 class="subtitle is-2"> {{ movie.yearReleased }}</h2>
-<p> The film length is {{ movie.movieLength }} </p>
 <img ng-src="{{ movie.image }}" alt="{{ movie.name }}">
-<p ng-repeat="writer in movie.writers"> The writers are {{ writer }}</p>
+<p> The film length is {{ movie.movieLength }} </p>
+<h2 class="subtitle is-2"> {{ movie.yearReleased }}</h2>
 <p>The director is {{ movie.director }}</p>
+<p ng-repeat="writer in movie.writers"> The writers are {{ writer }}</p>
 <p ng-repeat=" actor in movie.actors"> The actors are {{ actor }}</p>
-
-<p>{{ movie.name }} {{ movie.synopsis }}</p>
+<p>{{ movie.name }}. {{ movie.synopsis }}</p>
 <button class="button is-rounded" ui-sref="movieEdit({ id: movie._id})">EDIT</button>
 <button class="button is-rounded" ng-click="handleDelete()">DELETE</button>
