@@ -6,6 +6,7 @@ const secureController = require('../controllers/secureController');
 const reviewController = require('../controllers/reviewController');
 const authController = require('../controllers/authController');
 const secureRoute = secureController.secure;
+
 //zoe's code
 router.route('/movies')
   .get(movieController.index)
