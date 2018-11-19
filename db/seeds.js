@@ -53,7 +53,8 @@ const movieData = [
     actors: ['Hugh Grant', 'Martine McCutcheon', 'Liam Neeson'],
     synopsis: 'Follows the lives of eight very different couples in dealing with their love lives in various loosely interrelated tales all set during a frantic month before Christmas in London, England.',
     locationFilmed: ['London', 'Surrey', 'France'],
-    genres: ['Comedy', 'Romance']
+    genres: ['Comedy', 'Romance'],
+    reviews: []
   }, {
     createdBy: userIds[1],
     name: 'Blood Diamond',
@@ -65,7 +66,8 @@ const movieData = [
     actors: ['Leonardo DiCaprio', 'Dijimon Hounsou', 'Jennifer Connelly'],
     synopsis: 'A story following Archer, a man tortured by his roots. With a strong survival instinct, he has made himself a key player in the business of conflict diamonds. Political unrest is rampant in Sierra Leone as people fight tooth for tooth. Upon meeting Solomon, and the beautiful Maddy, Archers life changes forever as he is given a chance to make peace with the war around him.',
     locationFilmed: ['South Africa', 'Mozambique'],
-    genres: ['Adventure', 'Drama', 'Thriller']
+    genres: ['Adventure', 'Drama', 'Thriller'],
+    reviews: []
   }, {
     createdBy: userIds[2],
     name: 'The Shawshank Redemption',
@@ -77,7 +79,8 @@ const movieData = [
     actors: ['Tim Robbins', 'Morgan Freeman', 'Bob Gunton'],
     synopsis: 'Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the mans unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red.',
     locationFilmed: ['Ohio', 'Virgin Islands'],
-    genres: ['Drama']
+    genres: ['Drama'],
+    reviews: []
   }
 ];
 

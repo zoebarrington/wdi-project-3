@@ -11,7 +11,7 @@ const movieSchema = mongoose.Schema({
   synopsis: String,
   locationFilmed: [String],
   genres: [String],
-  reviews: {
+  reviews: [{
     title: String,
     rating: Number,
     content: String,
@@ -22,7 +22,7 @@ const movieSchema = mongoose.Schema({
       type: mongoose.Schema.ObjectId, ref: 'User'
     }],
     date: String
-  },
+  }],
   averageRatings: Number,
   createdBy: {
     type: mongoose.Schema.ObjectId,
