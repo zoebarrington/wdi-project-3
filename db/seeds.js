@@ -15,7 +15,7 @@ const userIds = [
 const userData = [
   {
     _id: userIds[0],
-    username: 'freddiebell',
+    username: 'freddie bell',
     email: 'fred@bell.com',
     password: 'pass'
   }, {
