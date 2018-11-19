@@ -1,10 +1,33 @@
 <h1 class="title is-1">{{ movie.name }}</h1>
-<img ng-src="{{ movie.image }}" alt="{{ movie.name }}">
-<p> The film length is {{ movie.movieLength }} </p>
-<h2 class="subtitle is-2"> {{ movie.yearReleased }}</h2>
-<p>The director is {{ movie.director }}</p>
-<p ng-repeat="writer in movie.writers"> The writers are {{ writer }}</p>
-<p ng-repeat=" actor in movie.actors"> The actors are {{ actor }}</p>
-<p>{{ movie.name }}. {{ movie.synopsis }}</p>
-<button class="button is-rounded" ui-sref="movieEdit({ id: movie._id})">EDIT</button>
-<button class="button is-rounded" ng-click="handleDelete()">DELETE</button>
+<div class="info-box">
+  <img ng-src="{{ movie.image }}" alt="{{ movie.name }}">
+  <div class="stats">
+    <p>Director: {{ movie.director }}</p>
+    <div class="writers">
+      Writers:
+      <span ng-repeat="writer in movie.writers">{{ writer }}</span>
+    </div>
+    <div class="actors">
+      Actors:
+      <span ng-repeat=" actor in movie.actors">{{ actor }}</span>
+    </div>
+    <p>Synopsis: {{ movie.synopsis }}</p>
+    <div class="genres">
+      Genres:
+      <span ng-repeat=" genre in movie.genres">{{ genre }}</span>
+    </div>
+    <p>Runtime: {{ movie.movieLength }} </p>
+    <p>Release year: {{ movie.yearReleased }}</p>
+    <div class="locations">
+      Locations Filmed:
+      <span ng-repeat=" location in movie.locationFilmed">{{ location }}</span>
+    </div>
+  </div>
+  <div class="rating-display">
+    {{movie.averageRatings}}
+  </div>
+  <div class="buttons-box">
+    <button class="button is-rounded" ui-sref="movieEdit({ id: movie._id})">EDIT</button>
+    <button class="button is-rounded" ng-click="handleDelete()">DELETE</button>
+  </div>
+</div>

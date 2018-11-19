@@ -16,22 +16,22 @@
         <div class="navbar-item has-dropdown is-hoverable">
           <div class="navbar-link">
             <div class="navbar-dropdown">
-              <a href="navbar-item" ui-sref="home">
+              <a  ui-sref="home">
                 <div>Home</div>
               </a>
-              <a href="navbar-item" ui-sref="movieIndex">
+              <a ui-sref="movieIndex">
                 <div>Movies</div>
               </a>
-              <a href="navbar-item" ui-sref="movieNew">
+              <a ui-sref="movieNew">
                 <div>Add a movie</div>
               </a>
-              <a href="navbar-item" ui-sref="login">
+              <a ng-if="!isAuthenticated()" ui-sref="login">
                 <div>Login</div>
               </a>
-              <a href="navbar-item" ui-sref="register">
+              <a ng-if="!isAuthenticated()" ui-sref="register">
                 <div>Register</div>
               </a>
-              <a ng-if="isAuthenticated()" class="navbar-item" ng-click="handleLogout()">
+              <a ng-if="isAuthenticated()"  ng-click="handleLogout()">
                 <div>Log out {{ username }}</div>
               </a>
             </div>

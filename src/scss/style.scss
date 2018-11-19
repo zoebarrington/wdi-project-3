@@ -26,28 +26,55 @@
   }
 }
 
-body{
-  min-height: 100%;
-  display: grid;
-   grid-template-rows: 1fr auto;
-    main {
-    height: 80vh;
+// body{
+//   min-height: 100%;
+//   display: grid;
+//    grid-template-rows: 1fr auto;
+//     main {
+//     height: 80vh;
+//   }
+// }
+//
+// footer{
+//   width: 100vw;
+//   position: relative;
+//   grid-row-start: -1;
+//   grid-row-end: 3;
+//   .socials{
+//     position: absolute;
+//     right: 3vw;
+//     top: 5vh;
+//     .social{
+//       margin: 0.25vh;
+//       font-size: 30px;
+//       color: black;
+//     }
+//   }
+// }
+
+
+// movie show page styling
+.info-box{
+  width: 30vw;
+  background-color: pink;
+  position: absolute;
+  left: 10vw;
+  top: 20vh;
+  display: flex;
+  flex-direction: column;
+  img{
+    width: 20vw;
+    margin-left: 5vw;
+  }
+  span{
+    margin-left: 5px;
+  }
+  p{
+    border-bottom: 1px solid;
+  }
+  div{
+    border-bottom: 1px solid;
   }
 }
 
-footer{
-  width: 100vw;
-  position: relative;
-  grid-row-start: -1;
-  grid-row-end: 3;
-  .socials{
-    position: absolute;
-    right: 3vw;
-    top: 5vh;
-    .social{
-      margin: 0.25vh;
-      font-size: 30px;
-      color: black;
-    }
-  }
-}
+// home page styling
