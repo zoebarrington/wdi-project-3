@@ -16,6 +16,10 @@ function movieShow(req, res, next) {
 
 //fred's code
 function movieCreate(req, res, next){
+  req.body.writers = req.body.writers.split(',');
+  req.body.actors = req.body.actors.split(',');
+  req.body.locationFilmed = req.body.locationFilmed.split(',');
+  req.body.genres = req.body.genres.split(',');
   Movie
     .create(req.body)
     .then(movie => res.json(movie))
@@ -24,6 +28,10 @@ function movieCreate(req, res, next){
 
 //update route
 function movieUpdate(req, res, next) {
+  req.body.writers = req.body.writers.split(',');
+  req.body.actors = req.body.actors.split(',');
+  req.body.locationFilmed = req.body.locationFilmed.split(',');
+  req.body.genres = req.body.genres.split(',');
   Movie.findById(req.params.id)
     .then(movie => movie.set(req.body))
     .then(movie => movie.save())
