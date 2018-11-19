@@ -17,6 +17,7 @@
     "body-parser": "^1.18.3",
     "bulma": "^0.7.2",
     "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
     "mongoose": "^5.3.12",
     "morgan": "^1.9.1",
     "satellizer": "^0.15.5"
