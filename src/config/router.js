@@ -2,7 +2,8 @@ import moviesIndexCtrl from '../controllers/movies/indexCtrl';
 import moviesShowCtrl from '../controllers/movies/showCtrl';
 import moviesNewCtrl from '../controllers/movies/newCtrl';
 import moviesEditCtrl from '../controllers/movies/editCtrl';
-import loginCtrl from '../controllers/movies/loginCtrl';
+import loginCtrl from '../controllers/loginCtrl';
+import registerCtrl from '../controllers/registerCtrl';
 
 
 function Router($stateProvider, $urlRouterProvider) {
@@ -20,6 +21,11 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: './views/login.html',
       url: '/login',
       controller: loginCtrl
+    })
+    .state('register', {
+      templateUrl: './views/register.html',
+      url: '/register',
+      controller: registerCtrl
     })
     .state('movieShow', {
       templateUrl: './views/movies/show.html',
