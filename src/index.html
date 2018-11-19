@@ -22,17 +22,17 @@
               <a ui-sref="movieIndex">
                 <div>Movies</div>
               </a>
-              <a ui-sref="movieNew">
-                <div>Add a movie</div>
+              <a ng-if="isAuthenticated()" ui-sref="movieNew">
+                <div>Spot A Film</div>
               </a>
               <a ng-if="!isAuthenticated()" ui-sref="login">
                 <div>Login</div>
               </a>
               <a ng-if="isAuthenticated()" ui-sref="profileShow({ id: userId })">
-                <div>Your Profile</div>
+                <div>Profile</div>
               </a>
               <a ng-if="!isAuthenticated()" ui-sref="register">
-                <div>Register</div>
+                <div>Subscribe</div>
               </a>
               <a ng-if="isAuthenticated()"  ng-click="handleLogout()">
                 <div>Log out {{ username }}</div>
