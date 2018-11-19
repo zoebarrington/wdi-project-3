@@ -33,10 +33,11 @@
 </div>
 <div class="reviews">
   <div ng-repeat="review in movie.reviews">
-    <span>{{ review.createdBy.username }}</span>
+    <span style="font-weight: bold">{{ review.createdBy.username }}</span>
     <span>{{ review.content }}</span>
+    <button ng-if="isAuthenticated() && review.user._id === reviewId" class="delete-button" ng-click="deleteReview(review)">x</button>
     </div>
-    <form ng-submit="createReview()">
+    <form ng-submit="createReview()" ng-if="isAuthenicated()">
       <input type="text" ng-model="review.content">
       <button class="button">Write a Review</button>
     </form>
