@@ -81,6 +81,71 @@ const movieData = [
     locationFilmed: ['Ohio', 'Virgin Islands'],
     genres: ['Drama'],
     reviews: []
+  }, {
+    createdBy: userIds[1],
+    name: 'Ice Cold in Alex',
+    yearReleased: 1958,
+    movieLength: '2h 10mins',
+    image: 'https://m.media-amazon.com/images/M/MV5BYzVhNmJkZDMtYzgwMC00MjY5LTlkNzUtNjNjYjI3ODIwOTFhXkEyXkFqcGdeQXVyMjI4MjA5MzA@._V1_SY1000_CR0,0,661,1000_AL_.jpg',
+    writers: ['Christopher Landon', 'T.J. Morrison'],
+    director: 'J. Lee Thompson',
+    actors: ['John Mills', 'Sylvia Syms', 'Anthony Quayle', 'Harry Andrews', 'Diane Clare'],
+    synopsis: 'Captain Anson (John Mills) is tired and thirsty. Forced to leave his North African post when it becomes clear it will be invaded, Anson is on his way to Alexandria, Egypt, and looking forward to a nice cold beer. Before he gets there, though, circumstances pressure him to take on several passengers. Sister Diana Murdoch (Sylvia Syms) and Captain van der Poel (Anthony Quayle) prove to be excellent traveling companions, but Anson soon realizes that one of them is a German spy.',
+    locationFilmed: ['Tripoli', 'Hampshire'],
+    genres: ['Drama'],
+    reviews: []
+  }, {
+    createdBy: userIds[0],
+    name: 'Mousehunt',
+    yearReleased: 1997,
+    movieLength: '1h 38mins',
+    image: 'https://m.media-amazon.com/images/M/MV5BMzE0NTRhZWQtZmE5OS00NTI5LWJhMzMtMGU4MzE4MmRlZDE0L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,678,1000_AL_.jpg',
+    writers: ['Adam Rifkin'],
+    director: 'Gore Verbinski',
+    actors: ['Nathan Lane', 'Lee Evans'],
+    synopsis: 'Two stumblebum inheritors are determined to rid their antique house of a mouse who is equally determined to stay where he is.',
+    locationFilmed: ['Bass Lake, California'],
+    genres: ['Comedy'],
+    reviews: []
+  }, {
+    createdBy: userIds[3],
+    name: 'Jaws',
+    yearReleased: 1994,
+    movieLength: '2h 4mins',
+    image: 'https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX651_CR0,0,651,999_AL_.jpg',
+    writers: ['Peter Benchley ', 'Carl Gottlieb '],
+    director: 'Steven Spielberg',
+    actors: ['Roy Scheider', 'Robert Shaw', 'Richard Dreyfuss'],
+    synopsis: 'When a killer shark unleashes chaos on a beach resort, it is up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.',
+    locationFilmed: ['Martha/s Vineyard, USA'],
+    genres: ['Thriller'],
+    reviews: []
+  }, {
+    createdBy: userIds[3],
+    name: 'The Intouchables',
+    yearReleased: 2011,
+    movieLength: '1h 52mins',
+    image: 'https://m.media-amazon.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_SY1000_CR0,0,674,1000_AL_.jpg',
+    writers: ['Philippe Pozzo di Borgo', 'Olivier Nakache'],
+    director: 'Olivier Nakache',
+    actors: ['François Cluzet', 'Omar Sy', 'Audrey Fleurot'],
+    synopsis: 'After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.',
+    locationFilmed: ['Paris, France'],
+    genres: ['Drama'],
+    reviews: []
+  }, {
+    createdBy: userIds[0],
+    name: 'Spring Breakers',
+    yearReleased: 2013,
+    movieLength: '1h 34mins',
+    image: 'https://m.media-amazon.com/images/M/MV5BNDBmYjU3NzAtZGVkNS00N2E3LWEyNTgtMjIwMTczYTE0M2Y4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_SX675_AL_.jpg',
+    writers: ['Harmony Korine'],
+    director: 'Harmony Korine',
+    actors: ['James Franco', '	Selena Gomez', 'Vanessa Hudgens', 'Ashley Benson'],
+    synopsis: 'Four college girls hold up a restaurant in order to fund their spring break vacation. While partying, drinking, and taking drugs, they are arrested, only to be bailed out by a drug and arms dealer. ',
+    locationFilmed: ['Florida, USA'],
+    genres: ['Crime'],
+    reviews: []
   }
 ];
 

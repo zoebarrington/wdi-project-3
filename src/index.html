@@ -22,7 +22,7 @@
               <a ui-sref="movieIndex">
                 <div>Movies</div>
               </a>
-              <a ui-sref="movieNew">
+              <a ng-if="isAuthenticated()" ui-sref="movieNew">
                 <div>Add a movie</div>
               </a>
               <a ng-if="!isAuthenticated()" ui-sref="login">
