@@ -4,6 +4,7 @@ import moviesNewCtrl from '../controllers/movies/newCtrl';
 import moviesEditCtrl from '../controllers/movies/editCtrl';
 import loginCtrl from '../controllers/loginCtrl';
 import registerCtrl from '../controllers/registerCtrl';
+import profileCtrl from '../controllers/profileCtrl';
 
 
 function Router($stateProvider, $urlRouterProvider) {
@@ -36,6 +37,11 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: './views/movies/new.html',
       url: '/movies/new',
       controller: moviesNewCtrl
+    })
+    .state('profileShow', {
+      templateUrl: './views/profile.html',
+      url: '/profile/:id',
+      controller: profileCtrl
     })
     .state('movieEdit', {
       templateUrl: './views/movies/edit.html',

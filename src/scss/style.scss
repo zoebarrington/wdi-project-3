@@ -26,14 +26,14 @@
   }
 }
 
-body{
-  min-height: 100%;
-  display: grid;
-   grid-template-rows: 1fr auto;
-    main {
-    height: 80vh;
-  }
-}
+// body{
+//   min-height: 100%;
+//   display: grid;
+//    grid-template-rows: 1fr auto;
+//     main {
+//     height: 80vh;
+//   }
+// }
 //
 // footer{
 //   width: 100vw;
@@ -74,5 +74,20 @@ body{
   }
   div{
     border-bottom: 1px solid;
+  }
+}
+
+// home page styling
+.home-welcome{
+  width: 100vw;
+  text-align: center;
+  font-size: 90px;
+  margin-bottom: 10vh;
+}
+
+#home-content{
+  h2{
+    width: 100%;
+    text-align: center;
   }
 }
