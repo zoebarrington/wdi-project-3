@@ -40,6 +40,9 @@ function showCtrl($state, $scope, $http) {
       $scope.review.content = null;
     });
   };
+  $scope.deleteme = function() {
+    console.log($scope.review);
+  };
 
   $scope.deleteComment = function(review) {
     $http({
@@ -53,7 +56,7 @@ function showCtrl($state, $scope, $http) {
       method: 'DELETE',
       url: `/api/movies/${$scope.movie._id}`
     }).then(() => $state.go('movieIndex'));
-  }
+  };
 }
 
 export default showCtrl;
