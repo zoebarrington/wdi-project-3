@@ -16,9 +16,6 @@ function showCtrl($scope, $http, $state) {
       data: $scope.review
     }).then(result => $scope.movie = result.data);
   };
-  $scope.deleteme = function() {
-    console.log($scope.review);
-  };
 
   $scope.deleteReview = function(review) {
     $http({
