@@ -2,11 +2,22 @@
   height: 100%;
 }
 
-
 .navbar{
   background-color: dimgrey;
+  .navbar-item.has-dropdown.is-hoverable .navbar-link{
+    background-color: dimgrey;
+  }
+  .navbar-item.has-dropdown.is-hoverable .navbar-link:hover i{
+    transform: rotate(180deg);
+  }
   .navbar-link{
     width: 10vw;
+    i{
+      margin-left: 5vw;
+      font-size: 50px;
+      color: white;
+      transition: transform 0.5s;
+    }
     .navbar-dropdown{
       text-align: center;
       background-color: dimgrey;
