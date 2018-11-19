@@ -2,18 +2,21 @@
 const router = require('express').Router();
 const movieController = require('../controllers/movieController');
 const userController = require('../controllers/userController');
+
+const secureController = require('../controllers/secureController');
+
 const reviewController = require('../controllers/reviewController');
 
 
 //zoe's code
 router.route('/movies')
   .get(movieController.index)
-  .post(movieController.create);
+  .post(secureController, movieController.create);
 
 router.route('/movies/:id')
   .get(movieController.show)
-  .put(movieController.update)
-  .delete(movieController.delete);
+  .put(secureController, movieController.update)
+  .delete(secureController, movieController.delete);
 
 //theo's code
 
