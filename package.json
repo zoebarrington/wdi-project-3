@@ -8,7 +8,6 @@
     "start:client": "webpack-dev-server",
     "build": "webpack",
     "seed": "node db/seeds",
-    "start": "yarn build && node index",
     "test": "nyc mocha test/**/*_spec.js --require test/spec_helper --recursive --exit"
   },
   "dependencies": {
