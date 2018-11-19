@@ -31,3 +31,13 @@
     <button class="button is-rounded" ng-click="handleDelete()">DELETE</button>
   </div>
 </div>
+<div class="reviews">
+  <div ng-repeat="review in movie.reviews">
+    <span>{{ review.createdBy.username }}</span>
+    <span>{{ review.content }}</span>
+    </div>
+    <form ng-submit="createReview()">
+      <input type="text" ng-model="review.content">
+      <button class="button">Write a Review</button>
+    </form>
+  </div>
