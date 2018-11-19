@@ -1,37 +1,19 @@
-<head>
-    <title>Login</title>
-</head>
-<body>
-  <section class="hero is-white is-fullheight" id="login-page">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <div class="column is-4 is-offset-4">
-          <h3 class="title has-text-white">Login</h3>
-          <p class="subtitle has-text-white">Please login to proceed</p>
-          <div class="box">
-            <figure class="avatar">
-              <img height="100px" width="100px" src="">
-            </figure>
-            <form class="" action="/login" method="post">
-              <div class="field">
-                <div class="control">
-                  <input class="input is-large" type="text" name="email" placeholder="Email" autofocus="">
-                </div>
-              </div>
-              <div class="field">
-                <div class="control">
-                  <input class="input is-large" type="password" name="password" placeholder="Password">
-                </div>
-              </div>
-              <button class="button is-block is-info is-large is-fullwidth">Login</button>
-            </form>
-          </div>
-          <p class="has-text-grey">
-            <a href="/register">Not a member? Click to register</a> &nbsp;·&nbsp;
-          </p>
-        </div>
-      </div>
+<form ng-submit="handleLogin()">
+  <div class="field">
+    <label class="label" for="email">Email:</label>
+    <div class="control">
+      <input class="input" name="email" ng-model="user.email">
     </div>
-  </section>
-</body>
-</html>
+  </div>
+  <div class="field">
+    <label class="label" for="password">Password:</label>
+    <div class="control">
+      <input class="input" name="password" type="password" ng-model="user.password">
+    </div>
+  </div>
+  <div class="field">
+    <div class="control">
+      <button class="button">Submit</button>
+    </div>
+  </div>
+</form>
