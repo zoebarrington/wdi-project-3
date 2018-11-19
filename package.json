@@ -8,12 +8,12 @@
     "start:client": "webpack-dev-server",
     "build": "webpack",
     "seed": "node db/seeds",
-    "start": "yarn build && node index",
     "test": "nyc mocha test/**/*_spec.js --require test/spec_helper --recursive --exit"
   },
   "dependencies": {
     "@uirouter/angularjs": "^1.0.20",
     "angular": "^1.7.1",
+    "bcrypt": "^3.0.2",
     "body-parser": "^1.18.3",
     "bulma": "^0.7.2",
     "express": "^4.16.4",

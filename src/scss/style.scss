@@ -4,14 +4,24 @@
 
 
 .navbar{
-  background-color: lightgrey;
+  background-color: dimgrey;
   .navbar-link{
     width: 10vw;
     .navbar-dropdown{
       text-align: center;
-    }
-    .navbar-dropdown:hover{
-      background-color: lightgrey;
+      background-color: dimgrey;
+      a{
+        width: 10vw;
+        color: white;
+      }
+      div{
+        border-top: 1px white solid;
+        border-bottom: 1px white solid;
+        padding: 1vh;
+      }
+      div:hover{
+        background-color: gray;
+      }
     }
   }
 }
