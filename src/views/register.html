@@ -1,5 +1,23 @@
 <form ng-submit="handleRegister()">
   <div class="field">
+    <label class="label" for="username">Username:</label>
+    <div class="control">
+      <input class="input" name="username" ng-model="user.username">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="profilePicture">Profile Picture:</label>
+    <div class="control">
+      <input class="input" name="profilePicture" ng-model="user.profilePicture">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="bio">Bio:</label>
+    <div class="control">
+      <input class="input" name="bio" ng-model="user.bio">
+    </div>
+  </div>
+  <div class="field">
     <label class="label" for="email">Email:</label>
     <div class="control">
       <input class="input" name="email" ng-model="user.email">
