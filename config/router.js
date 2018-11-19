@@ -2,6 +2,7 @@
 const router = require('express').Router();
 const movieController = require('../controllers/movieController');
 const userController = require('../controllers/userController');
+const reviewController = require('../controllers/reviewController');
 
 
 //zoe's code
@@ -27,5 +28,12 @@ router.route('/movies')
 router.route('/users/:id')
   .get(userController.show);
 
+//comment create route
+router.route('/movies/:movieId/reviews')
+  .post(reviewController.create);
+
+//comment delete route
+router.route('/movies/:movieId/reviews/:reviewId')
+  .delete(reviewController.delete);
 
 module.exports = router;
