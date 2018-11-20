@@ -48,7 +48,7 @@
       <span>{{ review.content }}</span>
       <div class="like-wrapper">
         <i ng-click="like(review)" class="fas fa-thumbs-up"></i>
-        <p>{{ review.likedBy.length }} likes</p>
+        <span>{{ review.likedBy.length }} like</span><span ng-if="review.likedBy.length !== 1">s</span>
       </div>
       <div class="button-wrapper" ng-if="isAuthenticated() && review.createdBy._id === userId">
         <button class="button is-rounded" ng-click="editReview(review)">EDIT</button>
