@@ -1,4 +1,5 @@
-<div class="cover-photo"></div>
+<div ng-if="movie.coverPhoto" class="cover-photo" style="background-image:url({{ movie.coverPhoto}});"></div>
+<div ng-if="!movie.coverPhoto" class="cover-photo"></div>
 <div class="info-box">
   <img ng-src="{{ movie.image }}" alt="{{ movie.name }}">
   <div class="stats">
