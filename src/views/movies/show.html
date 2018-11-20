@@ -24,7 +24,7 @@
     </div>
   </div>
   <div class="rating-display">
-    {{movie.averageRating}}
+    <p>{{ "⭐️".repeat(movie.averageRating) }}</p>
   </div>
   <div class="buttons-box" ng-show="isAuthenticated() && movie.createdBy._id === userId">
     <button class="button is-rounded" ui-sref="movieEdit({ id: movie._id})">EDIT</button>
