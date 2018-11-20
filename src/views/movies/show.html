@@ -1,30 +1,31 @@
-<div class="cover-photo"></div>
+<div ng-if="movie.coverPhoto" class="cover-photo" style="background-image:url({{ movie.coverPhoto}});"></div>
+<div ng-if="!movie.coverPhoto" class="cover-photo"></div>
 <div class="info-box">
   <img ng-src="{{ movie.image }}" alt="{{ movie.name }}">
   <div class="stats">
     <p>Director: {{ movie.director }}</p>
     <div class="writers">
       Writers:
-      <span ng-repeat="writer in movie.writers">{{ writer }}</span>
+      <span ng-repeat="writer in movie.writers">{{ writer }}, </span>
     </div>
     <div class="actors">
       Actors:
-      <span ng-repeat=" actor in movie.actors">{{ actor }}</span>
+      <span ng-repeat=" actor in movie.actors">{{ actor }}, </span>
     </div>
     <p>Synopsis: {{ movie.synopsis }}</p>
     <div class="genres">
       Genres:
-      <span ng-repeat=" genre in movie.genres">{{ genre }}</span>
+      <span ng-repeat=" genre in movie.genres">{{ genre }}, </span>
     </div>
     <p>Runtime: {{ movie.movieLength }} </p>
     <p>Release year: {{ movie.yearReleased }}</p>
     <div class="locations">
       Locations Filmed:
-      <span ng-repeat=" location in movie.locationFilmed">{{ location }}</span>
+      <span ng-repeat=" location in movie.locationFilmed">{{ location }}, </span>
     </div>
   </div>
   <div class="rating-display">
-    <p>{{ "⭐️".repeat(movie.averageRating) }}</p>
+    <h1>Average Rating: {{ "🎬".repeat(movie.averageRating) }}</h1>
   </div>
   <div class="buttons-box" ng-show="isAuthenticated() && movie.createdBy._id === userId">
     <button class="button is-rounded" ui-sref="movieEdit({ id: movie._id})">EDIT</button>
@@ -35,11 +36,21 @@
   <h1 class="title is-1">{{ movie.name }}</h1>
   <h1 class="title is-1 spotted-by" ui-sref="profileShow({ id: movie.createdBy._id })"> - Spotted by {{ movie.createdBy.username}}</h1>
   <div class="reviews">
-    <div class="review" ng-repeat="review in movie.reviews">
-      <h4 ui-sref="profileShow({ id: review.createdBy._id })"><strong>{{review.title.toUpperCase()}}</strong> by {{ review.createdBy.username }}</h4>
-      <p>{{ review.rating }}</p>
+    <div class="review" ng-repeat="review in movie.reviews | orderBy:'-likedBy.length'">
+      <h4>{{review.title.toUpperCase()}}</h4>
+      <p>{{ "🎬".repeat(review.rating) }}</p>
+      <div class="user-wrapper">
+        <figure ui-sref="profileShow({ id: review.createdBy._id })" class="image is-96x96 ">
+          <img class="is-rounded"src="{{ review.createdBy.profilePicture }}" alt="profile pic">
+          <h5>{{ review.createdBy.username }}</h5>
+        </figure>
+      </div>
       <span>{{ review.content }}</span>
-      <div ng-if="isAuthenticated() && review.user._id === reviewId">
+      <div class="like-wrapper">
+        <i ng-click="like(review)" class="fas fa-thumbs-up"></i>
+        <p>{{ review.likedBy.length }} likes</p>
+      </div>
+      <div class="button-wrapper" ng-if="isAuthenticated() && review.createdBy._id === userId">
         <button class="button is-rounded" ng-click="editReview(review)">EDIT</button>
         <button class="button is-rounded" ng-click="deleteReview(review)">DELETE</button>
       </div>

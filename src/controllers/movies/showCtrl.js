@@ -54,6 +54,24 @@ function showCtrl($scope, $http, $state) {
     }).then(() => $state.go('movieShow', { id: $state.params.id }));
   };
 
+  $scope.like = function(review){
+    if(review.likedBy.includes($scope.userId)){
+      const index = review.likedBy.indexOf($scope.userId);
+      review.likedBy.splice(index, 1);
+      $http({
+        method: 'PUT',
+        url: `/api/movies/${$state.params.id}/reviews/${review._id}`,
+        data: review
+      }).then(() => $state.go('movieShow', { id: $state.params.id }));
+    }else{
+      review.likedBy.push($scope.userId);
+      $http({
+        method: 'PUT',
+        url: `/api/movies/${$state.params.id}/reviews/${review._id}`,
+        data: review
+      }).then(() => $state.go('movieShow', { id: $state.params.id }));
+    }
+  };
 }
 
 export default showCtrl;

@@ -20,7 +20,7 @@ const userData = [
     username: 'freddie bell',
     email: 'fred@bell.com',
     password: 'pass',
-    coverPhoto: 'https://m.media-amazon.com/images/M/MV5BNDBmYjU3NzAtZGVkNS00N2E3LWEyNTgtMjIwMTczYTE0M2Y4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_SX675_AL_.jpg',
+    coverPhoto: 'https://images.pexels.com/photos/1146708/pexels-photo-1146708.jpeg?cs=srgb&dl=light-road-dawn-1146708.jpg&fm=jpg',
     profilePicture: 'http://media-ima002.globaltalentsystems.com/23671/600/23671_000-11-30-2016-12520.jpg',
     bio: 'Film enthusiast with excellent taste in motion pictures.',
     following: []
@@ -30,7 +30,7 @@ const userData = [
     username: 'theobirch',
     email: 'theo@birch.com',
     password: 'pass',
-    coverPhoto: 'https://m.media-amazon.com/images/M/MV5BMDNkZWIzZjktYWNkMi00MTQ2LWIyMTgtMmJhOGRiZDZlNmU4XkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_.jpg',
+    coverPhoto: 'https://wallpapersin4k.net/wp-content/uploads/2017/02/Mousehunt-Movie-Wallpapers-3.jpg',
     profilePicture: 'https://images-na.ssl-images-amazon.com/images/I/C1euUan+TUS._CR0,0,3840,2880_._SL1000_.jpg',
     bio: 'Don’t follow me because I don’t even know where I’m going' ,
     following: []

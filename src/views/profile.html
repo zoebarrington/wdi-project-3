@@ -1,4 +1,27 @@
-<h1> This is the profile page of {{ user.username }}</h1>
-<div> {{ user.bio }} </div>
-<img ng-src="{{ user.coverPhoto }}" </img>
-<img ng-src="{{ user.profilePicture }}" </img>
+
+<div class="cover-photo" style="background-image:url({{ user.coverPhoto}});"></div>
+  <div class="frame">
+    <div class="box">
+      <div class="main">
+
+        <div class="image">
+          <img src="{{ user.profilePicture}}" alt=" {{ user.name }}">
+        </div>
+
+        <p> {{ user.name }}</p>
+        <p class="bio"></p>
+          <strong>Bio:</strong>
+          <p>{{ user.bio}}</p>
+        <div class="btn">
+          <p>Follow</p>
+        </div>
+      </div>
+
+      <div class="posts"> 523 <p class="small">Posts</p>
+      </div>
+    <div class="posts"> 523 <p class="small">Posts</p>
+    </div>
+    <div class="likes"> 1387 <p class="small">Likes</p>
+    </div>
+  </div>
+</div>
