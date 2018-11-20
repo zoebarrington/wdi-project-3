@@ -239,7 +239,7 @@
 div#slider {
   overflow: hidden;
   figure img {
-    width: 3.2%;
+    width: 3%;
     float: left;
   }
   figure {
@@ -260,7 +260,14 @@ div#slider {
    padding: 0;
    margin: 0;
  }
-
- main {
-   width: 100%;
+ #searchbar {
+   display: flex;
+ }
+ #movie-name {
+   text-decoration: none;
+   color: black;
+   text-align: center;
+ }
+ #genreFilter {
+   display: flex;
  }
