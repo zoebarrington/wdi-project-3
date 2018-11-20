@@ -26,7 +26,7 @@
   <div class="rating-display">
     {{movie.averageRating}}
   </div>
-  <div class="buttons-box">
+  <div class="buttons-box" ng-show="isAuthenticated() && movie.createdBy._id === userId">
     <button class="button is-rounded" ui-sref="movieEdit({ id: movie._id})">EDIT</button>
     <button class="button is-rounded" ng-click="handleDelete()">DELETE</button>
   </div>
