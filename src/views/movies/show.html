@@ -37,10 +37,16 @@
   <h1 class="title is-1 spotted-by" ui-sref="profileShow({ id: movie.createdBy._id })"> - Spotted by {{ movie.createdBy.username}}</h1>
   <div class="reviews">
     <div class="review" ng-repeat="review in movie.reviews">
-      <h4 ui-sref="profileShow({ id: review.createdBy._id })"><strong>{{review.title.toUpperCase()}}</strong> by {{ review.createdBy.username }}</h4>
-      <p>{{ review.rating }}</p>
+      <h4>{{review.title.toUpperCase()}}</h4>
+      <p>{{ "⭐️".repeat(review.rating) }}</p>
+      <div class="user-wrapper">
+        <figure ui-sref="profileShow({ id: review.createdBy._id })" class="image is-96x96 ">
+          <img class="is-rounded"src="{{ review.createdBy.profilePicture }}" alt="profile pic">
+          <h5>{{ review.createdBy.username }}</h5>
+        </figure>
+      </div>
       <span>{{ review.content }}</span>
-      <div ng-if="isAuthenticated() && review.user._id === reviewId">
+      <div class="button-wrapper" ng-if="isAuthenticated() && review.createdBy._id === userId">
         <button class="button is-rounded" ng-click="editReview(review)">EDIT</button>
         <button class="button is-rounded" ng-click="deleteReview(review)">DELETE</button>
       </div>
