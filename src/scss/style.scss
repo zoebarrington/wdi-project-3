@@ -65,11 +65,78 @@
 
 
 // movie show page styling
-.show-title{
+.review-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   position: absolute;
   top: 65vh;
   right: 1vw;
+  width: 58vw;
+  text-align: center;
+  margin-bottom: 2vh;
+  h1{
+    padding: 0;
+    margin: 0;
+  }
+  .reviews{
+    border: 1px solid;
+    width: 55vw;
+    .review{
+      border: 1px solid;
+      display: flex;
+      flex-wrap: wrap;
+      h4{
+        width: 29vw;
+        margin-right: 1vw;
+        text-align: right;
+        font-size: 20px;
+      }
+      h5{
+        width: 20vw;
+        text-align: left;
+        font-size: 20px;
+      }
+      p{
+        width: 4vw;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+    .review-form{
+      border: 1px solid;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      form{
+        width: 100%;
+        .title-input{
+          width: 100%;
+          font-size: 20px;
+        }
+        textarea{
+          resize: none;
+          width: 100%;
+          height: 20vh;
+          margin-top: 1vh;
+          font-size: 20px;
+        }
+        .rating-input{
+          width: 3vw;
+          height: 3vw;
+          font-size: 25px;
+          text-align: center;
+          margin-right: 2vw;
+        }
+        button{
+          height: 3vw;
+        }
+      }
+    }
+  }
 }
+
 .info-box{
   background-color: white;
   width: 30vw;
@@ -101,13 +168,7 @@
   height: 55vh;
   background-color: red;
 }
-.reviews{
-  border: 1px solid;
-  position: absolute;
-  right: 1vw;
-  top: 75vh;
-  width: 55vw;
-}
+
 // home page styling
 .home-welcome{
   width: 100vw;
