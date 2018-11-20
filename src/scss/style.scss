@@ -203,3 +203,64 @@
 #clearButton {
   cursor: pointer;
 }
+
+//carousel animation
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+div#slider {
+  overflow: hidden;
+  figure img {
+    width: 3.2%;
+    float: left;
+  }
+  figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 15s slidy infinite;
+  }
+}
+.image-container img {
+  height: 250px;
+  width: 40px;
+}
+ #section-container {
+   padding: 0;
+   margin: 0;
+ }
+
+ main {
+   width: 100%;
+ }
