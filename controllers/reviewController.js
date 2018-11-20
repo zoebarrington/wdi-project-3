@@ -24,7 +24,20 @@ function deleteRoute(req, res, next) {
     .catch(next);
 }
 
+function updateRoute(req, res, next){
+  Movie.findById(req.params.movieId)
+    .then(movie => {
+      const review = movie.reviews.id(req.params.reviewId);
+      review.set(req.body);
+      return movie.save();
+    })
+    .then(movie => Movie.populate(movie, 'createdBy reviews.createdBy'))
+    .then(movie => res.json(movie))
+    .catch(next);
+}
+
 module.exports = {
   create: createRoute,
-  delete: deleteRoute
+  delete: deleteRoute,
+  update: updateRoute
 };

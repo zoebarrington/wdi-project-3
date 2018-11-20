@@ -29,13 +29,17 @@ router.route('/movies')
 router.route('/users/:id')
   .get(secureRoute, userController.show);
 
-//comment create route
+//review create route
 router.route('/movies/:movieId/reviews')
   .post(secureRoute, reviewController.create);
 
-//comment delete route
+//review delete route
 router.route('/movies/:movieId/reviews/:reviewId')
   .delete(secureRoute, reviewController.delete);
+
+//review update route
+router.route('/movies/:movieId/reviews/:reviewId')
+  .put(secureRoute, reviewController.update);
 
 // register route
 router.route('/register')
