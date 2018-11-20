@@ -14,8 +14,9 @@
       </div>
       <div class="navbar-end">
         <div class="navbar-item has-dropdown is-hoverable">
-          <div class="navbar-link">
-            <div class="navbar-dropdown">
+          <div class="navbar-link is-arrowless">
+            <i class="fas fa-angle-up"></i>
+            <div class="navbar-dropdown is-boxed">
               <a  ui-sref="home">
                 <div>Home</div>
               </a>
@@ -23,16 +24,20 @@
                 <div>Movies</div>
               </a>
               <a ng-if="isAuthenticated()" ui-sref="movieNew">
+<<<<<<< HEAD
                 <div>Add a movie</div>
+=======
+                <div>Spot A Film</div>
+>>>>>>> development
               </a>
               <a ng-if="!isAuthenticated()" ui-sref="login">
                 <div>Login</div>
               </a>
               <a ng-if="isAuthenticated()" ui-sref="profileShow({ id: userId })">
-                <div>Your Profile</div>
+                <div>Profile</div>
               </a>
               <a ng-if="!isAuthenticated()" ui-sref="register">
-                <div>Register</div>
+                <div>Subscribe</div>
               </a>
               <a ng-if="isAuthenticated()"  ng-click="handleLogout()">
                 <div>Log out {{ username }}</div>

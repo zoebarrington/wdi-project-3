@@ -24,10 +24,25 @@
     </div>
   </div>
   <div class="rating-display">
-    {{movie.averageRatings}}
+    {{movie.averageRating}}
   </div>
   <div class="buttons-box">
     <button class="button is-rounded" ui-sref="movieEdit({ id: movie._id})">EDIT</button>
     <button class="button is-rounded" ng-click="handleDelete()">DELETE</button>
   </div>
+</div>
+<div class="reviews">
+  <div ng-repeat="review in movie.reviews">
+    <h4>{{review.title}}</h4>
+    <span><strong>{{ review.createdBy.username }}</strong></span>
+    <span>{{ review.content }}</span>
+    <span><strong>{{ review.rating }}</strong></span>
+    <button ng-if="isAuthenticated() && review.user._id === reviewId" class="delete-button" ng-click="deleteReview(review)">x</button>
+  </div>
+  <form  ng-show="isAuthenticated()" ng-submit="createReview()">
+    <input type="text" ng-model="review.title" placeholder="title" required>
+    <input type="text" ng-model="review.content" placeholder="content">
+    <input type="number" ng-model="review.rating" min="1" max="5" required>
+    <button class="button">Write a Review</button>
+  </form>
 </div>

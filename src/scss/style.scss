@@ -2,11 +2,22 @@
   height: 100%;
 }
 
-
 .navbar{
   background-color: dimgrey;
+  .navbar-item.has-dropdown.is-hoverable .navbar-link{
+    background-color: dimgrey;
+  }
+  .navbar-item.has-dropdown.is-hoverable .navbar-link:hover i{
+    transform: rotate(180deg);
+  }
   .navbar-link{
     width: 10vw;
+    i{
+      margin-left: 5vw;
+      font-size: 50px;
+      color: white;
+      transition: transform 0.5s;
+    }
     .navbar-dropdown{
       text-align: center;
       background-color: dimgrey;
@@ -56,7 +67,7 @@
 // movie show page styling
 .info-box{
   width: 30vw;
-  background-color: pink;
+  border: 1px solid;
   position: absolute;
   left: 10vw;
   top: 20vh;
@@ -77,6 +88,11 @@
   }
 }
 
+.reviews{
+  position: absolute;
+  right: 0;
+  top: 20vh;
+}
 // home page styling
 .home-welcome{
   width: 100vw;

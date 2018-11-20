@@ -7,7 +7,7 @@ function createRoute(req, res, next) {
       movie.reviews.push(req.body);
       return movie.save();
     })
-    .then(movie => Movie.populate(movie, 'created by reviews.user'))
+    .then(movie => Movie.populate(movie, 'createdBy reviews.createdBy'))
     .then(movie => res.json(movie))
     .catch(next);
 }
@@ -19,7 +19,7 @@ function deleteRoute(req, res, next) {
       review.remove();
       return movie.save();
     })
-    .then(movie => Movie.populate(movie, 'createdBy review.user'))
+    .then(movie => Movie.populate(movie, 'createdBy reviews.createdBy'))
     .then(movie => res.json(movie))
     .catch(next);
 }
