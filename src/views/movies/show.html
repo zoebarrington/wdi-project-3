@@ -33,21 +33,32 @@
 </div>
 <div class="review-box">
   <h1 class="title is-1">{{ movie.name }}</h1>
-  <h1 class="title is-1"> - Spotted by {{ movie.createdBy.username}}</h1>
+  <h1 class="title is-1 spotted-by" ui-sref="profileShow({ id: movie.createdBy._id })"> - Spotted by {{ movie.createdBy.username}}</h1>
   <div class="reviews">
     <div class="review" ng-repeat="review in movie.reviews">
-      <h4>{{review.title.toUpperCase()}}</h4>
-      <h5>By {{ review.createdBy.username }}</h5>
+      <h4 ui-sref="profileShow({ id: review.createdBy._id })"><strong>{{review.title.toUpperCase()}}</strong> by {{ review.createdBy.username }}</h4>
       <p>{{ review.rating }}</p>
       <span>{{ review.content }}</span>
-      <button ng-if="isAuthenticated() && review.user._id === reviewId" class="delete-button" ng-click="deleteReview(review)">x</button>
+      <div ng-if="isAuthenticated() && review.user._id === reviewId">
+        <button class="button is-rounded" ng-click="editReview(review)">EDIT</button>
+        <button class="button is-rounded" ng-click="deleteReview(review)">DELETE</button>
+      </div>
     </div>
-    <div class="review-form">
-      <form  ng-show="isAuthenticated()" ng-submit="createReview()">
+    <div ng-show="isAuthenticated() && notReviewed()" class="review-form">
+      <form ng-submit="createReview()">
         <input class="title-input" type="text" ng-model="review.title" placeholder="Review Title" required>
         <textarea type="text" ng-model="review.content" placeholder="Write your review here...."></textarea>
         <input class="rating-input" type="number" ng-model="review.rating" min="1" max="5" placeholder="1" required>
-        <button class="button">Add Review</button>
+        <button class="button is-rounded">Add Review</button>
+      </form>
+    </div>
+    <div ng-show="isAuthenticated() && editing" class="review-form">
+      <form>
+        <input class="title-input" type="text" ng-model="yourReview.title" placeholder="Review Title" required>
+        <textarea type="text" ng-model="yourReview.content" placeholder="Write your review here...."></textarea>
+        <input class="rating-input" type="number" ng-model="yourReview.rating" min="1" max="5" placeholder="1" required>
+        <button ng-click="updateReview()" class="button is-rounded">UPDATE</button>
+        <button ng-click="editing = false" class="button is-rounded">CANCEL</button>
       </form>
     </div>
   </div>
