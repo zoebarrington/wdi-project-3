@@ -30,7 +30,7 @@ const userData = [
     username: 'theobirch',
     email: 'theo@birch.com',
     password: 'pass',
-    coverPhoto: 'https://m.media-amazon.com/images/M/MV5BMDNkZWIzZjktYWNkMi00MTQ2LWIyMTgtMmJhOGRiZDZlNmU4XkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_.jpg',
+    coverPhoto: '',
     profilePicture: 'https://images-na.ssl-images-amazon.com/images/I/C1euUan+TUS._CR0,0,3840,2880_._SL1000_.jpg',
     bio: 'Don’t follow me because I don’t even know where I’m going' ,
     following: []
