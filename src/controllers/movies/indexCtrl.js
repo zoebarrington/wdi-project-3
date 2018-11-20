@@ -39,6 +39,10 @@ function indexCtrl($scope, $http) {
       movie.genres.includes(genre.name)
     );
   };
+  $scope.handleFilterSubmit = function() {
+    $scope.filteredMovies = $scope.allMovies.filter(movie =>
+      movie.name.toLowerCase().startsWith($scope.searchTerm.toLowerCase()));
+  };
   $scope.clearFilters = function() {
     $scope.filteredMovies = $scope.allMovies;
   };

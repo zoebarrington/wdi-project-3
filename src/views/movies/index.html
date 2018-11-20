@@ -9,6 +9,9 @@
 <div class="container columns">
   <div class="genres column is-2">
     <h2>Genres</h2>
+    <form ng-submit="handleFilterSubmit()">
+      <input type="text" class="input" ng-model="searchTerm">
+      <button class="button">🔎</button>
       <div id="genre-name" ng-repeat="genre in genres" ng-click="filterGenres(genre)">
         {{ genre.name }}
       </div>
