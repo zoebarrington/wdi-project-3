@@ -36,7 +36,7 @@
   <h1 class="title is-1">{{ movie.name }}</h1>
   <h1 class="title is-1 spotted-by" ui-sref="profileShow({ id: movie.createdBy._id })"> - Spotted by {{ movie.createdBy.username}}</h1>
   <div class="reviews">
-    <div class="review" ng-repeat="review in movie.reviews">
+    <div class="review" ng-repeat="review in movie.reviews | orderBy:'-likedBy.length'">
       <h4>{{review.title.toUpperCase()}}</h4>
       <p>{{ "🎬".repeat(review.rating) }}</p>
       <div class="user-wrapper">
@@ -47,7 +47,7 @@
       </div>
       <span>{{ review.content }}</span>
       <div class="like-wrapper">
-        <i class="fas fa-thumbs-up"></i>
+        <i ng-click="like(review)" class="fas fa-thumbs-up"></i>
         <p>{{ review.likedBy.length }} likes</p>
       </div>
       <div class="button-wrapper" ng-if="isAuthenticated() && review.createdBy._id === userId">
