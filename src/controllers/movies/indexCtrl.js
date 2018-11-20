@@ -5,6 +5,15 @@ function indexCtrl($scope, $http) {
   }).then(result => {
     $scope.movies = result.data;
   });
+  $scope.genresIndexLink = function() {
+    const genreIndexPage = [];
+    for(let i=0; i < length; i++) {
+
+      
+    }
+  }
 }
+
+
 
 export default indexCtrl;
