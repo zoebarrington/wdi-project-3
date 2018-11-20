@@ -35,11 +35,11 @@
   <h1 class="title is-1">{{ movie.name }}</h1>
   <h1 class="title is-1"> - Spotted by {{ movie.createdBy.username}}</h1>
   <div class="reviews">
-    <div ng-repeat="review in movie.reviews">
-      <h4>{{review.title}}</h4>
-      <span><strong>{{ review.createdBy.username }}</strong></span>
+    <div class="review" ng-repeat="review in movie.reviews">
+      <h4>{{review.title.toUpperCase()}}</h4>
+      <h5>By {{ review.createdBy.username }}</h5>
+      <p>{{ review.rating }}</p>
       <span>{{ review.content }}</span>
-      <span><strong>{{ review.rating }}</strong></span>
       <button ng-if="isAuthenticated() && review.user._id === reviewId" class="delete-button" ng-click="deleteReview(review)">x</button>
     </div>
     <div class="review-form">

@@ -74,6 +74,7 @@
   right: 1vw;
   width: 58vw;
   text-align: center;
+  margin-bottom: 2vh;
   h1{
     padding: 0;
     margin: 0;
@@ -81,8 +82,29 @@
   .reviews{
     border: 1px solid;
     width: 55vw;
+    .review{
+      border: 1px solid;
+      display: flex;
+      flex-wrap: wrap;
+      h4{
+        width: 29vw;
+        margin-right: 1vw;
+        text-align: right;
+        font-size: 20px;
+      }
+      h5{
+        width: 20vw;
+        text-align: left;
+        font-size: 20px;
+      }
+      p{
+        width: 4vw;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
     .review-form{
-      border-top: 1px solid;
+      border: 1px solid;
       padding: 10px;
       display: flex;
       flex-wrap: wrap;
