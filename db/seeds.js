@@ -12,32 +12,55 @@ const userIds = [
   '5bf17051d4a071297aa4b6ee'
 ];
 
+
+
 const userData = [
   {
     _id: userIds[0],
     username: 'freddie bell',
     email: 'fred@bell.com',
-    password: 'pass'
+    password: 'pass',
+    coverPhoto: 'https://m.media-amazon.com/images/M/MV5BNDBmYjU3NzAtZGVkNS00N2E3LWEyNTgtMjIwMTczYTE0M2Y4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_SX675_AL_.jpg',
+    profilePicture: 'http://media-ima002.globaltalentsystems.com/23671/600/23671_000-11-30-2016-12520.jpg',
+    bio: 'Film enthusiast with excellent taste in motion pictures.',
+    following: []
+
   }, {
     _id: userIds[1],
     username: 'theobirch',
     email: 'theo@birch.com',
-    password: 'pass'
+    password: 'pass',
+    coverPhoto: 'https://m.media-amazon.com/images/M/MV5BMDNkZWIzZjktYWNkMi00MTQ2LWIyMTgtMmJhOGRiZDZlNmU4XkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_.jpg',
+    profilePicture: 'https://images-na.ssl-images-amazon.com/images/I/C1euUan+TUS._CR0,0,3840,2880_._SL1000_.jpg',
+    bio: 'Don’t follow me because I don’t even know where I’m going' ,
+    following: []
   }, {
     _id: userIds[2],
     username: 'davidcomer',
     email: 'david@comer.com',
-    password: 'pass'
+    password: 'pass',
+    coverPhoto: 'https://m.media-amazon.com/images/M/MV5BMGU5OWEwZDItNmNkMC00NzZmLTk1YTctNzVhZTJjM2NlZTVmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_CR0,0,677,1000_AL_.jpg',
+    profilePicture: 'https://vignette.wikia.nocookie.net/simpsons/images/6/65/Bart_Simpson.png/revision/latest?cb=20180319061933',
+    bio: 'Buoyant, waggish, efficacious, indefatigable, demiurgic, convivial marketing companion, self-made thousandaire',
+    following: []
   }, {
     _id: userIds[3],
     username: 'zoebarrington',
     email: 'zoe@barrington.com',
-    password: 'pass'
+    password: 'pass',
+    coverPhoto: 'https://m.media-amazon.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_SY1000_CR0,0,674,1000_AL_.jpg',
+    profilePicture: 'https://png2.kisspng.com/20180517/piw/kisspng-jessie-j-pop-art-illustrator-pop-art-5afe40ddbbf299.1313525515266121897698.png',
+    bio: 'A Caffeine dependent life-form',
+    following: []
   }, {
     _id: userIds[4],
     username: 'albert',
     email: 'albert@birch.com',
-    password: 'pass'
+    password: 'pass',
+    coverPhoto: 'https://m.media-amazon.com/images/M/MV5BMGYxNjdjMTItMmUwYy00NzNhLTk1NjctZWVkZTMzZTYzNjBmXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_SY1000_CR0,0,672,1000_AL_.jpg',
+    profilePicture: 'https://media1.popsugar-assets.com/files/thumbor/EBrpTMRMGZFRRMnCqf3zUI9Gkx8/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2015/08/12/721/n/1922243/ce6dbfc5_edit_img_image_14690959_1439396294_1/i/Pit-Bulls-Pajamas.jpg',
+    bio: 'Canine fanatic. Lover of all animal based cinema.',
+    following: []
   }
 ];
 
