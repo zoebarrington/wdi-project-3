@@ -119,7 +119,7 @@ const movieData = [
     reviews: []
   }, {
     createdBy: userIds[0],
-    name: 'Mousehunt',
+    name: 'MouseHunt',
     yearReleased: 1997,
     movieLength: '1h 38mins',
     image: 'https://m.media-amazon.com/images/M/MV5BMzE0NTRhZWQtZmE5OS00NTI5LWJhMzMtMGU4MzE4MmRlZDE0L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,678,1000_AL_.jpg',

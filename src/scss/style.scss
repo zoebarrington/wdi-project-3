@@ -82,16 +82,16 @@
       display: flex;
       flex-wrap: wrap;
       padding-top: 1vh;
-      padding-bottom: 2vh;
+      padding-bottom: 1vh;
       h4{
-        width: 77%;
-        margin-left: 8.5%;
+        width: 67%;
+        margin-left: 15.5%;
         text-align: center;
         font-size: 20px;
         font-weight: bold;
       }
       p{
-        width: 4vw;
+        width: 9vw;
         font-weight: bold;
         font-size: 20px;
         text-align: center;
@@ -99,18 +99,34 @@
       figure{
         margin-left: 1vh;
         margin-right: 1vh;
-        margin-bottom: 2vh;
+        margin-bottom: 3vh;
+        cursor: pointer;
         img{
-          max-height: 13vh;
+          max-height: 12vh;
         }
         h5{
           text-align: center;
         }
       }
       span{
-        margin-bottom: 4vh;
+        margin-bottom: 1vh;
         text-align: center;
-        width: 85%;
+        width: 70%;
+      }
+      .like-wrapper{
+        margin-top: 1vh;
+        width: 15%;
+        i{
+          width: 100%;
+          font-size: 70px;
+          text-align: center;
+        }
+        span{
+          font-size: 20px;
+          font-weight: bold;
+          margin: 0;
+          text-align: center;
+        }
       }
       .button-wrapper{
         border-top: 1px solid;
@@ -163,6 +179,11 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 2vh;
+  .stats{
+    border-top: 1px solid;
+    border-bottom: 0;
+    margin-top: 1vh;
+  }
   img{
     width: 20vw;
     margin-left: 5vw;
@@ -172,9 +193,15 @@
   }
   p{
     border-bottom: 1px solid;
+    padding: 3px;
+    width: 100%;
   }
   div{
     border-bottom: 1px solid;
+    padding: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
 .cover-photo{
@@ -314,3 +341,71 @@
 #clearButton {
   cursor: pointer;
 }
+
+//carousel animation
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+div#slider {
+  overflow: hidden;
+  figure img {
+    width: 3%;
+    float: left;
+  }
+  figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 15s slidy infinite;
+  }
+}
+.image-container img {
+  height: 250px;
+  width: 40px;
+}
+ #section-container {
+   padding: 0;
+   margin: 0;
+ }
+ #searchbar {
+   display: flex;
+ }
+ #movie-name {
+   text-decoration: none;
+   color: black;
+   text-align: center;
+ }
+ #genreFilter {
+   display: flex;
+ }
