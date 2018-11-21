@@ -47,5 +47,9 @@
   </div>
   <div class="upcoming-releases column is-2">
     <p>Upcoming Releases</p>
+    <div ng-repeat="release in releases">
+       {{ release.title }}
+       {{ release.release_date }}
+    </div>
   </div>
 </div>

@@ -31,6 +31,13 @@ function indexCtrl($scope, $http) {
     $scope.allMovies = result.data;
     $scope.filteredMovies = $scope.allMovies;
   });
+  $http({
+    method: 'GET',
+    url: 'https://api.themoviedb.org/3/movie/now_playing?api_key=1712d52487cc8d1fca9c99a892dd1f38&language=en-US&page=1'
+  }).then(result => {
+    $scope.releases = result.data.results;
+    console.log('scope', $scope.releases);
+  });
   $scope.title = 'Highest Rated';
   $scope.genres = genres;
   $scope.filterGenres = function(genre) {

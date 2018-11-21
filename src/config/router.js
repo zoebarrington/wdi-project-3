@@ -16,7 +16,7 @@ function Router($stateProvider, $urlRouterProvider) {
     .state('movieIndex', {
       templateUrl: './views/movies/index.html',
       url: '/movies',
-      controller: moviesIndexCtrl
+      controller: moviesIndexCtrl 
     })
     .state('login', {
       templateUrl: './views/login.html',
