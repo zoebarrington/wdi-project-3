@@ -16,7 +16,7 @@ const userSchema = mongoose.Schema({
 userSchema.virtual('moviesReviewed', {
   ref: 'Movie',
   localField: '_id',
-  foreignField: 'createdBy'
+  foreignField: 'reviews.createdBy'
 });
 
 userSchema.set('toJSON', {
