@@ -23,27 +23,22 @@
     </div>
   </div>
   <div class="profile-review-box media">
-    <figure class="media-left">
+    <figure class="media-left" >
       <p class="image is-64x64">
         <img ng-src=" {{ user.profilePicture }}">
       </p>
     </figure>
-    <div class="media-content">
-  <div class="content">
-    <p>
-      <strong>{{review.title.toUpperCase()}} reviewed by {{ user.username }}</strong>
-      <br>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-    </p>
-  </div>
-  <hr></hr>
-  <nav class="level is-mobile">
-      <div class="level-left">
+    <div class="media-content"ng-repeat="movie in user.moviesReviewed">
+      <div class="content" ng-repeat="review in movie.reviews">
+        <p><strong> {{ review.title }} reviewed by {{ user.username }}</strong>
+          <span>{{ review.content }}</span>
+        </p>
       </div>
-    </nav>
-  </div>
-<div class="media-right">
-  <button class="delete"></button>
-</div>
+      <hr></hr>
+      <nav class="level is-mobile">
+        <div class="level-left">
+        </div>
+      </nav>
+    </div>
   </div>
 </div>

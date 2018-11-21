@@ -13,6 +13,16 @@ const userSchema = mongoose.Schema({
   }]
 });
 
+userSchema.virtual('moviesReviewed', {
+  ref: 'Movie',
+  localField: '_id',
+  foreignField: 'createdBy'
+});
+
+userSchema.set('toJSON', {
+  virtuals: true
+});
+
 userSchema.pre('save', function() {
   this.password = bcrypt.hashSync(this.password, 8);
 });
