@@ -11,9 +11,7 @@ const genres = [
     name: 'Drama'
   }, {
     name: 'Romance'
-  }, {
-    name: 'Documentary'
-  }, {
+  },{
     name: 'Fantasy'
   }, {
     name: 'Adventure'
