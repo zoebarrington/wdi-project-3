@@ -51,7 +51,9 @@ function showCtrl($scope, $http, $state, $auth) {
       method: 'PUT',
       url: `/api/movies/${$state.params.id}/reviews/${$scope.yourReview._id}`,
       data: $scope.yourReview
-    }).then(() => $state.go('movieShow', { id: $state.params.id }));
+    }).then(result =>  {
+      $scope.movie = result.data;
+    });
   };
 
   $scope.like = function(review){
