@@ -2,6 +2,14 @@
   height: 100%;
 }
 
+
+.has-bg-img {
+  background: url(https://images.onlinelabels.com/images/clip-art/Stellaris/Stellaris_Clapper-board.png)center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
 .navbar{
   background-color: dimgrey;
   .navbar-item.has-dropdown.is-hoverable .navbar-link{
@@ -287,7 +295,7 @@
 .profile-image{
   position: relative;
   width: 200px;
-  height: 200px; 
+  height: 200px;
 }
 .bio{
        font-weight: 20;
@@ -413,3 +421,60 @@ div#slider {
    font-size: 30px;
    font-weight: bold;
  }
+
+ // Home page
+ .container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  flex-direction: column;
+}
+.clapper{
+  background-color: black;
+  height: 60vh;
+  width: 60vw;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slapper{
+  background-color: white;
+  height: 10vh;
+  width: 60vw;
+  display: flex;
+  transform: rotate(-7deg);
+  transform-origin: bottom left;
+}
+.diag-black{
+  height: inherit;
+  width: 10vw;
+  background-color: black;
+  transform: skew(-20deg);
+  margin-left: 2.5%;
+  margin-right: 10%;
+}
+.last {
+  margin-right: 2.5%;
+}
+.flat {
+  transform: none;
+}
+.reverse{
+  transform: skew(20deg);
+}
+.lines{
+  height: 20vh;
+  width: 50vw;
+  border-bottom: 5px solid white;
+  display: flex;
+  align-items: center;
+}
+.no-color{
+  border-bottom: 0;
+}
