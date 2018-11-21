@@ -10,6 +10,17 @@ function feedCtrl($scope, $http) {
         $scope.following.push($scope.users[i]);
       }
     }
+    $scope.feedContent = [];
+    $scope.following.forEach(function(user){
+      user.moviesReviewed.forEach(function(movie){
+        movie.reviews.forEach(function(review){
+          if(review.createdBy === user._id){
+            review.createdBy = user;
+            $scope.feedContent.push(review);
+          }
+        });
+      });
+    });
   });
 }
 

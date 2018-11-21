@@ -1,4 +1,4 @@
 <h1>NEWS FEED HERE!!!</h1>
-<div ng-repeat="user in following">
-  {{ user.username }}
+<div ng-repeat="review in feedContent">
+  {{ review.title }} - {{ review.content }} - {{ review.createdBy.username}}
 </div>

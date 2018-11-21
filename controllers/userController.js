@@ -19,7 +19,10 @@ function updateProfileRoute(req, res, next) {
 }
 
 function userIndexRoute(req, res, next) {
-  User.find().then(users => res.json(users))
+  User.find()
+    .populate('moviesReviewed')
+    .select('-password')
+    .then(users => res.json(users))
     .catch(next);
 }
 
