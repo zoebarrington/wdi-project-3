@@ -55,7 +55,7 @@ function showCtrl($scope, $http, $state, $auth) {
   };
 
   $scope.like = function(review){
-    if($auth.isAuthenticated()){
+    if($auth.isAuthenticated() && review.createdBy._id !== $scope.userId){
       if(review.likedBy.includes($scope.userId)){
         const index = review.likedBy.indexOf($scope.userId);
         review.likedBy.splice(index, 1);
