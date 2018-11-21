@@ -254,7 +254,6 @@
   top: 10vh;
   height: 55vh;
   z-index: -1;
-  background-image: url(https://wallpapersin4k.net/wp-content/uploads/2017/02/Mousehunt-Movie-Wallpapers-3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -271,7 +270,7 @@
 }
 .profile-review-box {
   margin-left: 20px;
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 .main{
     background: white;
@@ -287,6 +286,8 @@
 }
 .image{
   position: relative;
+  height: 200px;
+  width: 200px; 
 }
 .bio{
        font-weight: 20;
