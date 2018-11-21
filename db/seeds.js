@@ -22,9 +22,7 @@ const userData = [
     password: 'pass',
     coverPhoto: 'https://images.pexels.com/photos/1146708/pexels-photo-1146708.jpeg?cs=srgb&dl=light-road-dawn-1146708.jpg&fm=jpg',
     profilePicture: 'http://media-ima002.globaltalentsystems.com/23671/600/23671_000-11-30-2016-12520.jpg',
-    bio: 'Film enthusiast with excellent taste in motion pictures.',
-    following: []
-
+    bio: 'Film enthusiast with excellent taste in motion pictures.'
   }, {
     _id: userIds[1],
     username: 'theobirch',
@@ -32,8 +30,7 @@ const userData = [
     password: 'pass',
     coverPhoto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpRzrDa4xvGvNK9G0Smbk1TpdW6rFZHqOZqZxZwL6m_tEJrHph',
     profilePicture: 'https://images-na.ssl-images-amazon.com/images/I/C1euUan+TUS._CR0,0,3840,2880_._SL1000_.jpg',
-    bio: 'Don’t follow me because I don’t even know where I’m going' ,
-    following: []
+    bio: 'Don’t follow me because I don’t even know where I’m going'
   }, {
     _id: userIds[2],
     username: 'davidcomer',
@@ -41,8 +38,7 @@ const userData = [
     password: 'pass',
     coverPhoto: 'https://m.media-amazon.com/images/M/MV5BMGU5OWEwZDItNmNkMC00NzZmLTk1YTctNzVhZTJjM2NlZTVmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_CR0,0,677,1000_AL_.jpg',
     profilePicture: 'https://vignette.wikia.nocookie.net/simpsons/images/6/65/Bart_Simpson.png/revision/latest?cb=20180319061933',
-    bio: 'Buoyant, waggish, efficacious, indefatigable, demiurgic, convivial marketing companion, self-made thousandaire',
-    following: []
+    bio: 'Buoyant, waggish, efficacious, indefatigable, demiurgic, convivial marketing companion, self-made thousandaire'
   }, {
     _id: userIds[3],
     username: 'zoebarrington',
@@ -50,8 +46,7 @@ const userData = [
     password: 'pass',
     coverPhoto: 'https://m.media-amazon.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_SY1000_CR0,0,674,1000_AL_.jpg',
     profilePicture: 'https://png2.kisspng.com/20180517/piw/kisspng-jessie-j-pop-art-illustrator-pop-art-5afe40ddbbf299.1313525515266121897698.png',
-    bio: 'A Caffeine dependent life-form',
-    following: []
+    bio: 'A Caffeine dependent life-form'
   }, {
     _id: userIds[4],
     username: 'albert',
@@ -59,8 +54,7 @@ const userData = [
     password: 'pass',
     coverPhoto: 'https://m.media-amazon.com/images/M/MV5BMGYxNjdjMTItMmUwYy00NzNhLTk1NjctZWVkZTMzZTYzNjBmXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_SY1000_CR0,0,672,1000_AL_.jpg',
     profilePicture: 'https://media1.popsugar-assets.com/files/thumbor/EBrpTMRMGZFRRMnCqf3zUI9Gkx8/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2015/08/12/721/n/1922243/ce6dbfc5_edit_img_image_14690959_1439396294_1/i/Pit-Bulls-Pajamas.jpg',
-    bio: 'Canine fanatic. Lover of all animal based cinema.',
-    following: []
+    bio: 'Canine fanatic. Lover of all animal based cinema.'
   }
 ];
 

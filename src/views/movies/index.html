@@ -2,7 +2,7 @@
 <section id="section-container" class="">
   <div id="slider">
     <figure class="image-container">
-      <img ui-sref="movieShow({ id: movie._id })" ng-repeat="movie in allMovies | orderBy:'averageRating'" ng-src="{{movie.image}}" alt="{{ movie.name}}">
+      <img ui-sref="movieShow({ id: movie._id })" ng-repeat="movie in allMovies | orderBy:'-averageRating'" ng-src="{{movie.image}}" alt="{{ movie.name}}">
     </figure>
   </div>
   <hr>
@@ -28,7 +28,7 @@
 
   <div class="columns is-multiline column is-8">
     <h1 class="index-title title is-2">{{ title }} Films:</h1>
-    <div ng-repeat="movie in filteredMovies | orderBy:'averageRating'" class="column is-2">
+    <div ng-repeat="movie in filteredMovies | orderBy:'-averageRating'" class="column is-2">
       <a ui-sref="movieShow({ id: movie._id })">
         <div class="card">
           <div class="card-header">

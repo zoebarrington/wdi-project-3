@@ -10,11 +10,12 @@
         <p class="bio"></p>
         <strong>Bio:</strong>
         <p>{{ user.bio }}</p>
-          <button ng-click="follow()">Follow</button>
+        <button ng-if="user._id !== userId" ng-click="follow()">{{ buttonName }}</button>
+        <button ng-if="user._id === userId">Edit Profile</button>
       </div>
-      <div class="posts"> 523 <p class="small">Posts</p>
+      <div class="posts"> 523 <p class="small">Films Spotted</p>
       </div>
-      <div class="posts"> 523 <p class="small">Posts</p>
+      <div class="posts"> 523 <p class="small">Films Reviewed</p>
       </div>
       <div class="likes"> 1387 <p class="small">Likes</p>
       </div>

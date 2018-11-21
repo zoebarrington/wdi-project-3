@@ -18,7 +18,14 @@ function updateProfileRoute(req, res, next) {
     .catch(next);
 }
 
+function userIndexRoute(req, res, next) {
+  User.find().then(users => res.json(users))
+    .catch(next);
+}
+
+
 module.exports = {
   show: showRoute,
-  updateFollowers: updateProfileRoute
+  updateFollowers: updateProfileRoute,
+  feed: userIndexRoute
 };
