@@ -10,15 +10,15 @@
         <p class="bio"></p>
         <strong>Bio:</strong>
         <p>{{ user.bio }}</p>
-        <div class="btn">
-          <p>Follow</p>
-        </div>
+          <button ng-click="follow()">Follow</button>
       </div>
       <div class="posts"> 523 <p class="small">Posts</p>
       </div>
       <div class="posts"> 523 <p class="small">Posts</p>
       </div>
       <div class="likes"> 1387 <p class="small">Likes</p>
+      </div>
+      <div ng-click="follow()" class="followers"> {{ user.followedBy.length }} <p class="small">Followers</p>
       </div>
     </div>
   </div>

@@ -27,7 +27,8 @@ router.route('/movies')
 
 //user show page
 router.route('/users/:id')
-  .get(secureRoute, userController.show);
+  .get(secureRoute, userController.show)
+  .put(secureRoute, userController.updateFollowers);
 
 //review create route
 router.route('/movies/:movieId/reviews')
