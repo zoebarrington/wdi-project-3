@@ -13,7 +13,7 @@
     <h1 id="spotTheFilm">SPOT THE FILM</h1>
     <form id="searchbar" ng-submit="handleFilterSubmit()">
       <input type="text" class="input" ng-model="searchTerm">
-      <button class="button">🔎</button>
+      <button class="button">🎥</button>
       <hr>
     </form>
     <button id= "clearButton" ng-click="clearFilters()">Clear Filters</button>
@@ -48,7 +48,7 @@
   <div class="upcoming-releases column is-2">
     <p>Upcoming Releases</p>
     <div ng-repeat="release in releases">
-       {{ release.title }}
+       <strong>{{ release.title }}</strong>
        {{ release.release_date }}
        <a href="https://www.myvue.com/film/{{ release.title.replace('\'', '').replace(':', '').split(' ').join('-') }}">Tickets</a>
     </div>
