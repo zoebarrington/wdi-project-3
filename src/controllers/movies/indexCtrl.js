@@ -6,21 +6,19 @@ const genres = [
   }, {
     name: 'Comedy'
   }, {
-    name: 'Romantic Comedy'
-  }, {
     name: 'Horror'
   }, {
     name: 'Drama'
   }, {
     name: 'Romance'
-  }, {
-    name: 'Documentary'
-  }, {
+  },{
     name: 'Fantasy'
   }, {
     name: 'Adventure'
   }, {
     name: 'Crime'
+  }, {
+    name: 'Animation'
   }];
 
 
@@ -33,8 +31,10 @@ function indexCtrl($scope, $http) {
     $scope.allMovies = result.data;
     $scope.filteredMovies = $scope.allMovies;
   });
+  $scope.title = 'Highest Rated';
   $scope.genres = genres;
   $scope.filterGenres = function(genre) {
+    $scope.title = genre.name;
     $scope.filteredMovies = $scope.allMovies.filter(movie =>
       movie.genres.includes(genre.name)
     );
@@ -44,6 +44,7 @@ function indexCtrl($scope, $http) {
       movie.name.toLowerCase().startsWith($scope.searchTerm.toLowerCase()));
   };
   $scope.clearFilters = function() {
+    $scope.title = 'Highest Rated';
     $scope.filteredMovies = $scope.allMovies;
   };
 }
