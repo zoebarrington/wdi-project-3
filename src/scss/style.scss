@@ -340,6 +340,10 @@
   text-align: center;
 }
 
+.genres{
+  padding-left: 2vw;
+}
+
 #genre-name {
   cursor: pointer;
 }
@@ -354,20 +358,14 @@
   0% {
     left: 0%;
   }
-  20% {
+  25% {
     left: 0%;
   }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
   50% {
-    left: -200%;
+    left: -91%;
   }
-  70% {
-    left: -200%;
+  75% {
+    left: -91%;
   }
   100% {
     left: 0%;
@@ -393,6 +391,7 @@ div#slider {
 .image-container img {
   height: 250px;
   width: 40px;
+  cursor: pointer;
 }
  #section-container {
    padding: 0;
