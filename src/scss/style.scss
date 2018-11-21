@@ -330,6 +330,24 @@
 
 //carousel animation
 
+
+div#slider {
+  overflow: hidden;
+  figure img {
+    width: 3%;
+    float: left;
+  }
+  figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 15s slidy infinite;
+  }
+}
+
 @keyframes slidy {
   0% {
     left: 0%;
@@ -359,23 +377,6 @@
     left: -400%;
   }
 }
-
-div#slider {
-  overflow: hidden;
-  figure img {
-    width: 3%;
-    float: left;
-  }
-  figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    text-align: left;
-    font-size: 0;
-    animation: 15s slidy infinite;
-  }
-}
 .image-container img {
   height: 250px;
   width: 40px;
@@ -394,4 +395,8 @@ div#slider {
  }
  #genreFilter {
    display: flex;
+ }
+ #spotTheFilm {
+   font-size: 30px;
+   font-weight: bold;
  }
