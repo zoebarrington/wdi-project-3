@@ -21,13 +21,18 @@ router.route('/movies/:id')
 router.route('/movies/:id')
   .get(movieController.show);
 
+//news feed
+router.route('/feed')
+  .get(secureRoute, userController.feed);
+
 //fred's code
 router.route('/movies')
   .post(movieController.create);
 
 //user show page
 router.route('/users/:id')
-  .get(secureRoute, userController.show);
+  .get(secureRoute, userController.show)
+  .put(secureRoute, userController.updateFollowers);
 
 //review create route
 router.route('/movies/:movieId/reviews')

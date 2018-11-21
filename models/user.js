@@ -8,7 +8,7 @@ const userSchema = mongoose.Schema({
   bio: String,
   email: String,
   password: String,
-  following: [{
+  followedBy: [{
     type: mongoose.Schema.ObjectId, ref: 'User'
   }]
 });

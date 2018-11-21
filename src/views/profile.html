@@ -3,22 +3,23 @@
   <div class="frame">
     <div class="box column">
       <div class="main">
-        <div class="image">
+        <div class="profile-image">
           <p class ="profile-name"><strong>{{ user.username }}</strong></p>
           <img src="{{ user.profilePicture}}" alt=" {{ user.name }}">
         </div>
         <p class="bio"></p>
         <strong>Bio:</strong>
         <p>{{ user.bio }}</p>
-        <div class="btn">
-          <p>Follow</p>
-        </div>
+        <button ng-if="user._id !== userId" ng-click="follow()">{{ buttonName }}</button>
+        <button ng-if="user._id === userId">Edit Profile</button>
       </div>
-      <div class="posts"> 523 <p class="small">Posts</p>
+      <div class="posts"> 523 <p class="small">Films Spotted</p>
       </div>
-      <div class="posts"> 523 <p class="small">Posts</p>
+      <div class="posts"> 523 <p class="small">Films Reviewed</p>
       </div>
       <div class="likes"> 1387 <p class="small">Likes</p>
+      </div>
+      <div ng-click="follow()" class="followers"> {{ user.followedBy.length }} <p class="small">Followers</p>
       </div>
     </div>
   </div>
@@ -28,6 +29,7 @@
         <img ng-src=" {{ user.profilePicture }}">
       </p>
     </figure>
+
     <div class="media-content"ng-repeat="movie in user.moviesReviewed">
       <div class="content" ng-repeat="review in movie.reviews">
         <p><strong> {{ review.title }} reviewed by {{ user.username }}</strong>

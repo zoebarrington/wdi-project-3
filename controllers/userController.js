@@ -10,6 +10,22 @@ function showRoute(req, res, next) {
     .catch(next);
 }
 
+function updateProfileRoute(req, res, next) {
+  User.findById(req.params.id)
+    .then(user => user.set(req.body))
+    .then(user => user.save())
+    .then(user => res.json(user))
+    .catch(next);
+}
+
+function userIndexRoute(req, res, next) {
+  User.find().then(users => res.json(users))
+    .catch(next);
+}
+
+
 module.exports = {
-  show: showRoute
+  show: showRoute,
+  updateFollowers: updateProfileRoute,
+  feed: userIndexRoute
 };
