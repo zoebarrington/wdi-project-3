@@ -29,7 +29,6 @@
         <img ng-src=" {{ user.profilePicture }}">
       </p>
     </figure>
-
     <div class="media-content"ng-repeat="movie in user.moviesReviewed">
       <div class="content" ng-repeat="review in movie.reviews">
         <p><strong> {{ review.title }} reviewed by {{ user.username }}</strong>
