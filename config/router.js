@@ -21,6 +21,10 @@ router.route('/movies/:id')
 router.route('/movies/:id')
   .get(movieController.show);
 
+//news feed
+router.route('/feed')
+  .get(secureRoute, userController.feed);
+
 //fred's code
 router.route('/movies')
   .post(movieController.create);

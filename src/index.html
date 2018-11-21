@@ -20,6 +20,9 @@
               <a  ui-sref="home">
                 <div>Home</div>
               </a>
+              <a ng-if="isAuthenticated()" ui-sref="feed">
+                <div>Follow Feed</div>
+              </a>
               <a ui-sref="movieIndex">
                 <div>Movies</div>
               </a>

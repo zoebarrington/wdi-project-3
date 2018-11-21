@@ -5,7 +5,8 @@ import moviesEditCtrl from '../controllers/movies/editCtrl';
 import loginCtrl from '../controllers/loginCtrl';
 import registerCtrl from '../controllers/registerCtrl';
 import profileCtrl from '../controllers/profileCtrl';
-
+import feedCtrl from '../controllers/feedCtrl';
+import profileEditCtrl from '../controllers/profileEditCtrl';
 
 function Router($stateProvider, $urlRouterProvider) {
   $stateProvider
@@ -47,6 +48,16 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: './views/movies/edit.html',
       url: '/movies/:id/edit',
       controller: moviesEditCtrl
+    })
+    .state('feed', {
+      templateUrl: './views/feed.html',
+      url: '/feed',
+      controller: feedCtrl
+    })
+    .state('editProfile', {
+      templateUrl: './views/editProfile.html',
+      url: '/profile/:id/edit',
+      controller: profileEditCtrl
     });
   $urlRouterProvider.otherwise('/');
 }

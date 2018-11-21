@@ -10,11 +10,12 @@
         <p class="bio"></p>
         <strong>Bio:</strong>
         <p>{{ user.bio }}</p>
-          <button ng-click="follow()">Follow</button>
+        <button ng-if="user._id !== userId" ng-click="follow()">{{ buttonName }}</button>
+        <button ng-if="user._id === userId" ui-sref="editProfile({ id: user._id})">Edit Profile</button>
       </div>
-      <div class="posts"> 523 <p class="small">Posts</p>
+      <div class="posts"> 523 <p class="small">Films Spotted</p>
       </div>
-      <div class="posts"> 523 <p class="small">Posts</p>
+      <div class="posts"> 523 <p class="small">Films Reviewed</p>
       </div>
       <div class="likes"> 1387 <p class="small">Likes</p>
       </div>
@@ -23,24 +24,23 @@
     </div>
   </div>
   <div class="profile-review-box media">
-    <figure class="media-left">
+    <figure class="media-left" >
       <p class="image is-64x64">
         <img ng-src=" {{ user.profilePicture }}">
       </p>
     </figure>
-    <div class="media-content">
-  <div class="content">
-    <p>
-      <strong>{{review.title}}</strong>
-      <br>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-    </p>
-  </div>
-  <hr></hr>
-  <nav class="level is-mobile">
-      <div class="level-left">
+
+    <div class="media-content"ng-repeat="movie in user.moviesReviewed">
+      <div class="content" ng-repeat="review in movie.reviews">
+        <p><strong> {{ review.title }} reviewed by {{ user.username }}</strong>
+          <span>{{ review.content }}</span>
+        </p>
       </div>
-    </nav>
-  </div>
+      <hr></hr>
+      <nav class="level is-mobile">
+        <div class="level-left">
+        </div>
+      </nav>
+    </div>
   </div>
 </div>
