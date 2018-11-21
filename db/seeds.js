@@ -241,6 +241,48 @@ const movieData = [
     locationFilmed: [' Los Angeles, California, USA'],
     genres: [' Comedy' , 'Drama'],
     reviews: []
+  }, {
+    createdBy: userIds[2],
+    name: 'Four Weddings and a Funeral',
+    yearReleased: 1994,
+    movieLength: '1h 57mins',
+    image: 'https://m.media-amazon.com/images/M/MV5BMTkyNTc3MzM4Ml5BMl5BanBnXkFtZTcwNzcxNzczNA@@._V1_SY500_CR0,0,333,500_AL_.jpg',
+    coverPhoto: 'https://cdn-hit.scadigital.io/media/32635/four-weddings.jpg?preset=MainImage',
+    writers: ['Richard Curtis'],
+    director: 'Mike Newell',
+    actors: ['Hugh Grant', 'James Fleet', 'Andie MacDowell'],
+    synopsis: 'The film follows the fortunes of Charles and his friends as they wonder if they will ever find true love and marry. Charles thinks hes found "Miss Right" in Carrie, an American. This British subtle comedy revolves around Charlie, his friends and the four weddings and one funeral which they attend.',
+    locationFilmed: ['United Kingdom'],
+    genres: [' Comedy' , 'Drama', 'Romance'],
+    reviews: []
+  }, {
+    createdBy: userIds[0],
+    name: 'Finding Nemo',
+    yearReleased: 2003,
+    movieLength: '1h 40mins',
+    image: 'http://2.bp.blogspot.com/_6DfQTbAuzNc/TFXuBZWBhVI/AAAAAAAAAQY/a6GMixqO0W8/s1600/finding+nemo.jpg',
+    coverPhoto: 'https://pixel.nymag.com/imgs/daily/vulture/2016/06/29/29-finding-dory.w700.h700.jpg',
+    writers: ['Andrew Stanton', 'Lee Unkrich'],
+    director: 'Andrew Stanton',
+    actors: ['Albert Brooks', 'Ellen DeGeneres', 'Alexander Gould'],
+    synopsis: 'A clown fish named Marlin lives in the Great Barrier Reef and loses his son, Nemo, after he ventures into the open sea, despite his fathers constant warnings about many of the oceans dangers. Nemo is abducted by a boat and netted up and sent to a dentists office in Sydney. While Marlin ventures off to try to retrieve Nemo, Marlin meets a fish named Dory, a blue tang suffering from short-term memory loss. The companions travel a great distance, encountering various dangerous sea creatures such as sharks, anglerfish and jellyfish, in order to rescue Nemo from the dentists office, which is situated by Sydney Harbour. While the two are searching the ocean far and wide, Nemo and the other sea animals in the dentists fish tank plot a way to return to the sea to live their lives free again.',
+    locationFilmed: ['United States of America'],
+    genres: [' Animation' , 'Adventure', 'Family', 'Fantasy', 'Comedy'],
+    reviews: []
+  }, {
+    createdBy: userIds[1],
+    name: 'Avatar',
+    yearReleased: 2009,
+    movieLength: '2h 42mins',
+    image: 'https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_UX182_CR0,0,182,268_AL_.jpg',
+    coverPhoto: 'https://i1.wp.com/www.animationxpress.com/wp-content/uploads/2014/06/Avatar_images.jpg',
+    writers: ['James Cameron'],
+    director: 'James Cameron',
+    actors: ['Sam Worthington', 'Zoe Saldana', 'Signourney Weaver'],
+    synopsis: 'When his brother is killed in a robbery, paraplegic Marine Jake Sully decides to take his place in a mission on the distant world of Pandora. There he learns of greedy corporate figurehead Parker Selfridges intentions of driving off the native humanoid Navi in order to mine for the precious material scattered throughout their rich woodland. In exchange for the spinal surgery that will fix his legs, Jake gathers intel for the cooperating military unit spearheaded by gung-ho Colonel Quaritch, while simultaneously attempting to infiltrate the Navi people with the use of an "avatar" identity. While Jake begins to bond with the native tribe and quickly falls in love with the beautiful alien Neytiri, the restless Colonel moves forward with his ruthless extermination tactics, forcing the soldier to take a stand - and fight back in an epic battle for the fate of Pandora.',
+    locationFilmed: ['United States of America'],
+    genres: [' Animation' , 'Adventure', 'Family', 'Fantasy', 'Comedy'],
+    reviews: []
   }
 ];
 
