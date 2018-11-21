@@ -5,6 +5,7 @@ const movieSchema = mongoose.Schema({
   yearReleased: Number,
   movieLength: String,
   image: String,
+  coverPhoto: String,
   writers: [String],
   director: String,
   actors: [String],
