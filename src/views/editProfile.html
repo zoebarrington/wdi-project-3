@@ -1,0 +1,37 @@
+<form ng-submit="updateProfile()">
+  <div class="field">
+    <label class="label" for="username">Username:</label>
+    <div class="control">
+      <input class="input" name="username" ng-model="user.username" required>
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="profilePicture">Profile Picture:</label>
+    <div class="control">
+      <input class="input" name="profilePicture" ng-model="user.profilePicture">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="coverPhoto">Cover Photo:</label>
+    <div class="control">
+      <input class="input" name="coverPhoto" ng-model="user.coverPhoto">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="bio">Bio:</label>
+    <div class="control">
+      <input class="input" name="bio" ng-model="user.bio">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="email">Email:</label>
+    <div class="control">
+      <input class="input" name="email" ng-model="user.email" required>
+    </div>
+  </div>
+  <div class="field">
+    <div class="control">
+      <button class="button">Update</button>
+    </div>
+  </div>
+</form>
