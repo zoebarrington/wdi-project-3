@@ -348,6 +348,10 @@
   text-align: center;
   height: 5vh;
 }
+.aside-headers {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
 
 .genres{
   padding-left: 2vw;
@@ -357,8 +361,13 @@
   cursor: pointer;
 }
 
-#clearButton {
+.indexButtons {
   cursor: pointer;
+  margin-left: 45px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 //carousel animation
