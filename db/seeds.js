@@ -678,6 +678,198 @@ const movieData = [
       content: 'Maybe the movie has too much coherence, and the plot is too predictable; thats a weakness of films based on well-made Broadway plays. Still, thats hardly a serious complaint about something as funny as Play It Again, Sam.',
       createdBy: userIds [2]
     }]
+    // here is new code
+  }, {
+    createdBy: userIds[0],
+    name: 'Mrs Doubtfire',
+    yearReleased: '1993',
+    movieLength: '2h 5min',
+    image: 'https://m.media-amazon.com/images/M/MV5BMjExMDUzODE1N15BMl5BanBnXkFtZTgwNTU5NTYxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg',
+    coverPhoto: 'https://images6.alphacoders.com/438/thumb-1920-438053.jpg',
+    writers: ['Anne Fine', 'Randi Mayem Singer'],
+    director: 'Chris Columbus',
+    actors: ['Robin Williams', 'Sally Field', 'Pierce Brosnan'],
+    synopsis: 'After a bitter divorce, an actor disguises himself as a female housekeeper to spend time with his children held in custody by his former wife.',
+    locationFilmed: 'California',
+    genres: ['Comedy', 'Drama'],
+    reviews: [{
+      title: 'Titillating',
+      rating: 5,
+      content: 'Every time I see it, I hose myself with laughter. If you have not seen it, then you need to download it or buy it.',
+      createdBy: userIds [4]
+    }]
+  }, {
+    createdBy: userIds[1],
+    name: 'Time Bandits',
+    yearReleased: '1981',
+    movieLength: '1h 56min',
+    image: 'https://m.media-amazon.com/images/M/MV5BMTg2MDYwMzM0NF5BMl5BanBnXkFtZTcwODI3MTQ5OQ@@._V1_.jpg',
+    coverPhoto: 'https://images6.alphacoders.com/647/thumb-1920-647207.jpg',
+    writers: ['Michael Palin', 'Terry Gilliam'],
+    director: 'Terry Gilliam' ,
+    actors: ['Sean Connery', 'Shelley Duvall', 'John Cleese '],
+    synopsis: 'A young boy accidentally joins a band of time travelling dwarves, as they jump from era to era looking for treasure to steal.',
+    locationFilmed: 'London',
+    genres: ['Adventure', 'Comedy', 'Fantasy'],
+    reviews: [{
+      title: 'A lot or a little...',
+      rating: 3,
+      content: 'This movie is an enjoyable romp meant to appeal to the adventurous child in everyone',
+      createdBy: userIds [3]
+    }]
+  }, {
+    createdBy: userIds[2],
+    name: 'Star Trek',
+    yearReleased: '2009',
+    movieLength: '2h 7min',
+    image: 'https://m.media-amazon.com/images/M/MV5BMjE5NDQ5OTE4Ml5BMl5BanBnXkFtZTcwOTE3NDIzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg',
+    coverPhoto: 'https://images.alphacoders.com/764/thumb-1920-76401.jpg',
+    writers: ['Roberto Orci', 'Alex Kurtzman'],
+    director: 'J.J.Abrams',
+    actors: ['Chris Pine', 'Zachary Quinto', 'Simon Pegg'],
+    synopsis: 'The brash James T. Kirk tries to live up to his fathers legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time.',
+    locationFilmed: 'Alaska',
+    genres: ['Action', 'Adventure'],
+    reviews: [{
+      title: 'Is it any good?',
+      rating: 4,
+      content: 'Rocketing at warp speed without ever slowing down, J.J. Abrams directs this reboot as a smart, speedy thrill ride that does not indulge in nostalgia for its own sake. ',
+      createdBy: userIds[2]
+    }]
+  }, {
+    createdBy: userIds[1],
+    name: 'Beethoven',
+    yearReleased: '1992',
+    movieLength: '1h 27min',
+    image: 'https://m.media-amazon.com/images/M/MV5BODgwY2MyMTItMzY1OC00YmU3LTlhOWMtYWFkNGJjNzIwOWZiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,676,1000_AL_.jpg',
+    coverPhoto: 'https://images5.alphacoders.com/513/thumb-1920-513114.jpg',
+    writers: ['John Hughes'],
+    director: 'Brian Levant',
+    actors: [' Charles Grodin', 'Bonnie Hunt', 'Dean Jones'],
+    synopsis: 'A slobbering St. Bernard becomes the center of attention for a loving family, but must contend with a dog-napping veterinarian and his henchmen.',
+    locationFilmed: 'California',
+    genres: ['Comedy', 'Drama'],
+    reviews: [{
+      title: 'Offers no bark and bite!',
+      rating: 2,
+      content: 'Not since Look Who’s Talking has an inoffensive hour and a half seemed like three years in the dungeons of the Spanish Inquisition.',
+      createdBy: userIds[1]
+    }]
+  }, {
+    createdBy: userIds[0],
+    name: 'Titanic',
+    yearReleased: '1997',
+    movieLength: '3h 14min',
+    image: 'https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX182_CR0,0,182,268_AL_.jpg',
+    coverPhoto: 'https://images.alphacoders.com/273/thumb-1920-273563.jpg',
+    writers: ['James Cameron'],
+    director: 'James Cameron',
+    actors: ['Kate Winslet', 'Leonardo DiCaprio', 'Billy Zane'],
+    synopsis: 'A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.',
+    locationFilmed: ['California'],
+    genres: ['Action', 'Romance'],
+    reviews: [{
+      title: 'Titanic is an awful movie',
+      rating: 1,
+      content: 'Titanic, the highest-grossing film of all time, has been resurrected on the silver screen. I had not seen the film in over a decade until this weekend, when I watched it with friends. Overall I enjoyed it a lot more before I hit puberty. If you have ever paid income tax or seriously analyzed a potential mate based on more than “feelings,” this movie will confound you with its cardboard characters, nauseating dialogue and ridiculous sentimentalism.',
+      createdBy: userIds[4]
+    }]
+  }, {
+    createdBy: userIds[3],
+    name: 'Raiders of the Lost Ark',
+    yearReleased: '1981',
+    movieLength: '1h 55min',
+    image: 'https://m.media-amazon.com/images/M/MV5BMjA0ODEzMTc1Nl5BMl5BanBnXkFtZTcwODM2MjAxNA@@._V1_UX182_CR0,0,182,268_AL_.jpg',
+    coverPhoto: 'https://images2.alphacoders.com/865/thumb-1920-86520.jpg',
+    writers: ['Lawrence Kasdan', 'George Lucas'],
+    director: 'Steven Spielberg',
+    actors: ['Harrison Ford', 'Karen Allen', 'Paul Freeman'],
+    synopsis: 'In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before Adolf Hitlers Nazis can obtain its awesome powers.',
+    locationFilmed: ['Arizona'],
+    genres: ['Action', 'Adventure'],
+    reviews: [{
+      title: 'Cracking',
+      rating: 5,
+      content: 'If Lucas is Raiders guts and Kasdan its head, then Spielberg is its beating heart.',
+      createdBy: userIds[4]
+    }]
+  }, {
+    createdBy: userIds[0],
+    name: 'Apocalypse Now',
+    yearReleased: '1979',
+    movieLength: '2h 27min',
+    image: 'https://m.media-amazon.com/images/M/MV5BZTNkZmU0ZWQtZjQzMy00YTNmLWFmN2MtZGNkMmU1OThmMGYwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg',
+    coverPhoto: 'https://images3.alphacoders.com/795/thumb-1920-795660.jpg',
+    writers: ['John Milius', 'Francis Ford Coppola'],
+    director: 'Francis Ford Copolla',
+    actors: [' Martin Sheen', 'Marlon Brando', 'Robert Duvall'],
+    synopsis: 'During the Vietnam War, Captain Willard is sent on a dangerous mission into Cambodia to assassinate a renegade Colonel who has set himself up as a god among a local tribe.',
+    locationFilmed: ['Philippines'],
+    genres: ['Drama'],
+    reviews: [{
+      title: 'Great movie',
+      rating: 5,
+      content: 'This disturbing vision of the harrowing effects of war and violence continues to shock and haunt audiences.',
+      createdBy: userIds[2]
+    }]
+  }, {
+    createdBy: userIds[0],
+    name: 'The Beach',
+    yearReleased: '2000',
+    movieLength: '1h 59min',
+    image: 'https://m.media-amazon.com/images/M/MV5BNTljZTUzYWUtOTI4YS00NmZlLWE5MmQtZjFlZDZhNjg4MjQxXkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_UX182_CR0,0,182,268_AL_.jpg',
+    coverPhoto: 'https://i.pinimg.com/originals/ef/a8/59/efa8599c216c6ae68bc84a36e9feca93.jpg',
+    writers: ['John Hodge', 'Alex Garland'],
+    director: 'Danny Boyle',
+    actors: ['Leonardo DiCaprio', 'Daniel York', 'Patcharawan Patarakijjanon'],
+    synopsis: 'Vicenarian Richard travels to Thailand and finds himself in possession of a strange map. Rumours state that it leads to a solitary beach paradise, a tropical bliss. Excited and intrigued, he sets out to find it.',
+    locationFilmed: ['Thailand'],
+    genres: ['Adventure', 'Drama', 'Romance'],
+    reviews: [{
+      title: 'A rollercoaster ride',
+      rating: 3,
+      content: 'It is much better than rumoured: entertaining, engrossing, and ripe for discussion - somewhere civilised - afterwards.',
+      createdBy: userIds[0]
+    }]
+  }, {
+    createdBy: userIds[4],
+    name: 'The Jungle Book',
+    yearReleased: '1967',
+    movieLength: '1h 18min',
+    image: 'https://m.media-amazon.com/images/M/MV5BMjAwMTExODExNl5BMl5BanBnXkFtZTgwMjM2MDgyMTE@._V1_UY268_CR0,0,182,268_AL_.jpg',
+    coverPhoto: 'https://images.alphacoders.com/493/thumb-1920-493163.jpg',
+    writers: [' Larry Clemmons','Ralph Wright'],
+    director: 'Wolfgang Reitherman',
+    actors: ['Phil Harris', 'Sebastian Cabot', 'Louis Prima'],
+    synopsis: 'Bagheera the Panther and Baloo the Bear have a difficult time trying to convince a boy to leave the jungle for human civilization.',
+    locationFilmed: ['California'],
+    genres: ['Animation', 'Adventure'],
+    reviews: [{
+      title: 'A slight tail.... but classy music',
+      rating: 3,
+      content: 'It is a slight tale, of course, and incredibly short, but the characters and songs are pretty much perfect viewing time and again.',
+      createdBy: userIds[4]
+    }]
+  }, {
+    createdBy: userIds[0],
+    name: 'Clueless',
+    yearReleased: '1995',
+    movieLength: '1h 37min',
+    image: 'https://m.media-amazon.com/images/M/MV5BMTgxODIxODE2MF5BMl5BanBnXkFtZTgwOTA4NjQxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg',
+    coverPhoto: 'https://s.abcnews.com/images/Entertainment/GTY_clueless_jef_150508_12x5_992.jpg',
+    writers: ['Amy Heckerling'],
+    director: 'Amy Heckerling',
+    actors: ['Alicia Silverstone', 'Stacey Dash', 'Brittany Murphy'],
+    synopsis: 'A rich high school student tries to boost a new pupils popularity, but reckons without affairs of the heart getting in the way.',
+    locationFilmed: ['California'],
+    genres: ['Comedy', 'Romance'],
+    reviews: [{
+      title: 'That was way harsh...',
+      rating: 4,
+      content: 'Thoroughly entertaining as well as being delightfully clever. (but not too clever!)',
+      createdBy: userIds[0]
+    }]
+
   }
 ];
 
