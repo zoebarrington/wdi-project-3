@@ -1,11 +1,12 @@
 <div class="suggestions-wrapper">
   <h1>Follow Suggestions</h1>
-  <div class="suggestion" ng-repeat="suggestion in suggestions | orderBy:'-moviesReviewed.length'">
-    {{suggestion.username}}
+  <div class="suggestion"  ui-sref="profileShow({ id: suggestion._id })" ng-repeat="suggestion in suggestions | orderBy:'-moviesReviewed.length'">
+    <img ng-src="{{suggestion.profilePicture}}" alt="profile picure">
+    <p>{{suggestion.username.toUpperCase()}} - {{suggestion.moviesReviewed.length}} films reviewed</p>
   </div>
 </div>
 <div class="feed-wrapper">
-  <h1 class="title is-2" ng-if="feedContent.length === 0">FOLLOW SOME REVIEWERS TO SEE THEIR LATEST REVIEWS HERE</h1>
+  <h1 class="title is-2" ng-if="feedContent.length === 0">FOLLOW SOME FILM FANS TO SEE THEIR LATEST REVIEWS HERE</h1>
   <img class="no-content" src="https://i.imgur.com/TZn7QV0.png" alt="No Content Banner" ng-if="feedContent.length === 0">
   <div class="review" ng-repeat="review in feedContent | orderBy:'-time'">
     <h4 ui-sref="movieShow({ id: review.movieId })">{{review.title.toUpperCase()}} - {{review.movieName}}</h4>
