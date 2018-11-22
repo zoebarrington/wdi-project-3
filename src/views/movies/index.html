@@ -35,7 +35,7 @@
           </div>
           <div class="card-image">
             <figure class="image">
-              <img ng-src="{{ movie.image }}" alt="{{ movie.name }}">
+              <img class="index-images" ng-src="{{ movie.image }}" alt="{{ movie.name }}">
             </figure>
           </div>
         </div>
@@ -49,8 +49,11 @@
     <p class="aside-headers"><strong>Upcoming Releases</strong>({{ releases.length }})</p>
     <div ng-repeat="release in releases">
        <strong>{{ release.title }}</strong>
+       <div>
        {{ release.release_date }}
        <a href="https://www.myvue.com/film/{{ release.title.replace('\'', '').replace(':', '').split(' ').join('-') }}">Tickets</a>
+       </div>
     </div>
   </div>
 </div>
+<div class="background-box" style="height: 150vw;"></div>

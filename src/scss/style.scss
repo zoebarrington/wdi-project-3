@@ -14,6 +14,8 @@ body {
 
 }
 
+.columns { align-content: start }
+
 .navbar{
   background-color: black;
   .navbar-item.has-dropdown.is-hoverable .navbar-link{
@@ -112,6 +114,7 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        min-height: 20vh;
         img{
           cursor: pointer;
           height: 200px;
@@ -138,7 +141,7 @@ body {
         margin-top: 1vh;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         width: 15%;
         i{
@@ -399,6 +402,11 @@ body {
   color: white;
   font-weight: bold;
   text-decoration: none;
+  border-radius: 60px;
+}
+
+.index-images:hover {
+  opacity: 0.5;
 }
 
 //carousel animation
