@@ -44,7 +44,7 @@ const userData = [
     username: 'zoebarrington',
     email: 'zoe@barrington.com',
     password: 'pass',
-    coverPhoto: 'https://m.media-amazon.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_SY1000_CR0,0,674,1000_AL_.jpg',
+    coverPhoto: 'http://www.smartgastraining.co.uk/wp-content/uploads/2017/05/cover-2.jpg',
     profilePicture: 'https://png2.kisspng.com/20180517/piw/kisspng-jessie-j-pop-art-illustrator-pop-art-5afe40ddbbf299.1313525515266121897698.png',
     bio: 'A Caffeine dependent life-form'
   }, {

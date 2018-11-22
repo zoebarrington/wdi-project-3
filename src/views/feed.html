@@ -1,4 +1,5 @@
 <div class="feed-wrapper">
+  <h1 class="title is-1" ng-if="feedContent.length === 0">FOLLOW SOME REVIEWERS TO SEE THEIR LATEST REVIEWS HERE</h1>
   <div class="review" ng-repeat="review in feedContent | orderBy:'-time'">
     <h4 ui-sref="movieShow({ id: review.movieId })">{{review.title.toUpperCase()}} - {{review.movieName}}</h4>
     <p>{{ "🎬".repeat(review.rating) }}</p>

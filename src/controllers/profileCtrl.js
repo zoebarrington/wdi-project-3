@@ -46,7 +46,7 @@ function profileCtrl ($state, $scope, $http, $auth) {
     }
   };
   $scope.like = function(review){
-    if($auth.isAuthenticated() && review.createdBy._id !== $scope.userId){
+    if($auth.isAuthenticated() && review.createdBy !== $scope.userId){
       if(review.likedBy.includes($scope.userId)){
         const index = review.likedBy.indexOf($scope.userId);
         review.likedBy.splice(index, 1);

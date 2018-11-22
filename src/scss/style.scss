@@ -45,24 +45,6 @@
   }
 }
 
-// footer{
-//   width: 100vw;
-//   position: relative;
-//   grid-row-start: -1;
-//   grid-row-end: 3;
-//   .socials{
-//     position: absolute;
-//     right: 3vw;
-//     top: 5vh;
-//     .social{
-//       margin: 0.25vh;
-//       font-size: 30px;
-//       color: black;
-//     }
-//   }
-// }
-
-
 // movie show page styling
 .review-box{
   display: flex;
@@ -541,6 +523,9 @@ div#slider {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  h1{
+    text-align: center;
+  }
   .review{
     margin-bottom: 5vh;
   }
