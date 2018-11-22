@@ -560,11 +560,32 @@ div#slider {
 
 
 // feed page styling
+.suggestions-wrapper{
+  position: absolute;
+  top: 20vh;
+  right: 5vw;
+  width: 25vw;
+  height: 50vh;
+  border-radius: 25px;
+  border: 1px solid;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1vh;
+  h1{
+    font-weight: bold;
+    font-size: 30px;
+  }
+}
+
+
 .feed-wrapper{
   width: 60vw;
   position: absolute;
   top: 20vh;
-  left: 10vw;
+  left: 5vw;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
