@@ -2,12 +2,12 @@
 <section class="hero is-light-title is-fullheight">
   <div class="hero-body">
     <div class="container has-text-centered">
-      <div class="column is-4 is-offset-4">
-        <h3 class="title has-text-grey">Login</h3>
-        <p class="subtitle has-text-grey">Please login to proceed.</p>
+      <div class="column is-4 is-offset-4" style="border: solid black;">
+        <h3 class="title has-text-black">Login</h3>
+        <p class="subtitle has-text-black">Please login to proceed.</p>
         <div class="login-box">
-          <figure class="grey">
-            <img style="height: 100px; width: 100px;" ng-src="https://png.pngtree.com/element_pic/17/09/08/060080ba34225fd51d2ba2e8ab794465.jpg">
+          <figure class="black">
+            <img style="height: 100px; width: 100px;" ng-src="https://in.bookmyshow.com/entertainment/wp-content/uploads/2014/09/filmreel.jpg">
           </figure>
           <form ng-submit="handleLogin()">
             <div class="field">
@@ -21,20 +21,15 @@
                 <input class="input is-large" type="password" ng-model ="user.password" placeholder="Your Password">
               </div>
             </div>
-            <div class="field">
+            <div class="field has-text-black">
               <label class="checkbox">
                 <input type="checkbox">
                 Remember me
               </label>
             </div>
-            <button class="button is-block is-info is-large is-fullwidth">Login</button>
+            <button class="login-button button is-block is-info is-large is-fullwidth"  style="background-color: black; ">Login</button>
           </form>
         </div>
-        <p class="has-text-grey">
-          <a usref="../">Sign Up</a>
-          <a usref="../">Forgot Password</a>
-          <a usref="../">Need Help?</a>
-        </p>
       </div>
     </div>
   </div>

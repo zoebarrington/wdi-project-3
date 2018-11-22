@@ -28,7 +28,7 @@ const userData = [
     username: 'theobirch',
     email: 'theo@birch.com',
     password: 'pass',
-    coverPhoto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpRzrDa4xvGvNK9G0Smbk1TpdW6rFZHqOZqZxZwL6m_tEJrHph',
+    coverPhoto: 'http://getwallpapers.com/wallpaper/full/5/f/4/593520.jpg',
     profilePicture: 'https://images-na.ssl-images-amazon.com/images/I/C1euUan+TUS._CR0,0,3840,2880_._SL1000_.jpg',
     bio: 'Don’t follow me because I don’t even know where I’m going'
   }, {
