@@ -46,6 +46,17 @@
 }
 
 // movie show page styling
+.background-box{
+  width: 100vw;
+  z-index: -2;
+  background-color: black;
+  background-image: url(https://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-037.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 60vh;
+  left: 0;
+}
 .review-box{
   display: flex;
   flex-wrap: wrap;
@@ -59,14 +70,17 @@
   h1{
     padding: 0;
     margin: 0;
+    color: dimgrey;
   }
   .spotted-by{
     margin-left: 1vh;
     cursor: pointer;
   }
   .reviews{
+    background-color: transparent;
     width: 55vw;
     .review{
+      background-color: white;
       border: 1px solid;
       display: flex;
       flex-wrap: wrap;
@@ -95,6 +109,7 @@
         align-items: center;
         img{
           cursor: pointer;
+          height: 200px;
         }
         figure{
           cursor: pointer;
@@ -152,6 +167,7 @@
       display: flex;
       flex-wrap: wrap;
       width: 100%;
+      background-color: white;
       form{
         width: 100%;
         .title-input{

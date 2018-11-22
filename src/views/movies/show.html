@@ -3,6 +3,9 @@
 <div class="info-box">
   <img ng-src="{{ movie.image }}" alt="{{ movie.name }}">
   <div class="stats">
+    <div class="rating-display">
+      <h1>Average Rating: {{ "🎬".repeat(movie.averageRating) }}</h1>
+    </div>
     <p>Director: {{ movie.director }}</p>
     <div class="writers">
       Writers:
@@ -23,9 +26,6 @@
       Locations Filmed:
       <span ng-repeat=" location in movie.locationFilmed">{{ location }}, </span>
     </div>
-  </div>
-  <div class="rating-display">
-    <h1>Average Rating: {{ "🎬".repeat(movie.averageRating) }}</h1>
   </div>
   <div class="buttons-box" ng-show="isAuthenticated() && movie.createdBy._id === userId">
     <button class="button is-rounded" ui-sref="movieEdit({ id: movie._id})">EDIT</button>
@@ -75,3 +75,4 @@
     </div>
   </div>
 </div>
+<div class="background-box" style="height: {{ 75 + 30 * movie.reviews.length}}vh;"></div>
