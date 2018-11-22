@@ -1,17 +1,71 @@
-<section class="hero is-large has-bg-img">
-  <h1 ng-if="isAuthenticated()" class="home-welcome">WELCOME {{username.toUpperCase()}}</h1>
-  <h1 ng-if="!isAuthenticated()" class="home-welcome">WELCOME TO FILM SPOTTING</h1>
-  <div class="columns" id="home-content">
-    <div class="column is-1"></div>
-    <div class="column is-5">
-      <h2 class="subtitle is-1">About Film Spotting:</h2>
-      <hr>
-      <p>Filmspotting is a global social network for film discussion and discovery. Use it as a record to record and share your opinion about films as you watch them, or just to keep track of films you’ve seen in the past. Showcase your favorites on your profile page. Rate and review films as you add them. Find and follow your friends to see what they’re enjoying.</p>
-      <p>Sign in or register to get started. We’re your home for logging in, rating and reviewing films, your source for lists and inspiration and and activity stream of passionate film criticism, discussion and discovery.</p>
+<div class="container">
+  <form ng-submit="handleSubmit()">
+    <div class="field">
+      <label class="label">Title</label>
+      <div class="control">
+        <input class="input" ng-model="movie.name" placeholder="Title">
+      </div>
     </div>
-    <div class="column is-5">
-      screenshots or photos here??
+    <div class="field">
+      <label class="label">Year Released</label>
+      <div class="control has-icons-left has icons-right">
+        <input class="input is success" type="text" ng-model="movie.yearReleased" placeholder="Year Released">
+      </div>
     </div>
-    <div class="column is-1"></div>
-  </div>
-</section>
+    <div class="field">
+      <label class="label">Runtime</label>
+      <div class="control">
+        <input class="input" ng-model="movie.movieLength" placeholder="Runtime">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Poster</label>
+      <div class="control">
+        <input class="input" ng-model="movie.image" placeholder="Image URL">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Cover Photo</label>
+      <div class="control">
+        <input class="input" ng-model="movie.coverPhoto" placeholder="Image URL">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">The writers (separated with ,)</label>
+      <div class="control">
+        <input class="input" ng-model="movie.writers" placeholder="Writers">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Director</label>
+      <div class="control">
+        <input class="input" ng-model="movie.director" placeholder="Director">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">The actors (separated with ,)</label>
+      <div class="control">
+        <input class="input" ng-model="movie.actors" placeholder="Actors">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Synopsis</label>
+      <div class="control">
+        <input class="input" ng-model="movie.synopsis" placeholder="Synopsis">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Filming locations (separated with ,)</label>
+      <div class="control">
+        <input class="input" ng-model="movie.locationFilmed" placeholder="Locations Filmed">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Some genres (separated with ,)</label>
+      <div class="control">
+        <input class="input" ng-model="movie.genres" placeholder="Genres">
+      </div>
+    </div>
+    <button class="button is-rounded">UPDATE</button>
+  </form>
+</div>

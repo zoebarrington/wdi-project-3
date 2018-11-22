@@ -6,9 +6,11 @@ const jwt = require('jsonwebtoken');
 const { secret } = require('../../config/environment');
 
 const Movie = require('../../models/movie');
+
 const userIds = [
   '5bf17051d4a071297aa4b6ea'
 ];
+
 const movieData = {
   createdBy: userIds [0],
   name: 'Love Actually',
