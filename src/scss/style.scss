@@ -54,7 +54,7 @@
   background-position: center;
   background-size: cover;
   position: absolute;
-  top: 60vh;
+  top: 0;
   left: 0;
 }
 .review-box{
@@ -564,12 +564,17 @@ div#slider {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: center;
   h1{
     text-align: center;
+  }
+  .no-content{
+    width: 60%;
   }
   .review{
     margin-bottom: 5vh;
     border-radius: 25px;
+    background-color: white;
   }
   div{
     border: solid 1px;
@@ -634,6 +639,7 @@ div#slider {
       .user-wrapper{
         img{
           height: 90px;
+          border-bottom-left-radius: 20px;
         }
         display: flex;
         flex-wrap: wrap;
