@@ -45,24 +45,6 @@
   }
 }
 
-// footer{
-//   width: 100vw;
-//   position: relative;
-//   grid-row-start: -1;
-//   grid-row-end: 3;
-//   .socials{
-//     position: absolute;
-//     right: 3vw;
-//     top: 5vh;
-//     .social{
-//       margin: 0.25vh;
-//       font-size: 30px;
-//       color: black;
-//     }
-//   }
-// }
-
-
 // movie show page styling
 .review-box{
   display: flex;
@@ -83,46 +65,60 @@
     cursor: pointer;
   }
   .reviews{
-    border: 1px solid;
     width: 55vw;
     .review{
       border: 1px solid;
       display: flex;
       flex-wrap: wrap;
       padding-top: 1vh;
-      padding-bottom: 1vh;
+      margin-bottom: 1vh;
       h4{
-        width: 67%;
-        margin-left: 15.5%;
+        width: 85%;
+        padding-left: 15%;
         text-align: center;
         font-size: 20px;
         font-weight: bold;
+        border-bottom: 1px solid;
       }
       p{
-        width: 9vw;
+        width: 15%;
         font-weight: bold;
         font-size: 20px;
         text-align: center;
+        border-bottom: 1px solid;
       }
-      figure{
-        margin-left: 1vh;
-        margin-right: 1vh;
-        margin-bottom: 3vh;
-        cursor: pointer;
+      .user-wrapper{
+        width: 15%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         img{
-          max-height: 12vh;
+          cursor: pointer;
         }
-        h5{
-          text-align: center;
+        figure{
+          cursor: pointer;
+          img{
+            max-height: 12vh;
+          }
+          h5{
+            text-align: center;
+          }
         }
       }
       span{
-        margin-bottom: 1vh;
+        padding: 1vh;
         text-align: center;
         width: 70%;
+        border-right: 1px solid;
+        border-left: 1px solid;
       }
       .like-wrapper{
         margin-top: 1vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         width: 15%;
         i{
           width: 100%;
@@ -130,10 +126,17 @@
           text-align: center;
         }
         span{
+          width: 30%;
           font-size: 20px;
           font-weight: bold;
+          text-align: left;
           margin: 0;
-          text-align: center;
+          padding: 0;
+          border: 0;
+        }
+        span:first-of-type{
+          text-align: right;
+          width: 70%
         }
       }
       .button-wrapper{
@@ -216,8 +219,8 @@
   width: 100vw;
   position: absolute;
   right: 0;
-  top: 10vh;
-  height: 55vh;
+  top: 8vh;
+  height: 57.5vh;
   z-index: -1;
   background-image: url(https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Free-images-film-wallpaper-1920x1080-PIC-WPB004944.jpg);
   background-size: cover;
@@ -537,6 +540,9 @@ div#slider {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  h1{
+    text-align: center;
+  }
   .review{
     margin-bottom: 5vh;
   }

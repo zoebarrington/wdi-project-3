@@ -6,7 +6,6 @@ const reviewController = require('../controllers/reviewController');
 const authController = require('../controllers/authController');
 const secureRoute = secureController.secure;
 
-//zoe's code
 router.route('/movies')
   .get(movieController.index)
   .post(secureRoute, movieController.create);
@@ -16,8 +15,6 @@ router.route('/movies/:id')
   .put(secureRoute, movieController.update)
   .delete(secureRoute, movieController.delete);
 
-//theo's code
-
 router.route('/movies/:id')
   .get(movieController.show);
 
@@ -25,7 +22,7 @@ router.route('/movies/:id')
 router.route('/feed')
   .get(secureRoute, userController.feed);
 
-//fred's code
+
 router.route('/movies')
   .post(movieController.create);
 
