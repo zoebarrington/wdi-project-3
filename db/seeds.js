@@ -72,7 +72,12 @@ const movieData = [
     synopsis: 'Follows the lives of eight very different couples in dealing with their love lives in various loosely interrelated tales all set during a frantic month before Christmas in London, England.',
     locationFilmed: ['London', 'Surrey', 'France'],
     genres: ['Comedy', 'Romance'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 4,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [0]
+    }]
   }, {
     createdBy: userIds[1],
     name: 'Blood Diamond',
@@ -86,7 +91,12 @@ const movieData = [
     synopsis: 'A story following Archer, a man tortured by his roots. With a strong survival instinct, he has made himself a key player in the business of conflict diamonds. Political unrest is rampant in Sierra Leone as people fight tooth for tooth. Upon meeting Solomon, and the beautiful Maddy, Archers life changes forever as he is given a chance to make peace with the war around him.',
     locationFilmed: ['South Africa', 'Mozambique'],
     genres: ['Adventure', 'Drama', 'Thriller', 'Action'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 4,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [0]
+    }]
   }, {
     createdBy: userIds[2],
     name: 'The Shawshank Redemption',
@@ -100,7 +110,12 @@ const movieData = [
     synopsis: 'Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the mans unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red.',
     locationFilmed: ['Ohio', 'Virgin Islands'],
     genres: ['Drama'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 4,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [0]
+    }]
   }, {
     createdBy: userIds[1],
     name: 'Ice Cold in Alex',
@@ -114,7 +129,12 @@ const movieData = [
     synopsis: 'Captain Anson (John Mills) is tired and thirsty. Forced to leave his North African post when it becomes clear it will be invaded, Anson is on his way to Alexandria, Egypt, and looking forward to a nice cold beer. Before he gets there, though, circumstances pressure him to take on several passengers. Sister Diana Murdoch (Sylvia Syms) and Captain van der Poel (Anthony Quayle) prove to be excellent traveling companions, but Anson soon realizes that one of them is a German spy.',
     locationFilmed: ['Tripoli', 'Hampshire'],
     genres: ['Drama'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 4,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [0]
+    }]
   }, {
     createdBy: userIds[0],
     name: 'Mouse Hunt',
@@ -128,7 +148,12 @@ const movieData = [
     synopsis: 'Two stumblebum inheritors are determined to rid their antique house of a mouse who is equally determined to stay where he is.',
     locationFilmed: ['Bass Lake, California'],
     genres: ['Comedy'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 4,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [0]
+    }]
   }, {
     createdBy: userIds[3],
     name: 'Jaws',
@@ -142,7 +167,12 @@ const movieData = [
     synopsis: 'When a killer shark unleashes chaos on a beach resort, it is up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.',
     locationFilmed: ['Martha/s Vineyard, USA'],
     genres: ['Thriller'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 2,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [1]
+    }]
   }, {
     createdBy: userIds[3],
     name: 'The Intouchables',
@@ -156,21 +186,37 @@ const movieData = [
     synopsis: 'After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.',
     locationFilmed: ['Paris, France'],
     genres: ['Drama'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 2,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [1]
+    },
+    {
+      title: 'Sensible Review Title',
+      rating: 4,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [0]
+    }]
   }, {
     createdBy: userIds[0],
     name: 'Spring Breakers',
     yearReleased: 2013,
     movieLength: '1h 34mins',
     image: 'https://m.media-amazon.com/images/M/MV5BNDBmYjU3NzAtZGVkNS00N2E3LWEyNTgtMjIwMTczYTE0M2Y4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_SX675_AL_.jpg',
-    coverPhoto: 'https://vignette.wikia.nocookie.net/spring-breakers/images/c/c3/Spring-breakers-title-logo.png/revision/latest?cb=20140222023816',
+    coverPhoto: 'https://vignette.wikia.nocookie.net/spring-breakers/images/c/c3/Spring-breakers-Title-logo.png/revision/latest?cb=20140222023816',
     writers: ['Harmony Korine'],
     director: 'Harmony Korine',
     actors: ['James Franco', '	Selena Gomez', 'Vanessa Hudgens', 'Ashley Benson'],
     synopsis: 'Four college girls hold up a restaurant in order to fund their spring break vacation. While partying, drinking, and taking drugs, they are arrested, only to be bailed out by a drug and arms dealer. ',
     locationFilmed: ['Florida, USA'],
     genres: ['Crime'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 2,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [1]
+    }]
   } , {
     createdBy: userIds[4],
     name: 'Brokeback Mountain',
@@ -184,7 +230,18 @@ const movieData = [
     synopsis: 'Two young men, Ennis Del Mar and Jack Twist, meet when they get a job as sheep herders on Brokeback Mountain. They are at first strangers, then they become friends. Throughout the weeks, they grow closer as they learn more about each other. One night, after some heavy drinking, they find a deeper connection. They then indulge in a blissful romance for the rest of the summer. Unable to deal with their feelings for each other, they part ways at the end of the summer. Four years go by, and they each settle down, Ennis in Wyoming with his wife and two girls, and Jack in Texas with his wife and son. Still longing for each other, they meet back up, and are faced with the fact that they need each other. They undeniably need each other, and unsure of what to do, they start a series of "fishing trips", in order to spend time together. The relationship struggles on for years until tragedy strikes.',
     locationFilmed: ['USA' , 'Canada'],
     genres: [' Drama' , 'Romance'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review',
+      rating: 2,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [1]
+    },
+    {
+      title: 'Sensible Review Title',
+      rating: 4,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [0]
+    }]
   } , {
     createdBy: userIds[2],
     name: 'The Ring',
@@ -198,7 +255,12 @@ const movieData = [
     synopsis: 'A journalist must investigate a mysterious videotape which seems to cause the death of anyone one week to the day after they view it.',
     locationFilmed: ['Malibou Lake, California, USA'],
     genres: ['Horror' , 'Mystery'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 2,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [1]
+    }]
   } , {
     createdBy: userIds[0],
     name: 'Shrek',
@@ -212,7 +274,18 @@ const movieData = [
     synopsis: 'After his swamp is filled with magical creatures, Shrek agrees to rescue Princess Fiona for a villainous lord in order to get his land back.',
     locationFilmed: ['USA'],
     genres: ['Animation' , 'Adventure' , 'Comedy', 'Fantasy'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 5,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [1]
+    },
+    {
+      title: 'Sensible Review Title',
+      rating: 5,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [0]
+    }]
   } , {
     createdBy: userIds[0],
     name: 'The Godfather',
@@ -226,7 +299,18 @@ const movieData = [
     synopsis: 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
     locationFilmed: ['USA'],
     genres: ['Crime', 'Drama'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 2,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [1]
+    },
+    {
+      title: 'Sensible Review Title',
+      rating: 4,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [0]
+    }]
   }, {
     createdBy: userIds[3],
     name: 'La La Land',
@@ -240,7 +324,12 @@ const movieData = [
     synopsis: 'While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.',
     locationFilmed: [' Los Angeles, California, USA'],
     genres: [' Comedy' , 'Drama'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 5,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [3]
+    }]
   }, {
     createdBy: userIds[2],
     name: 'Four Weddings and a Funeral',
@@ -254,7 +343,12 @@ const movieData = [
     synopsis: 'The film follows the fortunes of Charles and his friends as they wonder if they will ever find true love and marry. Charles thinks hes found "Miss Right" in Carrie, an American. This British subtle comedy revolves around Charlie, his friends and the four weddings and one funeral which they attend.',
     locationFilmed: ['United Kingdom'],
     genres: [' Comedy' , 'Drama', 'Romance'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 5,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [3]
+    }]
   }, {
     createdBy: userIds[0],
     name: 'Finding Nemo',
@@ -268,7 +362,18 @@ const movieData = [
     synopsis: 'A clown fish named Marlin lives in the Great Barrier Reef and loses his son, Nemo, after he ventures into the open sea, despite his fathers constant warnings about many of the oceans dangers. Nemo is abducted by a boat and netted up and sent to a dentists office in Sydney. While Marlin ventures off to try to retrieve Nemo, Marlin meets a fish named Dory, a blue tang suffering from short-term memory loss. The companions travel a great distance, encountering various dangerous sea creatures such as sharks, anglerfish and jellyfish, in order to rescue Nemo from the dentists office, which is situated by Sydney Harbour. While the two are searching the ocean far and wide, Nemo and the other sea animals in the dentists fish tank plot a way to return to the sea to live their lives free again.',
     locationFilmed: ['United States of America'],
     genres: [' Animation' , 'Adventure', 'Family', 'Fantasy', 'Comedy'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 5,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [3]
+    },
+    {
+      title: 'Sensible Review Title',
+      rating: 4,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [0]
+    }]
   }, {
     createdBy: userIds[1],
     name: 'Avatar',
@@ -282,7 +387,12 @@ const movieData = [
     synopsis: 'When his brother is killed in a robbery, paraplegic Marine Jake Sully decides to take his place in a mission on the distant world of Pandora. There he learns of greedy corporate figurehead Parker Selfridges intentions of driving off the native humanoid Navi in order to mine for the precious material scattered throughout their rich woodland. In exchange for the spinal surgery that will fix his legs, Jake gathers intel for the cooperating military unit spearheaded by gung-ho Colonel Quaritch, while simultaneously attempting to infiltrate the Navi people with the use of an "avatar" identity. While Jake begins to bond with the native tribe and quickly falls in love with the beautiful alien Neytiri, the restless Colonel moves forward with his ruthless extermination tactics, forcing the soldier to take a stand - and fight back in an epic battle for the fate of Pandora.',
     locationFilmed: ['United States of America'],
     genres: [' Animation' , 'Adventure', 'Family', 'Fantasy', 'Comedy'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 5,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [1]
+    }]
   }, {
     createdBy: userIds [3],
     name: 'The Lives of Others',
@@ -296,7 +406,12 @@ const movieData = [
     synopsis: 'In 1984 East Berlin, an agent of the secret police, conducting surveillance on a writer and his lover, finds himself becoming increasingly absorbed by their lives.',
     locationFilmed: ['Berlin, Germany'],
     genres: ['Drama', 'Thriller'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 5,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [3]
+    }]
   }, {
     createdBy: userIds [1],
     name: 'Leon',
@@ -310,7 +425,12 @@ const movieData = [
     synopsis: 'Mathilda, a 12-year-old girl, is reluctantly taken in by Léon, a professional assassin, after her family is murdered. Léon and Mathilda form an unusual relationship, as she becomes his protégée and learns the assassin/s trade.',
     locationFilmed: ['New York'],
     genres: ['Crime', 'Drama', 'Thriller'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 5,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [1]
+    }]
   }, {
     createdBy: userIds [3],
     name: 'City of God',
@@ -324,7 +444,12 @@ const movieData = [
     synopsis: 'In the slums of Rio, two kids paths diverge as one struggles to become a photographer and the other a kingpin.',
     locationFilmed: ['Rio de Janeiro'],
     genres: ['Crime', 'Drama'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 5,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [3]
+    }]
   }, {
     createdBy: userIds [0],
     name: 'Aladdin and the Return of Jafar',
@@ -338,7 +463,12 @@ const movieData = [
     synopsis: 'Jafar comes for revenge on Aladdin, using a foolish thief and Iagos treachery to find a way back into power.',
     locationFilmed: ['USA'],
     genres: ['Animation', 'Adventure', 'Comedy'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 5,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [1]
+    }]
   }, {
     createdBy: userIds [4],
     name: 'The Killing Fields',
@@ -352,7 +482,12 @@ const movieData = [
     synopsis: 'A journalist is trapped in Cambodia during tyrant Pol Pot/s bloody Year Zero cleansing campaign, which claimed the lives of two million undesirable civilians.' ,
     locationFilmed: ['USA'],
     genres: ['Biography', 'Drama', 'History'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 5,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [3]
+    }]
   }, {
     createdBy: userIds [3],
     name: 'Scream',
@@ -366,7 +501,12 @@ const movieData = [
     synopsis: 'A year after the murder of her mother, a teenage girl is terrorized by a new killer, who targets the girl and her friends by using horror films as part of a deadly game.',
     locationFilmed: ['California'],
     genres: ['Horror', 'Mystery'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 5,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [1]
+    }]
   }, {
     createdBy: userIds [2],
     name: 'Lost in Translation',
@@ -380,7 +520,12 @@ const movieData = [
     synopsis: 'A faded movie star and a neglected young woman form an unlikely bond after crossing paths in Tokyo.',
     locationFilmed: ['Tokyo'],
     genres: ['Drama'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 5,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [3]
+    }]
   }, {
     createdBy: userIds [1],
     name: 'The Shining',
@@ -394,7 +539,12 @@ const movieData = [
     synopsis: 'A family heads to an isolated hotel for the winter where an evil spiritual presence influences the father into violence, while his psychic son sees horrific forebodings from the past and of the future.',
     locationFilmed: ['Stansted Airport'],
     genres: ['Drama', 'Horror'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 1,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [2]
+    }]
   }, {
     createdBy: userIds [0],
     name: 'The Lion King',
@@ -408,7 +558,12 @@ const movieData = [
     synopsis: 'A Lion cub crown prince is tricked by a treacherous uncle into thinking he caused his fathers death and flees into exile in despair, only to learn in adulthood his identity and his responsibilities.',
     locationFilmed: ['California'],
     genres: ['Animation', 'Adventure'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 1,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [2]
+    }]
   }, {
     createdBy: userIds [4],
     name: 'Amelie',
@@ -422,7 +577,12 @@ const movieData = [
     synopsis: 'Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love.',
     locationFilmed: ['France'],
     genres: ['Comedy', 'Romance'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 1,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [2]
+    }]
   }, {
     createdBy: userIds [3],
     name: 'Gladiator',
@@ -436,7 +596,12 @@ const movieData = [
     synopsis: 'A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.',
     locationFilmed: ['Morocco'],
     genres: ['Action', 'Adventure', 'Drama'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 1,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [2]
+    }]
   }, {
     createdBy: userIds [2],
     name: 'Y Tu Mamá También',
@@ -450,7 +615,12 @@ const movieData = [
     synopsis: 'In Mexico, two teenage boys and an attractive older woman embark on a road trip and learn a thing or two about life, friendship, sex, and each other.' ,
     locationFilmed: ['Mexico'],
     genres: ['Addenture', 'Comedy', 'Drama'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 1,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [2]
+    }]
   }, {
     createdBy: userIds [1],
     name: 'Howls Moving Castle',
@@ -464,7 +634,12 @@ const movieData = [
     synopsis: 'When an unconfident young woman is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking castle.',
     locationFilmed: ['USA'],
     genres: ['Animation', 'Adventure', 'Fantasy'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 1,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [1]
+    }]
   }, {
     createdBy: userIds [0],
     name: 'The Godfather',
@@ -478,7 +653,12 @@ const movieData = [
     synopsis: 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
     locationFilmed: [ 'New York'],
     genres: ['Crime', 'Drama'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 1,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [0]
+    }]
   }, {
     createdBy: userIds [4],
     name: 'Play it again, Sam',
@@ -492,7 +672,12 @@ const movieData = [
     synopsis: 'A neurotic film critic obsessed with the movie Casablanca (1942) attempts to get over his wife leaving him by dating again with the help of a married couple and his illusory idol, Humphrey Bogart.',
     locationFilmed: [ 'San Francisco'],
     genres: ['Comedy', 'Romance'],
-    reviews: []
+    reviews: [{
+      title: 'Sensible Review Title',
+      rating: 1,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      createdBy: userIds [2]
+    }]
   }
 ];
 
