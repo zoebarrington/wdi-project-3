@@ -16,9 +16,9 @@
       <button class="button">🎥</button>
       <hr>
     </form>
-    <button id= "clearButton" ng-click="clearFilters()">Clear Filters</button>
     <div id="genreFilter">
-      <h2><strong>Genres</strong></h2>
+      <h2 class="aside-headers"><strong>Genres</strong>({{ genres.length }})</h2>
+      <button class="indexButtons" ng-click="clearFilters()">Clear Filters</button>
     </div>
     <div id="genre-name" ng-repeat="genre in genres | orderBy:'name'" ng-click="filterGenres(genre)">
       {{ genre.name }}
@@ -27,7 +27,7 @@
 
 
   <div class="columns is-multiline column is-8">
-    <h1 class="index-title title is-2">{{ title }} Films:</h1>
+    <h1 class="index-title title is-2">{{ title.toUpperCase() }} FILMS</h1>
     <div ng-repeat="movie in filteredMovies | orderBy:'-averageRating'" class="column is-2">
       <a ui-sref="movieShow({ id: movie._id })">
         <div class="card">
@@ -46,7 +46,7 @@
     </div>
   </div>
   <div class="upcoming-releases column is-2">
-    <p>Upcoming Releases</p>
+    <p class="aside-headers"><strong>Upcoming Releases</strong>({{ releases.length }})</p>
     <div ng-repeat="release in releases">
        <strong>{{ release.title }}</strong>
        {{ release.release_date }}
