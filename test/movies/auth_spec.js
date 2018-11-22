@@ -8,6 +8,7 @@ const userIds = [
 
 let user;
 
+
 const userData =
   {
     _id: userIds [0],
@@ -41,24 +42,6 @@ describe('user REGISTER', () => {
       });
   });
 
-// it('should return a 401 response without a token', done => {
-//   api.post('/api/register')
-//     .end((err, res) => {
-//       expect(res.status).to.eq(401);
-//       done();
-//     });
-// });
-
-// it('should return a 200 response with a token', done => {
-//   api.post('/api/login')
-//     .set('Authorization', `Bearer ${token}`)
-//     .send(userData)
-//     .end((err, res) => {
-//       console.log('token ==>', token);
-//       expect(res.status).to.eq(200);
-//       done();
-//     });
-// });
 
   it('should return the correct message', done => {
     api.post('/api/login')
@@ -68,4 +51,23 @@ describe('user REGISTER', () => {
         done();
       });
   });
+});
+
+it('should return a valid token', done => {
+  api.post('/api/login')
+    .send(userData)
+    .end((err, res) => {
+      expect(res.body.token).to.eq(userData.token);
+      done();
+    });
+});
+
+it('should return a 401 response if password is invalid', done => {
+  api.post('/api/login')
+    .send(userData)
+    .end((err, res) => {
+      expect(res.body.password).to.not.eq(userData.password);
+      expect(res.status).to.eq(401);
+      done();
+    });
 });
