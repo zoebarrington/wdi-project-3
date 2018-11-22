@@ -569,7 +569,6 @@ div#slider {
   top: 20vh;
   right: 5vw;
   width: 25vw;
-  height: 50vh;
   border-radius: 25px;
   border: 1px solid;
   background-color: white;
@@ -577,10 +576,15 @@ div#slider {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  padding: 1vh;
+  padding: 1vh 1vh 5vh 1vh;
   h1{
     font-weight: bold;
     font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .suggestion{
+    width: 100%;
   }
 }
 

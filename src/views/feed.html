@@ -1,5 +1,8 @@
 <div class="suggestions-wrapper">
   <h1>Follow Suggestions</h1>
+  <div class="suggestion" ng-repeat="suggestion in suggestions | orderBy:'-moviesReviewed.length'">
+    {{suggestion.username}}
+  </div>
 </div>
 <div class="feed-wrapper">
   <h1 class="title is-2" ng-if="feedContent.length === 0">FOLLOW SOME REVIEWERS TO SEE THEIR LATEST REVIEWS HERE</h1>

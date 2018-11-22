@@ -5,9 +5,12 @@ function feedCtrl($scope, $http, $auth, $state) {
   }).then(result => {
     $scope.users = result.data;
     $scope.following = [];
+    $scope.suggestions = [];
     for(let i = 0; i < $scope.users.length; i++){
       if($scope.users[i].followedBy.includes($scope.userId)){
         $scope.following.push($scope.users[i]);
+      } else if($scope.users[i]._id !== $scope.userId) {
+        $scope.suggestions.push($scope.users[i]);
       }
     }
     $scope.feedContent = [];
