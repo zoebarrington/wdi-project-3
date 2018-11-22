@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container hero is-light-title is-fullheight">
   <form ng-submit="handleSubmit()">
     <div class="field">
       <label class="label">Title</label>
@@ -8,8 +8,8 @@
     </div>
     <div class="field">
       <label class="label">Year Released</label>
-      <div class="control">
-        <input class="input" ng-model="movie.yearReleased" placeholder="Year Released">
+      <div class="control has-icons-left has icons-right">
+        <input class="input is success" type="text" ng-model="movie.yearReleased" placeholder="Year Released">
       </div>
     </div>
     <div class="field">
@@ -51,7 +51,7 @@
     <div class="field">
       <label class="label">Synopsis</label>
       <div class="control">
-        <input class="input" ng-model="movie.synopsis" placeholder="Synopsis">
+        <input class="input" type="ng-model="movie.synopsis" placeholder="Synopsis">
       </div>
     </div>
     <div class="field">
