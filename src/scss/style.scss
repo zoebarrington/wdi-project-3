@@ -10,6 +10,8 @@
 
 }
 
+.columns { align-content: start }
+
 .navbar{
   background-color: black;
   .navbar-item.has-dropdown.is-hoverable .navbar-link{
@@ -396,6 +398,7 @@
   color: white;
   font-weight: bold;
   text-decoration: none;
+  border-radius: 60px;
 }
 
 //carousel animation
