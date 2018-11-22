@@ -1,4 +1,4 @@
-function feedCtrl($scope, $http) {
+function feedCtrl($scope, $http, $auth, $state) {
   $http({
     method: 'GET',
     url: '/api/feed'
@@ -15,13 +15,39 @@ function feedCtrl($scope, $http) {
       user.moviesReviewed.forEach(function(movie){
         movie.reviews.forEach(function(review){
           if(review.createdBy === user._id){
-            review.createdBy = user;
+            review.movieId = movie._id;
+            review.movieName = movie.name;
+            review.movieImage = movie.image;
+            review.creatorId = user._id;
+            review.creatorUsername = user.username;
+            review.creatorProfilePicture = user.profilePicture;
             $scope.feedContent.push(review);
           }
         });
       });
     });
   });
+  $scope.like = function(review){
+    console.log(review);
+    if($auth.isAuthenticated() && review.createdBy._id !== $scope.userId){
+      if(review.likedBy.includes($scope.userId)){
+        const index = review.likedBy.indexOf($scope.userId);
+        review.likedBy.splice(index, 1);
+        $http({
+          method: 'PUT',
+          url: `/api/movies/${review.movieId}/reviews/${review._id}`,
+          data: review
+        }).then(() => $state.go('feed'));
+      }else{
+        review.likedBy.push($scope.userId);
+        $http({
+          method: 'PUT',
+          url: `/api/movies/${review.movieId}/reviews/${review._id}`,
+          data: review
+        }).then(() => $state.go('feed'));
+      }
+    }
+  };
 }
 
 export default feedCtrl;
