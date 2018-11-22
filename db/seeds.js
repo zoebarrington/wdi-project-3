@@ -73,9 +73,9 @@ const movieData = [
     locationFilmed: ['London', 'Surrey', 'France'],
     genres: ['Comedy', 'Romance'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 4,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'A let down',
+      rating: 2,
+      content: 'Love? Actually, no. More like disappointment, and, at times, hatred. I wanted so much to love Richard Curtiss directorial debut, expected to love it too. Yet, even though its makers would have us believe were curmudgeons if we dont grin and lap up the film, it really is a stale and contrived let-down.',
       createdBy: userIds [0]
     }]
   }, {
@@ -92,9 +92,9 @@ const movieData = [
     locationFilmed: ['South Africa', 'Mozambique'],
     genres: ['Adventure', 'Drama', 'Thriller', 'Action'],
     reviews: [{
-      title: 'Sensible Title',
+      title: 'Surprisingly Intense',
       rating: 4,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      content: 'Blood Diamond is a surprisingly intense and informative movie that the general public needs to see. Yet, the box office viewing is evidence of what America does to Africa on a general level (turning a blind eye) that its no surprise it never earned a #1 spot. Still, I believe it to be one of the best movies Ive seen this year. Leonardo DiCaprio, similar to his performance in The Departed, is believable, strong, and convincing. The story is strong; the cinematography is excellent; and overall, Blood Diamond does everything I want a movie to do (to educate, captivate, and be enjoyable.',
       createdBy: userIds [0]
     }]
   }, {
@@ -130,9 +130,9 @@ const movieData = [
     locationFilmed: ['Tripoli', 'Hampshire'],
     genres: ['Drama'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 4,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Really enjoyed it!',
+      rating: 5,
+      content: 'The film has flawed, interesting characters. It’s as much a drama about the mental impact of war and alcoholism as it is a war movie. Mills’ Anson is a troubled character who’s hard to warm to. Mills plays him well enough for the audience to care though, bringing out the human frailty behind his bitter attacks on those around him. Quayle’s van der Poel is an interesting addition to the bunch too. His arrogant macho posturing hiding some secrets to be revealed further down the line. Murdoch and Pugh are a bit bland, but filling the film with tough, troubled types might make for a group that is difficult to root for. I didn’t buy the love story shoe-horned in towards the end though.',
       createdBy: userIds [0]
     }]
   }, {
@@ -149,9 +149,9 @@ const movieData = [
     locationFilmed: ['Bass Lake, California'],
     genres: ['Comedy'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 4,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Just love mice!!',
+      rating: 5,
+      content: 'Really enjoyed the hunt for the smartest mouse in history!!',
       createdBy: userIds [0]
     }]
   }, {
@@ -187,15 +187,15 @@ const movieData = [
     locationFilmed: ['Paris, France'],
     genres: ['Drama'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 2,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Brilliant',
+      rating: 5,
+      content: 'This movie is an absolute masterpiece. "Professional" critics, get over yourselves and watch it again instead of rating boring turds like Civil War and 10 Cloverfield Lane at 100.',
       createdBy: userIds [1]
     },
     {
-      title: 'Sensible Title',
-      rating: 4,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Underwhelming',
+      rating: 2,
+      content: 'Really found this film underwhelming...expected much more from the reviews.',
       createdBy: userIds [0]
     }]
   }, {
@@ -212,9 +212,9 @@ const movieData = [
     locationFilmed: ['Florida, USA'],
     genres: ['Crime'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 2,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Really truly terrible',
+      rating: 1,
+      content: 'One of the worst films Ive ever seen.',
       createdBy: userIds [1]
     }]
   } , {
@@ -231,15 +231,15 @@ const movieData = [
     locationFilmed: ['USA' , 'Canada'],
     genres: [' Drama' , 'Romance'],
     reviews: [{
-      title: 'Sensible Review',
-      rating: 2,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Beautiful film',
+      rating: 5,
+      content: 'A beautiful, epic Western, Brokeback Mountains love story is imbued with heartbreaking universality thanks to moving performances by Heath Ledger and Jake Gyllenhaal.',
       createdBy: userIds [1]
     },
     {
-      title: 'Sensible Title',
+      title: 'A truly great love story',
       rating: 4,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      content: 'Like all great love stories, Ang Lees is one of tragic romance, strongly acted by Heath Ledger as the most buttoned-up of cowboys, and Michelle Williams as his betrayed and enraged wife.',
       createdBy: userIds [0]
     }]
   } , {
@@ -256,9 +256,9 @@ const movieData = [
     locationFilmed: ['Malibou Lake, California, USA'],
     genres: ['Horror' , 'Mystery'],
     reviews: [{
-      title: 'Sensible Title',
+      title: 'Ridiculous',
       rating: 2,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      content: 'Rarely has a more serious effort produced a less serious result than in "The Ring," the kind of dread dark horror film where you better hope nobody in the audience snickers, because the film teeters right on the edge of the ridiculous.',
       createdBy: userIds [1]
     }]
   } , {
@@ -275,15 +275,15 @@ const movieData = [
     locationFilmed: ['USA'],
     genres: ['Animation' , 'Adventure' , 'Comedy', 'Fantasy'],
     reviews: [{
-      title: 'Sensible Title',
+      title: 'Good quality entertainment',
       rating: 5,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      content: 'Im not one of those persons who praises Shrek all the time as one of the greatest movies ever made, like many other persons seem to do. Quite frankly I never really understood what the hype was all about. But still you have to give credit to this movie, its very entertaining and fun to watch over and over again. A good sidekick is always important, especially in an animated movie. A good sidekick can make the movie better but a bad sidekick can really ruin a movie. "Shrek" doesnt have a good sidekick...it has an excellent sidekick! Donkey is a wonderful and entertaining character thanks to Eddie Murphy who voiced him. The other main voices are provided by Mike Myers, Cameron Diaz and John Lithgow.',
       createdBy: userIds [1]
     },
     {
-      title: 'Sensible Title',
+      title: 'Too scary for kids',
       rating: 5,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      content: 'Shrek is quite scary. My kids were scared. This is too scary for a disney film.',
       createdBy: userIds [0]
     }]
   } , {
@@ -654,9 +654,9 @@ const movieData = [
     locationFilmed: [ 'New York'],
     genres: ['Crime', 'Drama'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 1,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'My favourite film',
+      rating: 5,
+      content: 'I love the godfather. Marlin Brandos husky dulcet tones warm the viewers cockles.',
       createdBy: userIds [0]
     }]
   }, {
@@ -673,9 +673,9 @@ const movieData = [
     locationFilmed: [ 'San Francisco'],
     genres: ['Comedy', 'Romance'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 1,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Too much coherence',
+      rating: 3,
+      content: 'Maybe the movie has too much coherence, and the plot is too predictable; thats a weakness of films based on well-made Broadway plays. Still, thats hardly a serious complaint about something as funny as Play It Again, Sam.',
       createdBy: userIds [2]
     }]
   }

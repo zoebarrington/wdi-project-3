@@ -1,4 +1,13 @@
-<div class="container">
+<section id="new-form" class="hero is-light-title is-fullheight">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="column is-4 is-offset-4" style="border: solid black;">
+        <h3 class="title has-text-black">Spot a Film</h3>
+        <p class="subtitle has-text-black">Add your favourite film!</p>
+        <div class="new-box">
+          <figure class="black">
+            <img style="height: 100px; width: 100px;" ng-src="https://in.bookmyshow.com/entertainment/wp-content/uploads/2014/09/filmreel.jpg">
+          </figure>
   <form ng-submit="handleSubmit()">
     <div class="field">
       <label class="label">Title</label>
@@ -51,7 +60,7 @@
     <div class="field">
       <label class="label">Synopsis</label>
       <div class="control">
-        <input class="input" ng-model="movie.synopsis" placeholder="Synopsis" required>
+        <textarea class="textarea" ng-model="movie.synopsis" placeholder="Synopsis" required></textarea>
       </div>
     </div>
     <div class="field">
@@ -66,6 +75,6 @@
         <input class="input" ng-model="movie.genres" placeholder="Genres" required>
       </div>
     </div>
-    <button class="button is-rounded">ADD</button>
+    <button class="login-button button is-block is-info is-large is-fullwidth"  style="background-color: black; ">ADD</button>
   </form>
-</div>
+</section>
