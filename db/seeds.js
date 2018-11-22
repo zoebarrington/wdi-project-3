@@ -117,7 +117,7 @@ const movieData = [
     reviews: []
   }, {
     createdBy: userIds[0],
-    name: 'MouseHunt',
+    name: 'Mouse Hunt',
     yearReleased: 1997,
     movieLength: '1h 38mins',
     coverPhoto: 'https://wallpapersin4k.net/wp-content/uploads/2017/02/Mousehunt-Movie-Wallpapers-3.jpg',
