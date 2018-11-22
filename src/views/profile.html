@@ -23,23 +23,21 @@
       </div>
     </div>
   </div>
-  <div class="profile-review-box media">
-    <figure class="media-left" >
-      <p class="image is-64x64">
-        <img ng-src=" {{ user.profilePicture }}">
-      </p>
-    </figure>
-    <div class="media-content"ng-repeat="movie in user.moviesReviewed">
-      <div class="content" ng-repeat="review in movie.reviews">
-        <p><strong> {{ review.title }} reviewed by {{ user.username }}</strong>
-          <span>{{ review.content }}</span>
-        </p>
+</div>
+<div class="review-box">
+  <div class="reviews">
+    <div class="review" ng-repeat="review in userReviews | orderBy:'-time'">
+      <h4>{{review.title.toUpperCase()}} - {{ review.movieName }}</h4>
+      <p>{{ "🎬".repeat(review.rating) }}</p>
+      <div class="user-wrapper">
+          <img ui-sref="movieShow({ id: review.movieId })" src="{{ review.movieImage }}" alt="{{ review.movieName}}">
       </div>
-      <hr></hr>
-      <nav class="level is-mobile">
-        <div class="level-left">
-        </div>
-      </nav>
+      <span>{{ review.content }}</span>
+      <div class="like-wrapper">
+        <i ng-if="review.likedBy.includes(userId)" ng-click="like(review)" class="fas fa-thumbs-up"></i>
+        <i ng-if="!review.likedBy.includes(userId)" ng-click="like(review)" class="far fa-thumbs-up"></i>
+        <span>{{ review.likedBy.length }} like</span><span ng-if="review.likedBy.length !== 1">s</span><span ng-if="review.likedBy.length === 1"></span>
+      </div>
     </div>
   </div>
 </div>

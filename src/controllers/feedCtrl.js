@@ -28,7 +28,6 @@ function feedCtrl($scope, $http, $auth, $state) {
     });
   });
   $scope.like = function(review){
-    console.log(review);
     if($auth.isAuthenticated() && review.createdBy._id !== $scope.userId){
       if(review.likedBy.includes($scope.userId)){
         const index = review.likedBy.indexOf($scope.userId);

@@ -6,7 +6,8 @@
     <span>{{ review.content }}</span>
     <div class="right-review">
       <div class="like-wrapper">
-        <i ng-click="like(review)" class="fas fa-thumbs-up"></i>
+        <i ng-if="review.likedBy.includes(userId)" ng-click="like(review)" class="fas fa-thumbs-up"></i>
+        <i ng-if="!review.likedBy.includes(userId)" ng-click="like(review)" class="far fa-thumbs-up"></i>
         <span>{{ review.likedBy.length }} like</span><span ng-if="review.likedBy.length !== 1">s</span>
       </div>
       <div class="user-wrapper">
