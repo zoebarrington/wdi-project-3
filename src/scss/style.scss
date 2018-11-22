@@ -108,6 +108,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        min-height: 20vh;
         img{
           cursor: pointer;
           height: 200px;
@@ -134,7 +135,7 @@
         margin-top: 1vh;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         width: 15%;
         i{
