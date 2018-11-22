@@ -1,4 +1,19 @@
-<h1>NEWS FEED HERE!!!</h1>
-<div ng-repeat="review in feedContent">
-  {{ review.title }} - {{ review.content }} - {{ review.createdBy.username}}
+<div class="feed-wrapper">
+  <div class="review" ng-repeat="review in feedContent | orderBy:'-time'">
+    <h4 ui-sref="movieShow({ id: review.movieId })">{{review.title.toUpperCase()}} - {{review.movieName}}</h4>
+    <p>{{ "🎬".repeat(review.rating) }}</p>
+    <img class="feed-poster" ui-sref="movieShow({ id: review.movieId })" ng-src="{{ review.movieImage }}" alt="{{ review.movieName }}">
+    <span>{{ review.content }}</span>
+    <div class="right-review">
+      <div class="like-wrapper">
+        <i ng-click="like(review)" class="fas fa-thumbs-up"></i>
+        <span>{{ review.likedBy.length }} like</span><span ng-if="review.likedBy.length !== 1">s</span>
+      </div>
+      <div class="user-wrapper">
+        <figure ui-sref="profileShow({ id: review.creatorId })" class="image is-96x96 ">
+          <img class="is-rounded"src="{{ review.creatorProfilePicture }}" alt="profile pic">
+          <h5>{{ review.creatorUsername }}</h5>
+        </figure>
+      </div>
+    </div>
 </div>
