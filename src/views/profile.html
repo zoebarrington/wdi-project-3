@@ -13,11 +13,11 @@
         <button ng-if="user._id !== userId" ng-click="follow()">{{ buttonName }}</button>
         <button ng-if="user._id === userId" ui-sref="editProfile({ id: user._id})">Edit Profile</button>
       </div>
-      <div class="posts"> 523 <p class="small">Films Spotted</p>
+      <div class="posts"> {{ user.moviesSpotted.length }} <p class="small">Films Spotted</p>
       </div>
-      <div class="posts"> 523 <p class="small">Films Reviewed</p>
+      <div class="posts"> {{ user.moviesReviewed.length }} <p class="small">Films Reviewed</p>
       </div>
-      <div class="likes"> 1387 <p class="small">Likes</p>
+      <div class="likes"> {{ totalLikes }} <p class="small">Review Likes</p>
       </div>
       <div ng-click="follow()" class="followers"> {{ user.followedBy.length }} <p class="small">Followers</p>
       </div>

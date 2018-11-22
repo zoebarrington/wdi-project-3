@@ -5,6 +5,15 @@ function profileCtrl ($state, $scope, $http) {
   })
     .then(result => {
       $scope.user = result.data;
+      let total = 0;
+      $scope.user.moviesReviewed.forEach(function(movie){
+        movie.reviews.forEach(function(review){
+          if(review.createdBy === $scope.user._id){
+            total = total + review.likedBy.length;
+          }
+        });
+      });
+      $scope.totalLikes = total;
       if($scope.user.followedBy.includes($scope.userId)){
         $scope.buttonName = 'Unfollow';
       } else {

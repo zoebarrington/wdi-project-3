@@ -13,11 +13,19 @@ const userSchema = mongoose.Schema({
   }]
 });
 
+
+userSchema.virtual('moviesSpotted', {
+  ref: 'Movie',
+  localField: '_id',
+  foreignField: 'createdBy'
+});
+
 userSchema.virtual('moviesReviewed', {
   ref: 'Movie',
   localField: '_id',
   foreignField: 'reviews.createdBy'
 });
+
 
 userSchema.set('toJSON', {
   virtuals: true
