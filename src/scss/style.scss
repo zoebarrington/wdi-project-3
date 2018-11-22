@@ -11,9 +11,9 @@
 }
 
 .navbar{
-  background-color: dimgrey;
+  background-color: black;
   .navbar-item.has-dropdown.is-hoverable .navbar-link{
-    background-color: dimgrey;
+    background-color: black;
   }
   .navbar-item.has-dropdown.is-hoverable .navbar-link:hover i{
     transform: rotate(180deg);
@@ -28,7 +28,7 @@
     }
     .navbar-dropdown{
       text-align: center;
-      background-color: dimgrey;
+      background-color: black;
       a{
         width: 10vw;
         color: white;
@@ -442,7 +442,7 @@ div#slider {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1F0A02;
+  background-color: #ffffff;
   flex-direction: column;
 }
 .clapper{
@@ -455,6 +455,7 @@ div#slider {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: solid black;
 }
 .slapper{
   background-color: white;
@@ -463,20 +464,37 @@ div#slider {
   display: flex;
   transform: rotate(-7deg);
   transform-origin: bottom left;
+  border: solid black;
 }
 .diag-black{
-  height: inherit;
+  height: 10hv;
   width: 10vw;
   background-color: black;
   transform: skew(-20deg);
   margin-left: 2.5%;
   margin-right: 10%;
 }
+
+@keyframes slap {
+  0% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: none;
+  }
+  100% {
+    transform: rotate(-7deg);
+  }
+}
 .last {
   margin-right: 2.5%;
 }
 .flat {
   transform: none;
+}
+.slapperTop {
+  animation: slap 3s infinite;
+  animation-timing-function: cubic-bezier(1, -0.01, 0.87, 0.4);
 }
 .reverse{
   transform: skew(20deg);

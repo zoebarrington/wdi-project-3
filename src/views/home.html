@@ -1,7 +1,7 @@
 
 <div class="home-container">
   <!-- <h1 ng-if="!isAuthenticated()" class="home-welcome">WELCOME {{username.toUpperCase()}}</h1> -->
-  <div class="slapper">
+  <div class="slapper slapperTop">
     <div class="diag-black"></div>
     <div class="diag-black"></div>
     <div class="diag-black"></div>
@@ -16,7 +16,8 @@
       <div class="reverse diag-black last"></div>
     </div>
     <div ng-if="isAuthenticated()" style="color:white; font-size: 35px;"class="lines">Welcome to Filmspotting {{username.toUpperCase()}}</div>
-    <div style="color:white;" class="lines">Filmspotting is a global social network for film discussion and discovery. We’re your home for logging in, rating and reviewing films. Your source for lists and inspiration and activity stream of passionate film criticism, discussion and discovery. Showcase your favorites on your profile page. Rate and review films as you add them. Find and follow your friends to see what they’re enjoying.</div>
+    <div ng-if="!isAuthenticated()" style="color:white; font-size: 35px; "class="lines">Welcome to Filmspotting </div>
+    <div style="color:white;" class="lines">Filmspotting is a global social network for film discussion and discovery. We’re your home for logging in, rating and reviewing films, your source for lists and inspiration and and activity stream of passionate film criticism, discussion and discovery. Showcase your favorites on your profile page. Rate and review films as you add them. Find and follow your friends to see what they’re enjoying.</div>
     <div class="lines no-color"> Made by Frezeoe</div>
   </div>
 </div>
