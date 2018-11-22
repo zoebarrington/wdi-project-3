@@ -10,8 +10,6 @@
         <p class="bio"></p>
         <strong>Bio:</strong>
         <p>{{ user.bio }}</p>
-        <button ng-if="user._id !== userId" ng-click="follow()">{{ buttonName }}</button>
-        <button ng-if="user._id === userId" ui-sref="editProfile({ id: user._id})">Edit Profile</button>
       </div>
       <div class="posts"> {{ user.moviesSpotted.length }} <p class="small">Films Spotted</p>
       </div>
@@ -19,8 +17,10 @@
       </div>
       <div class="likes"> {{ totalLikes }} <p class="small">Review Likes</p>
       </div>
-      <div ng-click="follow()" class="followers"> {{ user.followedBy.length }} <p class="small">Followers</p>
+      <div class="followers"> {{ user.followedBy.length }} <p class="small">Followers</p>
       </div>
+      <button ng-if="user._id !== userId" ng-click="follow()">{{ buttonName }}</button>
+      <button ng-if="user._id === userId" ui-sref="editProfile({ id: user._id})">Edit Profile</button>
     </div>
   </div>
 </div>

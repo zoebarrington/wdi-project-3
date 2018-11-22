@@ -4,26 +4,26 @@
   <img ng-src="{{ movie.image }}" alt="{{ movie.name }}">
   <div class="stats">
     <div class="rating-display">
-      <h1>Average Rating: {{ "🎬".repeat(movie.averageRating) }}</h1>
+      <h1><strong>Average Rating:</strong> <strong ng-if="movie.reviews.length === 0">NOT REVIEWED</strong>{{ "🎬".repeat(movie.averageRating) }}</h1>
     </div>
-    <p>Director: {{ movie.director }}</p>
+    <p><strong>Director:</strong> {{ movie.director }}</p>
     <div class="writers">
-      Writers:
+      <strong>Writers:</strong>
       <span ng-repeat="writer in movie.writers">{{ writer }}, </span>
     </div>
     <div class="actors">
-      Actors:
+      <strong>Actors:</strong>
       <span ng-repeat=" actor in movie.actors">{{ actor }}, </span>
     </div>
-    <p>Synopsis: {{ movie.synopsis }}</p>
+    <p><strong>Synopsis:</strong> {{ movie.synopsis }}</p>
     <div class="genres">
-      Genres:
+      <strong>Genres:</strong>
       <span ng-repeat=" genre in movie.genres">{{ genre }}, </span>
     </div>
-    <p>Runtime: {{ movie.movieLength }} </p>
-    <p>Release year: {{ movie.yearReleased }}</p>
+    <p><strong>Runtime:</strong> {{ movie.movieLength }} </p>
+    <p><strong>Release year:</strong> {{ movie.yearReleased }}</p>
     <div class="locations">
-      Locations Filmed:
+      <strong>Locations Filmed:</strong>
       <span ng-repeat=" location in movie.locationFilmed">{{ location }}, </span>
     </div>
   </div>

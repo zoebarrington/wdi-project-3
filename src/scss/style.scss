@@ -82,6 +82,7 @@
     .review{
       background-color: white;
       border: 1px solid;
+      border-radius: 25px;
       display: flex;
       flex-wrap: wrap;
       padding-top: 1vh;
@@ -110,6 +111,7 @@
         img{
           cursor: pointer;
           height: 200px;
+          border-bottom-left-radius: 20px;
         }
         figure{
           cursor: pointer;
@@ -206,10 +208,11 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 2vh;
+  border-radius: 30px;
   .stats{
-    border-top: 1px solid;
-    border-bottom: 0;
+    border: 0;
     margin-top: 1vh;
+    padding-bottom: 2vh;
   }
   img{
     width: 20vw;
@@ -219,16 +222,21 @@
     margin-left: 5px;
   }
   p{
-    border-bottom: 1px solid;
+    border-top: 1px solid;
     padding: 3px;
     width: 100%;
   }
   div{
-    border-bottom: 1px solid;
+    border-top: 1px solid;
     padding: 3px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+  }
+  .buttons-box{
+    display: flex;
+    justify-content: center;
+    border: 0;
   }
 }
 .cover-photo{
@@ -561,6 +569,7 @@ div#slider {
   }
   .review{
     margin-bottom: 5vh;
+    border-radius: 25px;
   }
   div{
     border: solid 1px;
@@ -586,6 +595,7 @@ div#slider {
     .feed-poster{
       width: 20%;
       height: 10%;
+      border-bottom-left-radius: 20px;
       cursor: pointer;
     }
     span{
