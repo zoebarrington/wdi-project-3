@@ -111,9 +111,9 @@ const movieData = [
     locationFilmed: ['Ohio', 'Virgin Islands'],
     genres: ['Drama'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 4,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Resonates',
+      rating: 5,
+      content: 'This is a movie that stands the test of time and still resonates with viewers. Call this the Stand by Me of prison stories.',
       createdBy: userIds [0]
     }]
   }, {
@@ -300,15 +300,15 @@ const movieData = [
     locationFilmed: ['USA'],
     genres: ['Crime', 'Drama'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 2,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'A Hollywood success',
+      rating: 4,
+      content: 'One of Hollywoods greatest critical and commercial successes, The Godfather gets everything right; not only did the movie transcend expectations, it established new benchmarks for American cinema.',
       createdBy: userIds [1]
     },
     {
-      title: 'Sensible Title',
-      rating: 4,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Slow start',
+      rating: 3,
+      content: 'The movie doesnt start out great, mainly just character introductions telling us about what type of people they are and their relations with the mafia. After that though the plot kicks in, and it really gets going, the violence is menacing, the story is engaging, and Al Pacinos character development is wonderful. Basically if youre willing to get passed the first thirty minutes or so, its a great watch.',
       createdBy: userIds [0]
     }]
   }, {
@@ -325,9 +325,9 @@ const movieData = [
     locationFilmed: [' Los Angeles, California, USA'],
     genres: [' Comedy' , 'Drama'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 5,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Magical',
+      rating: 3,
+      conent: 'A gorgeously photographed, unashamedly nostalgic, bittersweet marriage of the modern and the traditional, proving Chazelles fantastic eye for musical sequences.',
       createdBy: userIds [3]
     }]
   }, {
@@ -344,9 +344,9 @@ const movieData = [
     locationFilmed: ['United Kingdom'],
     genres: [' Comedy' , 'Drama', 'Romance'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 5,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'A classic British comedy',
+      rating: 4,
+      content: 'A bit predictable but efficient storyline, with definitely funny scenes. I liked the diversity in the characters - well-played by good actors. Another great British comedy just as I love it.',
       createdBy: userIds [3]
     }]
   }, {
@@ -426,9 +426,9 @@ const movieData = [
     locationFilmed: ['New York'],
     genres: ['Crime', 'Drama', 'Thriller'],
     reviews: [{
-      title: 'Sensible Title',
+      title: 'Incredible',
       rating: 5,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      content: 'Luc Bessons original cut feels more like a journey than just a joy-buzzer jolt of action, and the deeper, braver, darker story he set out to tell - a fractured and fractious fairy tale. When people rave about The Professional, they mean Léon.',
       createdBy: userIds [1]
     }]
   }, {
@@ -445,9 +445,9 @@ const movieData = [
     locationFilmed: ['Rio de Janeiro'],
     genres: ['Crime', 'Drama'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 5,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Compelling',
+      rating: 4,
+      content: 'A shocking and disturbing, but always compelling look at life in the slums of Rio de Janiero.',
       createdBy: userIds [3]
     }]
   }, {
@@ -464,9 +464,9 @@ const movieData = [
     locationFilmed: ['USA'],
     genres: ['Animation', 'Adventure', 'Comedy'],
     reviews: [{
-      title: 'Sensible Title',
+      title: 'A family favourite!',
       rating: 5,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      content: 'Aladdin is a family favourite of ours! The kids and my husband love it and its the perfect after dinner movie. Would highly recommend as a Sunday night classic!',
       createdBy: userIds [1]
     }]
   }, {
@@ -483,9 +483,9 @@ const movieData = [
     locationFilmed: ['USA'],
     genres: ['Biography', 'Drama', 'History'],
     reviews: [{
-      title: 'Sensible Title',
+      title: 'Artfully composed',
       rating: 5,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      content: 'Artfully composed, powerfully acted, and fueled by a powerful blend of anger and empathy, The Killing Fields is a career-defining triumph for director Roland Joffé and a masterpiece of American cinema.',
       createdBy: userIds [3]
     }]
   }, {
@@ -502,9 +502,9 @@ const movieData = [
     locationFilmed: ['California'],
     genres: ['Horror', 'Mystery'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 5,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Limited shock value',
+      rating: 2,
+      content: 'By the time Scream arrives at its final twist, Craven has done too many contortions of his own to give the finale much shock value.',
       createdBy: userIds [1]
     }]
   }, {
@@ -523,7 +523,7 @@ const movieData = [
     reviews: [{
       title: 'Sensible Title',
       rating: 5,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      content: 'review',
       createdBy: userIds [3]
     }]
   }, {
@@ -540,9 +540,9 @@ const movieData = [
     locationFilmed: ['Stansted Airport'],
     genres: ['Drama', 'Horror'],
     reviews: [{
-      title: 'Sensible Title',
+      title: 'Except for the scenery, nothing is good in this film',
       rating: 1,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      content: 'Except the scenery, nothing is good in this film. Lets start with the actors. Jack Nicholson puts on a horrendous performance, i will say that much. The woman, cant even remember her name, is one of the worst actors I have ever seen. She was just annoying and I was pleading for her to die throughout the movie. The little boy and his slobbering fits made me want to puke.',
       createdBy: userIds [2]
     }]
   }, {
@@ -559,9 +559,9 @@ const movieData = [
     locationFilmed: ['California'],
     genres: ['Animation', 'Adventure'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 1,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Sexual innuendo...I think so',
+      rating: 3,
+      content: ' We must assume that the lion king is the first disney animation to contain a fart joke. or be it one aimed over the head of the younger members of its audience or tailored to its baby boomer parents. Theres also a moment when you could swear that our leonine lover are about to make the two back to beast, as they no doubt would if this was live action.',
       createdBy: userIds [2]
     }]
   }, {
@@ -578,9 +578,9 @@ const movieData = [
     locationFilmed: ['France'],
     genres: ['Comedy', 'Romance'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 1,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Choccy Souffle',
+      rating: 4,
+      content: 'This film is filled with aery, whimsical charm the way that a chocolate souffle is filled with air.',
       createdBy: userIds [2]
     }]
   }, {
@@ -597,9 +597,9 @@ const movieData = [
     locationFilmed: ['Morocco'],
     genres: ['Action', 'Adventure', 'Drama'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 1,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Plugged in',
+      rating: 3,
+      content: 'Ancient Rome is thriving, after general maximus leads the Roman legions to victory in the final battle of the germanic tribes, he wants to go home. Gladiator is a movie of such astounding scope and sweep and such masterful story-telling that it makes its story-line seem classic rather than cliche.',
       createdBy: userIds [2]
     }]
   }, {
@@ -616,9 +616,9 @@ const movieData = [
     locationFilmed: ['Mexico'],
     genres: ['Addenture', 'Comedy', 'Drama'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 1,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Provocative',
+      rating: 3,
+      content: 'A remarkable achievement to take two mostly unlikeable, raunchy teens and craft a bitter sweet, moving, coming of age movie that has you rooting for the boys almost before you know it.',
       createdBy: userIds [2]
     }]
   }, {
@@ -635,9 +635,9 @@ const movieData = [
     locationFilmed: ['USA'],
     genres: ['Animation', 'Adventure', 'Fantasy'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 1,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'A true masterpiece',
+      rating: 4,
+      content: 'Just as Miyazaki seemed on the verge of properly crossing over, he serves up an animi-riddle wrapped in enigma - though with all his usual charm, wit and hand-drawn beauty.',
       createdBy: userIds [1]
     }]
   }, {
