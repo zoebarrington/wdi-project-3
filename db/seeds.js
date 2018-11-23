@@ -551,7 +551,7 @@ const movieData = [
     yearReleased: '1994',
     movieLength: '1h 28min',
     image: 'https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_UX182_CR0,0,182,268_AL_.jpg' ,
-    coverPhoto: 'https://images6.alphacoders.com/824/thumb-1920-824081.jpg',
+    coverPhoto: 'https://i.imgur.com/Q4hDifF.jpg?1',
     writers: ['Irene Mecchi', 'Jonathan Roberts'],
     director: 'Roger Allers',
     actors: ['Matthew Broderick', 'Jeremy Irons', 'James Earl Jones'],
