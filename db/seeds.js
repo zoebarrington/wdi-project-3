@@ -641,25 +641,6 @@ const movieData = [
       createdBy: userIds [1]
     }]
   }, {
-    createdBy: userIds [0],
-    name: 'The Godfather',
-    yearReleased: '1972',
-    movieLength: '2h 55min ',
-    image: 'https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL_.jpg' ,
-    coverPhoto: 'https://images8.alphacoders.com/461/thumb-1920-461502.jpg',
-    writers: ['Mario Puzo', 'Francis Ford Coppola'],
-    director: 'Francis Ford Coppola',
-    actors: ['Marlon Brando', 'Al Pacino', 'James Caan'],
-    synopsis: 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
-    locationFilmed: [ 'New York'],
-    genres: ['Crime', 'Drama'],
-    reviews: [{
-      title: 'My favourite film',
-      rating: 5,
-      content: 'I love the godfather. Marlin Brandos husky dulcet tones warm the viewers cockles.',
-      createdBy: userIds [0]
-    }]
-  }, {
     createdBy: userIds [4],
     name: 'Play it again, Sam',
     yearReleased: '1972',
@@ -677,6 +658,64 @@ const movieData = [
       rating: 3,
       content: 'Maybe the movie has too much coherence, and the plot is too predictable; thats a weakness of films based on well-made Broadway plays. Still, thats hardly a serious complaint about something as funny as Play It Again, Sam.',
       createdBy: userIds [2]
+    }]
+    // here is new code
+  }, {
+    createdBy: userIds[0],
+    name: 'Mrs Doubtfire',
+    yearReleased: '1993',
+    movieLength: '2h 5min',
+    image: 'https://m.media-amazon.com/images/M/MV5BMjExMDUzODE1N15BMl5BanBnXkFtZTgwNTU5NTYxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg',
+    coverPhoto: 'https://images6.alphacoders.com/438/thumb-1920-438053.jpg',
+    writers: ['Anne Fine', 'Randi Mayem Singer'],
+    director: 'Chris Columbus',
+    actors: ['Robin Williams', 'Sally Field', 'Pierce Brosnan'],
+    synopsis: 'After a bitter divorce, an actor disguises himself as a female housekeeper to spend time with his children held in custody by his former wife.',
+    locationFilmed: 'California',
+    genres: ['Comedy', 'Drama'],
+    reviews: [{
+      title: 'Titillating',
+      rating: 5,
+      content: 'Every time I see it, I hose myself with laughter. If you have not seen it, then you need to download it or buy it.',
+      createdBy: userIds [4]
+    }]
+  }, {
+    createdBy: userIds[1],
+    name: 'Time Bandits',
+    yearReleased: '1981',
+    movieLength: '1h 56min',
+    image: 'https://m.media-amazon.com/images/M/MV5BMTg2MDYwMzM0NF5BMl5BanBnXkFtZTcwODI3MTQ5OQ@@._V1_.jpg',
+    coverPhoto: 'https://images6.alphacoders.com/647/thumb-1920-647207.jpg',
+    writers: ['Michael Palin', 'Terry Gilliam'],
+    director: 'Terry Gilliam' ,
+    actors: ['Sean Connery', 'Shelley Duvall', 'John Cleese '],
+    synopsis: 'A young boy accidentally joins a band of time travelling dwarves, as they jump from era to era looking for treasure to steal.',
+    locationFilmed: 'London',
+    genres: ['Adventure', 'Comedy', 'Fantasy'],
+    reviews: [{
+      title: 'A lot or a little...',
+      rating: 3,
+      content: 'This movie is an enjoyable romp meant to appeal to the adventurous child in everyone',
+      createdBy: userIds [3]
+    }]
+  }, {
+    createdBy: userIds[2],
+    name: 'Star Trek',
+    yearReleased: '2009',
+    movieLength: '2h 7min',
+    image: 'https://m.media-amazon.com/images/M/MV5BMjE5NDQ5OTE4Ml5BMl5BanBnXkFtZTcwOTE3NDIzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg',
+    coverPhoto: 'https://images.alphacoders.com/764/thumb-1920-76401.jpg',
+    writers: ['Roberto Orci', 'Alex Kurtzman'],
+    director: 'J.J.Abrams',
+    actors: ['Chris Pine', 'Zachary Quinto', 'Simon Pegg'],
+    synopsis: 'The brash James T. Kirk tries to live up to his fathers legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time.',
+    locationFilmed: 'Alaska',
+    genres: ['Action', 'Adventure'],
+    reviews: [{
+      title: 'Is it any good?',
+      rating: 4,
+      content: 'Rocketing at warp speed without ever slowing down, J.J. Abrams directs this reboot as a smart, speedy thrill ride that does not indulge in nostalgia for its own sake. ',
+      createdBy: userIds[2]
     }]
   }
 ];
