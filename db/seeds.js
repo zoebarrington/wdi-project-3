@@ -363,15 +363,15 @@ const movieData = [
     locationFilmed: ['United States of America'],
     genres: [' Animation' , 'Adventure', 'Family', 'Fantasy', 'Comedy'],
     reviews: [{
-      title: 'Sensible Title',
-      rating: 5,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Is Finding Nemo better than Finding Dory?',
+      rating: 4,
+      content: 'To find Nemo is to discover underwater treasure. The animation has the depth of the ocean itself. The adventure is both fun and fulfilling. And the lessons just keep on swimming.',
       createdBy: userIds [3]
     },
     {
-      title: 'Sensible Title',
+      title: 'I have seen better ',
       rating: 4,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      content: 'It is all tremendously entertaining stuff, with oodles of wonderful detail and superb direction by Andrew Stanton and spacey undersea music by Thomas Newman of Six Feet Under fame. I have to confess however, I found it appreciably less exotic and somehow less ambitious than previous Pixar outings.',
       createdBy: userIds [0]
     }]
   }, {
@@ -388,9 +388,9 @@ const movieData = [
     locationFilmed: ['United States of America'],
     genres: [' Animation' , 'Adventure', 'Family', 'Fantasy', 'Comedy'],
     reviews: [{
-      title: 'Sensible Title',
+      title: 'James Cameron just got slack',
       rating: 5,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      content: 'The Titanic directors monstrously-hyped creation does look fantastic but, in trying to cover all the bases with militarist sci-fi, vacuous eco-waffle and an intra-species love story, it is too baggy ',
       createdBy: userIds [1]
     }]
   }, {
@@ -407,9 +407,9 @@ const movieData = [
     locationFilmed: ['Berlin, Germany'],
     genres: ['Drama', 'Thriller'],
     reviews: [{
-      title: 'Sensible Title',
+      title: 'Nothing could provide a more effective antidote to Ostalgie',
       rating: 5,
-      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      content: 'This fierce and gloomy drama, written and directed by first-timer Florian Henckel von Donnersmarck, was a notable winner of this years best foreign film Oscar. It is an indictment of the sinister brutalities of the Stasi, the GDRs secret police, whose tentacular network of informers was so vast that fully 2% of the entire civilian population was on the payroll - a network of fear and shame worthy of George Orwells Nineteen Eighty-Four.',
       createdBy: userIds [3]
     }]
   }, {
