@@ -1,0 +1,32 @@
+<div class="suggestions-wrapper">
+  <h1>Follow Suggestions</h1>
+  <div class="suggestion"  ui-sref="profileShow({ id: suggestion._id })" ng-repeat="suggestion in suggestions | orderBy:'-moviesReviewed.length'">
+    <img ng-src="{{suggestion.profilePicture}}" alt="profile picure">
+    <p>{{suggestion.username.toUpperCase()}} - {{suggestion.moviesReviewed.length}} films reviewed</p>
+  </div>
+</div>
+<div class="feed-wrapper">
+  <h1 class="title is-2" ng-if="feedContent.length === 0">FOLLOW SOME FILM FANS TO SEE THEIR LATEST REVIEWS HERE</h1>
+  <img class="no-content" src="https://i.imgur.com/TZn7QV0.png" alt="No Content Banner" ng-if="feedContent.length === 0">
+  <div class="review" ng-repeat="review in feedContent | orderBy:'-time'">
+    <h4 ui-sref="movieShow({ id: review.movieId })">{{review.title.toUpperCase()}} - {{review.movieName}}</h4>
+    <p>{{ "🎬".repeat(review.rating) }}</p>
+    <img class="feed-poster" ui-sref="movieShow({ id: review.movieId })" ng-src="{{ review.movieImage }}" alt="{{ review.movieName }}">
+    <span>{{ review.content }}</span>
+    <div class="right-review">
+      <div class="like-wrapper">
+        <i ng-if="review.likedBy.includes(userId)" ng-click="like(review)" class="fas fa-thumbs-up"></i>
+        <i ng-if="!review.likedBy.includes(userId)" ng-click="like(review)" class="far fa-thumbs-up"></i>
+        <span>{{ review.likedBy.length }} like</span><span ng-if="review.likedBy.length !== 1">s</span>
+      </div>
+      <div class="user-wrapper">
+        <figure ui-sref="profileShow({ id: review.creatorId })" class="image is-96x96 ">
+          <img class="is-rounded"src="{{ review.creatorProfilePicture }}" alt="profile pic">
+          <h5>{{ review.creatorUsername }}</h5>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="background-box" style="height: {{ 135 + 40 * feedContent.length}}vh;">

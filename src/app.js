@@ -7,7 +7,6 @@ import Router from './config/router';
 
 import mainCtrl from './controllers/mainCtrl';
 
-
 angular.module('filmSpotting', ['ui.router', 'satellizer'])
   .config(Router)
   .controller('mainCtrl', mainCtrl)

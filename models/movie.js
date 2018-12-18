@@ -5,6 +5,7 @@ const movieSchema = mongoose.Schema({
   yearReleased: Number,
   movieLength: String,
   image: String,
+  coverPhoto: String,
   writers: [String],
   director: String,
   actors: [String],
@@ -23,11 +24,24 @@ const movieSchema = mongoose.Schema({
     }],
     time: { type: Date, default: Date.now }
   }],
-  averageRatings: Number,
   createdBy: {
     type: mongoose.Schema.ObjectId,
     ref: 'User'
   }
+});
+
+movieSchema.virtual('averageRating')
+  .get(function(){
+    let total = 0;
+    const numberOfReviews = this.reviews.length;
+    for(let i = 0; i < numberOfReviews; i++){
+      total = total + this.reviews[i].rating;
+    }
+    return total / numberOfReviews;
+  });
+
+movieSchema.set('toJSON', {
+  virtuals: true
 });
 
 const movieModel = mongoose.model('Movie', movieSchema);

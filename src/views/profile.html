@@ -1,1 +1,42 @@
-<h1> This is the profile page of {{ user.username }}</h1>
+<div ng-if="user.coverPhoto" class="profile-cover-photo" style="background-image:url({{ user.coverPhoto}});"></div>
+<div class="columns">
+  <div class="frame">
+    <div class="box column">
+      <div class="main">
+        <div class="profile-image">
+          <p class ="profile-name"><strong>{{ user.username.toUpperCase() }}</strong></p>
+          <img src="{{ user.profilePicture}}" alt=" {{ user.name }}">
+        </div>
+        <p class="bio">{{ user.bio }}</p>
+      </div>
+      <div class="posts"> {{ user.moviesSpotted.length }} <p class="small">Films Spotted</p>
+      </div>
+      <div class="posts"> {{ user.moviesReviewed.length }} <p class="small">Films Reviewed</p>
+      </div>
+      <div class="likes"> {{ totalLikes }} <p class="small">Review Likes</p>
+      </div>
+      <div class="followers"> {{ user.followedBy.length }} <p class="small">Followers</p>
+      </div>
+      <button ng-if="user._id !== userId" ng-click="follow()">{{ buttonName }}</button>
+      <button ng-if="user._id === userId" ui-sref="editProfile({ id: user._id})">Edit Profile</button>
+    </div>
+  </div>
+</div>
+<div class="review-box">
+  <div class="reviews">
+    <div class="review" ng-repeat="review in userReviews | orderBy:'-time'">
+      <h4>{{review.title.toUpperCase()}} - {{ review.movieName }}</h4>
+      <p>{{ "🎬".repeat(review.rating) }}</p>
+      <div class="user-wrapper">
+          <img ui-sref="movieShow({ id: review.movieId })" src="{{ review.movieImage }}" alt="{{ review.movieName}}">
+      </div>
+      <span>{{ review.content }}</span>
+      <div class="like-wrapper">
+        <i ng-if="review.likedBy.includes(userId)" ng-click="like(review)" class="fas fa-thumbs-up"></i>
+        <i ng-if="!review.likedBy.includes(userId)" ng-click="like(review)" class="far fa-thumbs-up"></i>
+        <span>{{ review.likedBy.length }} like</span><span ng-if="review.likedBy.length !== 1">s</span><span ng-if="review.likedBy.length === 1"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="background-box" style="height: {{ 120 + 40 * userReviews.length}}vh;"></div>

@@ -3,13 +3,32 @@ const bcrypt = require('bcrypt');
 
 const userSchema = mongoose.Schema({
   username: String,
+  coverPhoto: String,
   profilePicture: String,
   bio: String,
   email: String,
   password: String,
-  following: [{
+  followedBy: [{
     type: mongoose.Schema.ObjectId, ref: 'User'
   }]
+});
+
+
+userSchema.virtual('moviesSpotted', {
+  ref: 'Movie',
+  localField: '_id',
+  foreignField: 'createdBy'
+});
+
+userSchema.virtual('moviesReviewed', {
+  ref: 'Movie',
+  localField: '_id',
+  foreignField: 'reviews.createdBy'
+});
+
+
+userSchema.set('toJSON', {
+  virtuals: true
 });
 
 userSchema.pre('save', function() {

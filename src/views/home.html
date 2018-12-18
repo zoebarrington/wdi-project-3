@@ -1,14 +1,23 @@
-<h1 ng-if="isAuthenticated()" class="home-welcome">WELCOME {{username.toUpperCase()}}</h1>
-<h1 ng-if="!isAuthenticated()" class="home-welcome">WELCOME TO FILM SPOTTING</h1>
-<div class="columns" id="home-content">
-  <div class="column is-1"></div>
-  <div class="column is-5">
-    <h2 class="subtitle is-1">About Film Spotting:</h2>
-    <hr>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<div class="home-container">
+  <!-- <h1 ng-if="!isAuthenticated()" class="home-welcome">WELCOME {{username.toUpperCase()}}</h1> -->
+  <div class="slapper slapperTop">
+    <div class="diag-black"></div>
+    <div class="diag-black"></div>
+    <div class="diag-black"></div>
+    <div class="diag-black last"></div>
+
   </div>
-  <div class="column is-5">
-    screenshots or photos here??
+  <div class="clapper">
+    <div class="slapper flat">
+      <div class="reverse diag-black"></div>
+      <div class="reverse diag-black"></div>
+      <div class="reverse diag-black"></div>
+      <div class="reverse diag-black last"></div>
+    </div>
+    <div ng-if="isAuthenticated()" style="color:white; font-size: 35px;"class="lines">Welcome to Filmspotting {{username}}</div>
+    <div ng-if="!isAuthenticated()" style="color:white; font-size: 35px; "class="lines">Welcome to Filmspotting </div>
+    <div style="color:white; font-size: 14px;" class="lines">Filmspotting is a global social network for film discussion and discovery. We’re your home for logging in, rating and reviewing films, your source for lists and inspiration and and activity stream of passionate film criticism, discussion and discovery. Showcase your favorites on your profile page. Rate and review films as you add them. Find and follow your friends to see what they’re enjoying.</div>
+    <div class="lines no-color"> Made by Frezeoe</div>
   </div>
-  <div class="column is-1"></div>
 </div>

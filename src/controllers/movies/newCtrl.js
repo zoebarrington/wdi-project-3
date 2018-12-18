@@ -1,5 +1,6 @@
-function newCtrl($scope, $http, $state){
+function newCtrl($scope, $http, $state, $auth){
   $scope.handleSubmit = function (){
+    $scope.review.createdBy = $auth.getPayload().sub;
     console.log('handleSubmit');
     $http({
       method: 'POST',

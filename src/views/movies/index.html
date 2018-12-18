@@ -1,17 +1,59 @@
-<h1 class="title is-1">Spot the film</h1>
-  <div class="columns is-multiline">
-    <div ng-repeat="movie in movies" class="column is-4">
+<!-- <h1 class="title is-1">Spot the film</h1> -->
+<section id="section-container" class="">
+  <div id="slider">
+    <figure class="image-container">
+      <img ui-sref="movieShow({ id: movie._id })" ng-repeat="movie in allMovies | orderBy:'-averageRating'" ng-src="{{movie.image}}" alt="{{ movie.name}}">
+    </figure>
+  </div>
+  <hr>
+</section>
+
+<div class="columns">
+  <div class="genres column is-2">
+    <h1 id="spotTheFilm">SPOT THE FILM</h1>
+    <form id="searchbar" ng-submit="handleFilterSubmit()">
+      <input type="text" class="input" ng-model="searchTerm">
+      <button class="button">🎥</button>
+      <hr>
+    </form>
+    <div id="genreFilter">
+      <h2 class="aside-headers"><strong>Genres</strong>({{ genres.length }})</h2>
+      <button class="indexButtons" ng-click="clearFilters()">Clear Filters</button>
+    </div>
+    <div id="genre-name" ng-repeat="genre in genres | orderBy:'name'" ng-click="filterGenres(genre)">
+      {{ genre.name }}
+    </div>
+  </div>
+
+
+  <div class="columns is-multiline column is-8">
+    <h1 class="index-title title is-2">{{ title.toUpperCase() }} FILMS</h1>
+    <div ng-repeat="movie in filteredMovies | orderBy:'-averageRating'" class="column is-2">
       <a ui-sref="movieShow({ id: movie._id })">
         <div class="card">
           <div class="card-header">
-            {{ movie.name }}
           </div>
           <div class="card-image">
             <figure class="image">
-              <img ng-src="{{ movie.image }}" alt="{{ movie.name }}">
+              <img class="index-images" ng-src="{{ movie.image }}" alt="{{ movie.name }}">
             </figure>
           </div>
+        </div>
+        <div id="movie-name">
+          {{ movie.name }}
         </div>
       </a>
     </div>
   </div>
+  <div class="upcoming-releases column is-2">
+    <p class="aside-headers"><strong>Upcoming Releases</strong>({{ releases.length }})</p>
+    <div ng-repeat="release in releases">
+       <strong>{{ release.title }}</strong>
+       <div>
+       {{ release.release_date }}
+       <a href="https://www.myvue.com/film/{{ release.title.replace('\'', '').replace(':', '').split(' ').join('-') }}">Tickets</a>
+       </div>
+    </div>
+  </div>
+</div>
+<div class="background-box" style="height: 150vw;"></div>
