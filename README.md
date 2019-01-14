@@ -1,5 +1,9 @@
 # Filmspotting
 
+## Background
+
+Filmspotting is a social media platform for movies. Users can login and review movies that they have watched.
+
 ## Brief
 
 Your instructors will partner you with other classmates to design and collaboratively build a MEAN stack app of your own design.
