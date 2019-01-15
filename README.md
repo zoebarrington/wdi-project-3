@@ -4,6 +4,8 @@
 
 Filmspotting is a social media platform for movies. Users can login and review movies that they have watched.
 
+Launch on [Heroku](https://film-spotting.herokuapp.com/#!/) or check out the GitHub [Repo](https://github.com/zoebarrington/wdi-project-3).
+
 ## Course Curriculum
 **Week 7-8*** | Module Three
 * AngularJS
@@ -68,6 +70,7 @@ Your app must:
 
 ## APIS Used
 
+
 ## Approach Taken
 
 > Teamwork and Time Management
@@ -111,14 +114,27 @@ All Features
 * View newsfeed consisting of movies reviewed only by followed users
 
 ## Featured Piece of Code no.1
+```javascript  
+$http({
+  method: 'GET',
+  url: 'https://api.themoviedb.org/3/movie/now_playing?api_key=1712d52487cc8d1fca9c99a892dd1f38&language=en-US&page=1'
+}).then(result => {
+  $scope.releases = result.data.results;
+  console.log('scope', $scope.releases);
+});
+```
+
+This piece of code is taken from the indexCtrl.js file in the back-end.
 
 ## Featured Piece of Code no.2
-
-## Styling
 
 ## Wins and Blockers
 
 ## Future Features
+
+* Add maps to show cinemas near you
+* Add messaging so that users can message each other about movies/reviews
+* Make the app mobile responsive
 
 ***
 
