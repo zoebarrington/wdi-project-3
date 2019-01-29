@@ -41,7 +41,7 @@ Your app must:
 ![Index-Page](screenshots/filmspot-gif.gif)
 
 ### Profile Page
-![Profile-Page](screenshots/film-profile.gif)
+![Profile-Page](screenshots/film-profilepage.gif)
 
 ## Technologies Used
 * HTML5
