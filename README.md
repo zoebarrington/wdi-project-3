@@ -32,6 +32,17 @@ Your app must:
 
 **Timeframe:** 1 week(November 2018)
 
+## Visuals
+
+### Home Page
+![Home-Page](screenshots/filmspot-home.gif)
+
+### Index Page
+![Index-Page](screenshots/filmspot-gif.gif)
+
+### Profile Page
+![Profile-Page](screenshots/film-profile.gif)
+
 ## Technologies Used
 * HTML5
 * SCSS   
@@ -77,7 +88,10 @@ Your app must:
 * Daily stand-up every morning
 * Summary at end of every day to review what's been achieved that day  
 * Co-located work space and online communication (Trello and Slack)
-* Continuous status checking throughout each day  
+* Continuous status checking throughout each day
+
+### Trello
+![Trello](screenshots/prj3-trello.gif)
 
 ### Wireframes
 #### Home Page  
