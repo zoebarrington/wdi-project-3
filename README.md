@@ -136,7 +136,9 @@ This piece of code is taken from the indexCtrl.js file in the back-end.
 ## Wins and Blockers
 I think our biggest win was our ability to work well in a team. By achieving full transparency and communication, we were able to work to our individual strength, and help each other through any weaknesses.
 
-In terms of the elements that I built, 
+In terms of the elements that I built, my biggest win was the index page. I was given full responsibility for this page, and I am really pleased with the search bar and the implementation of an external API.
+
+My biggest blocker was probably testing as, prior to this project, I did not have much experience in it. However, completing the tests for the project was extremely beneficial for me as it allowed me to feel much more comfortable tacking tests.
 
 ## Future Features
 
