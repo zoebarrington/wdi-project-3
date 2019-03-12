@@ -1,4 +1,4 @@
-# Filmspotting
+# **Filmspotting** <img src="https://trello-attachments.s3.amazonaws.com/5bed8efca96b2a5821714190/5beec7e682068e09a7ee4ad9/c5409bca2ad015f6e8fdbcae4818f1a6/filmspotting-wordmark-3000x3000.jpg" style="width: 48px;"/>
 
 ## Background
 
@@ -38,46 +38,37 @@ Your app must:
 ![Home-Page](screenshots/filmspot-home.gif)
 
 ### Index Page
+**Used to find a film on the site**
+
 ![Index-Page](screenshots/filmspot-gif.gif)
+
+### Show Page
+**Used to see film information, read reviews, or write your own**
+![Show-Page](screenshots/show-film.gif)
 
 ### Profile Page
 ![Profile-Page](screenshots/film-profilepage.gif)
 
+
 ## Technologies Used
+* AngularJS
+* JavaScript (ES6)
 * HTML5
-* SCSS   
-* JavaScript(ECMAScript6)
-* Node.js
-* angular:v1.7.3
-* bulma:v0.7.1
-* @uirouter/angularjs:v1.0.20
-* moment:v2.22.2
-* satellizer:v0.15.5
-* MongoDB
-* bcrypt:v3.0.2
-* body-parser:v1.18.3
-* express:v4.16.5
-* jsonwebtoken:v8.4.0
-* mongoose:v5.3.12
-* morgan:v1.9.1
-* mocha:v5.2.0
-* nyc:v12.0.2
-* supertest:v3.1.0
-* chai:v4.1.2
-* supertest:v3.1.0
-* node-sass:v4.7.2
-* sass-loader:v6.0.6
-* url-loader:v0.6.2
-* css-loader:v0.28.9
-* babel-core:v6.26.0
-* babel-loader:v7.1.2
-* babel-preset-env:v1.6.1
+* SCSS
+* Bulma CSS Framework
 * Git
 * GitHub
+* Bcrypt
+* JWT
+* Moment.js
+* Mongoose
 * Heroku
 * Trello
-* Google Fonts
-* Fontawesome
+* Yarn
+* Chai
+* Mocha
+* Leaflet.js map
+* OpenStreetMap API
 
 ## APIS Used
 
@@ -143,6 +134,9 @@ This piece of code is taken from the indexCtrl.js file in the back-end.
 ## Featured Piece of Code no.2
 
 ## Wins and Blockers
+I think our biggest win was our ability to work well in a team. By achieving full transparency and communication, we were able to work to our individual strength, and help each other through any weaknesses.
+
+In terms of the elements that I built, 
 
 ## Future Features
 
