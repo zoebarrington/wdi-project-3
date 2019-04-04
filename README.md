@@ -32,7 +32,6 @@ Your app must:
 
 **Timeframe:** 1 week(November 2018)
 
-## Visuals
 
 ### Home Page
 ![Home-Page](screenshots/filmspot-home.gif)
@@ -69,8 +68,6 @@ Your app must:
 * Mocha
 * Leaflet.js map
 * OpenStreetMap API
-
-## APIS Used
 
 
 ## Approach Taken
@@ -118,7 +115,7 @@ All Features
 * View all specified user's reviews on their profile
 * View newsfeed consisting of movies reviewed only by followed users
 
-## Featured Piece of Code no.1
+<!-- ## Featured Piece of Code no.1
 ```javascript  
 $http({
   method: 'GET',
@@ -130,9 +127,7 @@ $http({
 ```
 
 This piece of code is taken from the indexCtrl.js file in the back-end.
-
-## Featured Piece of Code no.2
-
+ -->
 ## Wins and Blockers
 I think our biggest win was our ability to work well in a team. By achieving full transparency and communication, we were able to work to our individual strength, and help each other through any weaknesses.
 
