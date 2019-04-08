@@ -115,7 +115,7 @@ All Features
 * View all specified user's reviews on their profile
 * View newsfeed consisting of movies reviewed only by followed users
 
-## Featured Piece of Code no.1
+## Featured Piece of Code 
 ```javascript  
 $http({
   method: 'GET',
