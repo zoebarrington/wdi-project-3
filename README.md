@@ -115,7 +115,7 @@ All Features
 * View all specified user's reviews on their profile
 * View newsfeed consisting of movies reviewed only by followed users
 
-<!-- ## Featured Piece of Code no.1
+## Featured Piece of Code no.1
 ```javascript  
 $http({
   method: 'GET',
@@ -126,8 +126,13 @@ $http({
 });
 ```
 
-This piece of code is taken from the indexCtrl.js file in the back-end.
- -->
+We decided that it would be a great feature to have a rolling side panel on the index page which showed the movies which were currently playing in the cinema.
+
+This piece of code is taken from the indexCtrl.js file in the back-end. It's the GET request for the External Movie API which shows these current movies.
+
+Since I was given responsibility for the whole of the index page, this was a feature I was particularly proud of and felt added value to the app. Once the API had responded with the requested data, I was then able manipulate the data to fit the desired feature.
+
+
 ## Wins and Blockers
 I think our biggest win was our ability to work well in a team. By achieving full transparency and communication, we were able to work to our individual strength, and help each other through any weaknesses.
 
